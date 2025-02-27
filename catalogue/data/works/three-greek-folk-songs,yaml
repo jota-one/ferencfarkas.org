@@ -1,13 +1,13 @@
 category: choir
 composition_date: 1994
-date: 2023-12-30T17:21:32.593Z
+date: 2023-12-30T17:21:32.593
 description: for 4-part mixed choir
 duration: 160
 id: three-greek-folk-songs
 movements:
   - title: Ierakina
   - title: Lemon
-  - title: The kiss of the kiss
+  - title: The wings of the kiss 
 publications:
   - publisher_id: afp
 texts:
@@ -17,5 +17,7 @@ title:
   original: el
   sort:
     - en
+    - el
   translations:
     en: Three Greek folk songs
+    el: Τρία Ελληνικά λαϊκά τραγούδια
