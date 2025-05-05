@@ -1,0 +1,23 @@
+category: male
+composition_date: 1959
+date: 2023-12-30T17:21:33.767Z
+description: 5 bulgarian folk songs for 4-part male choir
+duration: 360
+id: foelkel-a-hues-hajnali-szel
+movements:
+  - title: Fölkél a hűs hajnali szél
+  - title: Meghívjuk a várost
+  - title: Hull már a dér
+  - title: Van-e puha pihe melege
+  - title: Puskát, szablyát félre tennénk
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian translated by László Dalos
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Fölkél a hűs hajnali szél

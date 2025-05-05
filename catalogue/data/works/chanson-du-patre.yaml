@@ -1,0 +1,17 @@
+category: male
+composition_date: 1976
+date: 2023-12-30T17:21:25.342Z
+description: for 4-part male choir
+duration: 180
+id: chanson-du-patre
+publications:
+  - publisher_id: afp
+texts:
+  fr: in French
+title:
+  main: fr
+  original: fr
+  sort:
+    - fr
+  translations:
+    fr: Chanson du pâtre
