@@ -1,0 +1,20 @@
+category: male
+date: 2023-12-30T17:21:20.679Z
+description: for 4-part male choir
+duration: 180
+id: harom-palocz-katonanota
+movements:
+  - title: Ferenc József, az...
+  - title: Réten, réten...
+  - title: Csivirgónak, csavargónak...
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Három palócz katonanóta
