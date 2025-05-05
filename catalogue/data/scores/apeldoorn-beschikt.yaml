@@ -1,0 +1,5 @@
+- id: apeldoorn-beschikt-score
+  score_type: score
+  ref: /MALE CHOIR/Apeldoorn beschikt/score/score.pdf
+  manuscript: true
+  published: false
