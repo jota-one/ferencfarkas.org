@@ -1,0 +1,5 @@
+- id: fel-score
+  score_type: score
+  ref: /MALE CHOIR/Fel !/score/score.pdf
+  manuscript: false
+  published: false

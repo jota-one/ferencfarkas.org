@@ -1,0 +1,5 @@
+- id: chanson-du-patre-score
+  score_type: score
+  ref: /MALE CHOIR/Chanson du pâtre/score/score.pdf
+  manuscript: true
+  published: false
