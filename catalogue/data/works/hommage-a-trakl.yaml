@@ -1,0 +1,21 @@
+category: male
+composition_date: 1996
+date: 2023-12-30T17:21:20.679Z
+dedicated: an die “Harmonie” Lindenholzhausen und seinem Dirigenten Martin Winkler herzlichst gewidmet
+description: for 6-part male choir
+duration: 180
+id: hommage-a-trakl
+movements:
+  - title: Rondell
+  - title: Im Park
+publications:
+  - publisher_id: carus
+texts:
+  de: in German by Georg Trakl
+title:
+  main: de
+  original: de
+  sort:
+    - de
+  translations:
+    de: Hommage à Trakl

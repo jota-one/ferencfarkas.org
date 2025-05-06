@@ -1,0 +1,21 @@
+category: male
+composition_date: 1984
+date: 2023-12-30T17:21:20.679Z
+description: for 4-part male choir
+duration: 240
+id: harom-enek-a-mohacsi-veszroel
+movements:
+  - title: Lajos magyar királyról - Babst’s Gesangsbuch 1545 III, Nr.ll, Dresdner Gsgb, 1593
+  - title: A mohácsi vész históriája - Barsi Ernö gyüjtése Ásványváró
+  - title: A mohácsi csata - Izlandi kézirat, 1540, Kopenhága
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Három ének a mohácsi vészröl
