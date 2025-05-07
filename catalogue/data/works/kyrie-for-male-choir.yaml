@@ -1,0 +1,18 @@
+category: male
+composition_date: 1997
+date: 2023-12-30T17:21:33.767Z
+description: for double male choir from  the mass “Missa brevis in honorem Sancti Stephani”
+duration: 90
+id: kyrie-for-male-choir
+publications:
+  - publisher_id: ascolta
+rework_of: missa-brevis-in-honorem-sancti-stephani
+texts:
+  la: in Latin
+title:
+  main: la
+  original: la
+  sort:
+    - la
+  translations:
+    la: Kyrie
