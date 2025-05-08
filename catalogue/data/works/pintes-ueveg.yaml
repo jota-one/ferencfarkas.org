@@ -1,0 +1,23 @@
+category: male
+composition_date: 1934
+date: 2023-12-30T17:21:33.767Z
+description: 5 drinking songs for 4-part male choir
+duration: 360
+id: pintes-ueveg
+movements:
+  - title: Igyunk ilt...
+  - title: Ez a bor nem drága....
+  - title: Oh én édös pintös üvegöm...
+  - title: Egy icce bor....
+  - title: Bort ittam én...
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian (traditional)
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Pintes-üveg

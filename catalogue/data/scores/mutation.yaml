@@ -1,0 +1,5 @@
+- id: mutation-score
+  score_type: score
+  ref: /MALE CHOIR/Mutation/score/score.pdf
+  manuscript: true
+  published: false
