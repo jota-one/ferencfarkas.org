@@ -1,0 +1,22 @@
+category: male
+composition_date: 1988
+date: 2023-12-30T17:21:33.767Z
+description: for 4-part male choir
+duration: 600
+id: psalmus-et-hymni
+movements:
+  - title: Psalmus X
+  - title: Hymnus de Amore Divino - text by Sancti Bernardi de Claravalle
+  - title: De vitae vanitate - Anonymi
+  - title: De vero sponso Regis Filio- text by Sancti Petri Damiani
+publications:
+  - publisher_id: afp
+texts:
+  la: in Latin
+title:
+  main: la
+  original: la
+  sort:
+    - la
+  translations:
+  la: Psalmus et Hymni
