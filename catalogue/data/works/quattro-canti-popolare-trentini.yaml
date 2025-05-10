@@ -1,0 +1,22 @@
+category: male
+composition_date: 1984
+date: 2023-12-30T17:21:33.767Z
+description: for 4-part male choir
+duration: 390
+id: quattro-canti-popolare-trentini
+movements:
+  - title: Vegnerá sta primavera
+  - title: E dove vastu bèla Giulieta
+  - title: Aprite le porte di questo castel
+  - title: Io sono stanco
+publications:
+  - publisher_id: afp
+texts:
+  it: in Italian
+title:
+  main: it
+  original: it
+  sort:
+    - it
+  translations:
+    it: Quattro canti popolare trentini
