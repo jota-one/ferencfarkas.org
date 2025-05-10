@@ -1,0 +1,21 @@
+category: male
+composition_date: 1994
+date: 2023-12-30T17:21:33.767Z
+dedicated: à la Chorale “Chant de Ville” d’Estavayer-le-Lac
+description: for 4-part male choir
+duration: 200
+id: rondeau-et-epilogue
+movements:
+  - title: Rondeau
+  - title: Epilogue
+publications:
+  - publisher_id: afp
+texts:
+  fr: in French by François Villon
+title:
+  main: fr
+  original: fr
+  sort:
+    - fr
+  translations:
+    fr: Rondeau et Epilogue
