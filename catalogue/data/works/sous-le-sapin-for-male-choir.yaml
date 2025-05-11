@@ -1,0 +1,18 @@
+category: male
+composition_date: 1979
+date: 2023-12-30T17:21:33.767Z
+description: for 4-part male choir
+duration: 120
+id: sous-le-sapin-for-male-choir
+publications:
+  - publisher_id: afp
+rework_of: sous-le-sapin
+texts:
+  fr: in French by Henri Magnenat
+title:
+  main: fr
+  original: fr
+  sort:
+    - fr
+  translations:
+    fr: Sous le sapin

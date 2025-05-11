@@ -1,0 +1,21 @@
+category: male
+date: 2023-12-30T17:21:33.767Z
+description: 4 soldier-songs for 4-part male choir
+duration: 210
+id: zug-az-erdoe-harsog-a-trombita
+movements:
+  - title: Ütik a rézdobot
+  - title: Sok embernek
+  - title: Megütötték már a dobot
+  - title: Zúg az erdő
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Zúg az erdő, harsog a trombita
