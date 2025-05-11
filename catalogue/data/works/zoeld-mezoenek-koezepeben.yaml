@@ -1,0 +1,20 @@
+category: male
+composition_date: 1970
+date: 2023-12-30T17:21:33.767Z
+description: 2 songs from the Carpathian mountains for 3-part male choir
+duration: 120
+id: zoeld-mezoenek-koezepeben
+movements:
+  - title: Zöld mezőnek közepében - text by István Raics
+  - title: Kolomejka - text by Mihály Fincziczky
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Zöld mezőnek közepében

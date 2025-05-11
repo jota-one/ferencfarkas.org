@@ -1,0 +1,19 @@
+category: male
+composition_date: 1975
+date: 2023-12-30T17:21:33.767Z
+dedicated: á la Chorale de l’Orient
+description: Hungarian drinking song for 4-part male choir
+duration: 120
+id: vinus-vina-vinum
+publications:
+  - publisher_id: sympaphonie
+rework_of: pataki-diakdalok
+texts:
+  la: in Latin
+title:
+  main: la
+  original: la
+  sort:
+    - la
+  translations:
+    la: Vinus, vina, vinum
