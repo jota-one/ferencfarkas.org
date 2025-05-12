@@ -1,0 +1,5 @@
+- id: psalmus-et-hymni-score
+  score_type: score
+  ref: /MALE CHOIR/Psalmus et Hymni/score/score.pdf
+  manuscript: true
+  published: false
