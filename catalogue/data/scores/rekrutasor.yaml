@@ -1,0 +1,5 @@
+- id: rekrutasor-score
+  score_type: score
+  ref: /MALE CHOIR/Rekrutasor/score/score.pdf
+  manuscript: false
+  published: false

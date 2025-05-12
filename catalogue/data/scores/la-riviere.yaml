@@ -1,0 +1,5 @@
+- id: la-riviere-score
+  score_type: score
+  ref: /MALE CHOIR/La rivière/score/score.pdf
+  manuscript: true
+  published: false
