@@ -1,0 +1,5 @@
+- id: silence-score
+  score_type: score
+  ref: /MALE CHOIR/Silence/score/score.pdf
+  manuscript: false
+  published: false

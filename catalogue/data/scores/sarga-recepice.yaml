@@ -1,0 +1,5 @@
+- id: sarga-recepice-score
+  score_type: score
+  ref: /MALE CHOIR/Sárga recepice/score/score.pdf
+  manuscript: false
+  published: false
