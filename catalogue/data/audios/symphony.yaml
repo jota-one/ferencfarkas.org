@@ -1,0 +1,16 @@
+- id: symphony-1
+  description: Overture
+  cd: p206
+  track: 7
+- id: symphony-2
+  description: Elegia
+  cd: p206
+  track: 8
+- id: symphony-3
+  description: Scherzo
+  cd: p206
+  track: 9
+- id: symphony-4
+  description: Finale
+  cd: p206
+  track: 10
