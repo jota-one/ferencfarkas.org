@@ -1,0 +1,21 @@
+category: female
+composition_date: 1967
+date: 2023-12-30T17:21:33.578Z
+description: for 2-part female choir
+duration: 260
+id: keresztoeltes
+movements:
+  - title: Kánon - text by Ferenc Jankovich
+  - title: Keresztöltés - text by Sándor Weöres
+  - title: Táncdal - text by Sándor Weöres
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Keresztöltés
