@@ -5,6 +5,7 @@ duration: 120
 id: it-came-upon-the-midnight-clear
 publications:
   - publisher_id: emb
+rework_of: christmas-album
 texts:
   en: in English
   hu: Hungarian translated by Károly Vargha
