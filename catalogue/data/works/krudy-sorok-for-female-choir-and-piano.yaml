@@ -1,0 +1,18 @@
+category: female
+composition_date: 1988
+date: 2023-12-30T17:21:32.977Z
+description: for female choir and piano
+duration: 600
+id: krudy-sorok-for-female-choir-and-piano
+publications:
+  - publisher_id: kontrapunkt
+rework_of: krudy-sorok
+texts:
+  hu: in Hungarian by Gyula Krúdy
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Krúdy-sorok
