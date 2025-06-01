@@ -1,0 +1,20 @@
+category: female
+composition_date: 1960
+date: 2023-12-30T17:21:32.977Z
+description: for 3-part female choir
+duration: 120
+id: le-gout-de-la-paix
+publications:
+  - publisher_id: emb
+texts:
+  fr: in French by Guillevic
+  hu: Hungarian translated by Ferenc Farkas
+title:
+  main: fr
+  original: hu
+  sort:
+    - fr
+    - hu
+  translations:
+    fr: Le goût de la paix
+    hu: A béke mosolya
