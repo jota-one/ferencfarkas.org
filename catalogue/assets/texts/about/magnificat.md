@@ -20,7 +20,6 @@ menu:
 > revelation also inspired me to set a Magnificat to music. I thought of the organ accompaniment as being most suitable. This 
 > work was created in 1994.
 > {{< author name="Ferenc Farkas" >}}
-> {{< author name="Ferenc Farkas" >}}
 
 {{% /column %}}
 {{% column %}}
