@@ -4,7 +4,7 @@ date: 2025-06.06
 menu:
   main:
     parent: 'work'
-    weight: 120
+    weight: 160
 ---
 
 {{% section highlight %}}
@@ -21,40 +21,40 @@ In the 16th and 17th centuries, Hungary suffered of the Turkish occupation and t
 
 1. « Bátoritás a halál ellen / Encouragement devant la mort (Courage in the face of death ) » : János Szepetneki, 1555
    
-   My Lord, my God, here I am in front of You,
-   Ready in everything to submit me to You,
-   Ready to suffer and ready to die for You,
-   Do not let me lose the faith I have in You.
+My Lord, my God, here I am in front of You,
+Ready in everything to submit me to You,
+Ready to suffer and ready to die for You,
+Do not let me lose the faith I have in You.
 
-   From this world I'm already detached,
-   For this world is overwhelmed by his sins.
-   This world is the reign of cruelty,
-   Everything is vile and vain, yes, all is only wickedness.
+From this world I'm already detached,
+For this world is overwhelmed by his sins.
+This world is the reign of cruelty,
+Everything is vile and vain, yes, all is only wickedness.
 
-   In the year thousand one hundred and fifty five has written,
-   At the edge of Szamos River, János Szepetneki,
-   This song for being ready to die, 
-   To find Christ, peace and bliss.
+In the year thousand one hundred and fifty five has written,
+At the edge of Szamos River, János Szepetneki,
+This song for being ready to die, 
+To find Christ, peace and bliss.
 
-> 2. « Könyörgés / Imploration » : Bálint Balassi (1554-1594)
+2. « Könyörgés / Imploration » : Bálint Balassi (1554-1594)
    
-   Forgive, my Lord, my youth errors,
-   My vile treacheries, my ignominious acts.
-   From felony erase the ugliness, please relieve my heart.
+Forgive, my Lord, my youth errors,
+My vile treacheries, my ignominious acts.
+From felony erase the ugliness, please relieve my heart.
 
-   Oh, my soul, turn towards your God who receives you,
-   It is He who calls you, his home is beautiful.
-   Put yourself under his wing for He is your Lord, He is your God, your Savior.
+Oh, my soul, turn towards your God who receives you,
+It is He who calls you, his home is beautiful.
+Put yourself under his wing for He is your Lord, He is your God, your Savior.
 
-   No doubts anymore about my fate, I wander waiting of death.
-   The devil spies on me, I am afflicted with my sins.
-   I am weary and sad, I see the end coming and grace of the Holy God.
+No doubts anymore about my fate, I wander waiting of death.
+The devil spies on me, I am afflicted with my sins.
+I am weary and sad, I see the end coming and grace of the Holy God.
 
 {{% /column %}}
 {{% column %}}
 
-> 3. « Máriá ének / Chant à Marie » (Song to Mary) by András Vásárhelyi appeared in the oldest collection of sacred folk songs 
-> of the Hungarian Catholic Church, the "Cantus Catholici" published in 1651.
+3. « Máriá ének / Chant à Marie » (Song to Mary) by András Vásárhelyi appeared in the oldest collection of sacred folk songs 
+of the Hungarian Catholic Church, the "Cantus Catholici" published in 1651.
    
    Lady of Angels, full of grace,
    Mother of Jesus, glory to you,
