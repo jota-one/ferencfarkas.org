@@ -9,9 +9,6 @@ menu:
 
 {{% section highlight %}}
 
-{{% row %}}
-{{% column %}}
-
 > I spent my summers for over twenty years on the shores of Lake Balaton. During my excursions, I often visited the village of 
 > Köröshegy and, every year, I never missed attending the concerts held in its beautiful old church. It was for this place with 
 > its very special atmosphere that I composed my "Cantiones optimae".
@@ -19,7 +16,10 @@ menu:
  
 In the 16th and 17th centuries, Hungary suffered of the Turkish occupation and the music composed at that time fell into oblivion. "Cantio optima" (Beautiful Song) refers to a genre specific to Hungarian literature and music of this period. These are poems intended to be sung, and only a few with their melody have survived.
 
-> 1. « Bátoritás a halál ellen / Encouragement devant la mort (Courage in the face of death ) » : János Szepetneki, 1555
+{{% row %}}
+{{% column %}}
+
+1. « Bátoritás a halál ellen / Encouragement devant la mort (Courage in the face of death ) » : János Szepetneki, 1555
    
    My Lord, my God, here I am in front of You,
    Ready in everything to submit me to You,
@@ -87,7 +87,6 @@ In the 16th and 17th centuries, Hungary suffered of the Turkish occupation and t
    Do your bed in my heart, my little flower.
    Oh my Jesus, my Holy fiancé,
    Be present in my heart, my beloved.
-
 
 {{% /column %}}
 {{% column %}}
