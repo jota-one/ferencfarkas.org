@@ -53,43 +53,39 @@ I am weary and sad, I see the end coming and grace of the Holy God.
 {{% /column %}}
 {{% column %}}
 
-3. « Máriá ének / Chant à Marie » (Song to Mary) by András Vásárhelyi appeared in the oldest collection of sacred folk songs 
-of the Hungarian Catholic Church, the "Cantus Catholici" published in 1651.
+3. « Máriá ének / Chant à Marie » (Song to Mary) by András Vásárhelyi, 1651 
    
-   Lady of Angels, full of grace,
-   Mother of Jesus, glory to you,
-   Queen of Heaven, Mother of stars,
-   From paradise you are the open door.
+Lady of Angels, full of grace,
+Mother of Jesus, glory to you,
+Queen of Heaven, Mother of stars,
+From paradise you are the open door.
 
-   Have the honour of the heavenly kingdom,
-   The angels army of owes you obedience,
-   Your loving Son sit at your side,
-   No other woman resemble to you.
+Have the honour of the heavenly kingdom,
+The angels army of owes you obedience,
+Your loving Son sit at your side,
+No other woman resemble to you.
 
-   Blessed are you, wet nurse/mother of Jesus,
-   God’s daughter full of beauty,
-   Of the Holy Spirit beloved fiancée,
-   Creation of the Holy Trinity.
+Blessed are you, wet nurse/mother of Jesus,
+God’s daughter full of beauty,
+Of the Holy Spirit beloved fiancée,
+Creation of the Holy Trinity.
 
-> 4. « O Jézus » by Ferenc Lénárt Szegedi appeared in the edition of Kassa’s “Cantus Catholici” published in 1674.
+4. « O Jézus » by Ferenc Lénárt Szegedi, 1674.
    
-   Nice Rose born of the Virgin Mary, oh my Jesus,
-   I found you in your simplest humility.
-   Oh my Jesus, my Holy fiancé,
-   Be present in my heart, my beloved.
+Nice Rose born of the Virgin Mary, oh my Jesus,
+I found you in your simplest humility.
+Oh my Jesus, my Holy fiancé,
+Be present in my heart, my beloved.
 
-   Oh my host that came from heaven, stay with me,
-   Do not be repulsed by my sins.
-   Oh my Jesus, my Holy fiancé,
-   Be present in my heart, my beloved.
+Oh my host that came from heaven, stay with me,
+Do not be repulsed by my sins.
+Oh my Jesus, my Holy fiancé,
+Be present in my heart, my beloved.
 
-   I beg you, make haste towards me, my little king.
-   Do your bed in my heart, my little flower.
-   Oh my Jesus, my Holy fiancé,
-   Be present in my heart, my beloved.
-
-{{% /column %}}
-{{% column %}}
+I beg you, make haste towards me, my little king.
+Do your bed in my heart, my little flower.
+Oh my Jesus, my Holy fiancé,
+Be present in my heart, my beloved.
 
 {{< catalogue work-id="cantiones-optimae" >}}
 
