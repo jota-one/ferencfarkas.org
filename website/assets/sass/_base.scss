@@ -133,6 +133,10 @@ blockquote {
   font-size: 120%;
   font-weight: 100;
 
+  .news & {
+    font-size: 90%;
+  }
+
   .blocked & {
     z-index: -1;
   }

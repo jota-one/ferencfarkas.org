@@ -9,6 +9,63 @@ date: 2021-03-21
 
 {{% carousel %}}
 
+{{% news date="09.06.2025" %}}
+{{% row %}}
+{{% column %}}
+
+## New CD release!
+### Piano works 2 on *Stradivarius*
+
+The Italian **pianist Stefano Cascioli** has undertaken to record the complete
+works of Ferenc Farkas for piano.
+
+The second CD, wich has just been published by Stradivarius contains the following works:
+[Ballade](/work/?r=ballade),
+[Correspondances](/work/?r=correspondances),
+[Deux aquarelles](/work/?r=deux-aquarelles),
+[Deux esquisses pour la main gauche](/work/?r=deux-esquisses-pour-la-main-gauche),
+[Journal 1986](/work/?r=journal-1986),
+[Journal 1987](/work/?r=journal-1987),
+[Little suite for the left hand](/work/?r=little-suite-for-the-left-hand),
+[Sonata no.2](/work/?r=sonata-1-for-piano)
+
+{{< arrow-link "https://www.stradivarius.it/scheda.php?ID=801157037312000" "Check it on Stradivarius" "_blank" >}}
+
+{{% /column %}}
+{{% column valign="center" %}}
+
+{{< figure src="/img/news/STR_37312.jpg" >}}
+
+{{% /column %}}
+{{% /row %}}
+{{% /news %}}
+
+{{% news date="09.06.2025" %}}
+{{% row %}}
+{{% column %}}
+## New CD release!
+### Orchestral music, volume six on *Toccata classics*
+
+> ...In my Symphony, of neoclassical character but without any style constraints,
+> I have put on an explosion of strong emotions…
+> {{< author name="Ferenc Farkas, 1952" >}}
+
+On this CD, you can hear for the first time Ferenc Farkas' unique Symphony in its entirety.
+Published by [Toccata classics recordings](https://toccataclassics.com),
+this CD contains the following works:
+[The sly students, suite](/work/?q=sly&showID&s=t.asc), [Preludio e fuga](/work/?r=preludio-e-fuga), [Symphony](/work/?r=symphony)
+
+{{< arrow-link "https://toccataclassics.com/product/ferenc-farkas-orchestral-music-volume-six/" "Listen & buy" "_blank" >}}
+
+{{% /column %}}
+{{% column valign="center" %}}
+
+{{< figure src="/img/news/TOCC_0722.jpg" >}}
+
+{{% /column %}}
+{{% /row %}}
+{{% /news %}}
+
 {{% news date="19.10.2023" %}}
 {{% row %}}
 {{% column %}}
@@ -25,61 +82,6 @@ Ferenc Farkas **directly from our website!**
 {{% column valign="center" %}}
 
 {{< catalogue work-id="concertino-for-harp-and-string-orchestra-or-string-quartet" >}}
-
-{{% /column %}}
-{{% /row %}}
-{{% /news %}}
-
-{{% news date="29.07.2023" %}}
-{{% row %}}
-{{% column %}}
-
-## New CD release!
-### Piano works 1 on *Stradivarius*
-
-The Italian pianist **Stefano Cascioli** has undertaken to record the complete
-works of Ferenc Farkas for piano.
-
-The first of the 3 CDs, which has just been released, contains 8 pieces from
-Farkas's catalog:
-
-[Quaderno Romano](/work/?r=quaderno-romano),
-[Hybrides](/work/?r=hybrides),
-[Three fantasias](/work/?r=three-fantasias),
-[3X33](/work/?r=3-x-33),
-[Canephorae](/work/?r=canephorae),
-[Movimento improvvisato](/work/?r=movimento-improvvisato),
-[Maschere](/work/?r=maschere),
-[Sonata no.1](/work/?r=sonata-1-for-piano)
-
-{{< arrow-link "https://www.stradivarius.it/scheda.php?ID=801157037261100" "Check it on Stradivarius" "_blank" >}}
-
-{{% /column %}}
-{{% column valign="center" %}}
-
-{{< figure src="/img/news/STR_37261.jpg" >}}
-
-{{% /column %}}
-{{% /row %}}
-{{% /news %}}
-
-{{% news date="25.04.2023" %}}
-{{% row %}}
-{{% column %}}
-## New CD release!
-### Chamber music, volume six<br>on *Toccata classics*
-
-[Toccata classics recordings](https://toccataclassics.com/) just released a new
-volume in its Ferenc Farkas series which focuses on chamber music with violin.
-
-Featuring **Gyula Stuller** (violin), **Yukari Shimanuki** (viola), **Dénes Várjon** (piano) and the **Stuller Quartet**.
-
-{{< arrow-link "https://toccataclassics.com/product/ferenc-farkas-chamber-music-volume-six/" "Listen & buy" "_blank" >}}
-
-{{% /column %}}
-{{% column valign="center" %}}
-
-{{< figure src="/img/news/TOCC_0682.jpg" >}}
 
 {{% /column %}}
 {{% /row %}}
