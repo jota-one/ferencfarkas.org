@@ -27,7 +27,7 @@ The second CD, wich has just been published by Stradivarius contains the followi
 [Journal 1986](/work/?r=journal-1986),
 [Journal 1987](/work/?r=journal-1987),
 [Little suite for the left hand](/work/?r=little-suite-for-the-left-hand),
-[Sonata no.2](/work/?r=sonata-1-for-piano)
+[Sonata no.2](/work/?r=sonata-2-for-piano)
 
 {{< arrow-link "https://www.stradivarius.it/scheda.php?ID=801157037312000" "Check it on Stradivarius" "_blank" >}}
 
