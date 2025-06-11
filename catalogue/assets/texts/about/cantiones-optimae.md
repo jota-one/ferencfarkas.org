@@ -13,7 +13,7 @@ menu:
 > Köröshegy and, every year, I never missed attending the concerts held in its beautiful old church. It was for this place with 
 > its very special atmosphere that I composed my "Cantiones optimae".
 > {{< author name="Ferenc Farkas" >}}
- 
+
 In the 16th and 17th centuries, Hungary suffered of the Turkish occupation and the music composed at that time fell into oblivion. "Cantio optima" (Beautiful Song) refers to a genre specific to Hungarian literature and music of this period. These are poems intended to be sung, and only a few with their melody have survived.
 
 {{% row %}}

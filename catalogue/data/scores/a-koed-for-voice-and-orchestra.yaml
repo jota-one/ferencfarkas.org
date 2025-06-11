@@ -1,0 +1,10 @@
+- id: a-koed-for-voice-and-orchestra-score
+  score_type: score
+  ref: /LIEDER/A köd for voice and orchestra/score/score.pdf
+  manuscript: true
+  published: false
+- id: a-koed-for-voice-and-orchestra-score
+  score_type: material
+  ref: /LIEDER/A köd for voice and orchestra/score/material.pdf
+  manuscript: true
+  published: false

@@ -1,0 +1,5 @@
+- id: a-koed-score
+  score_type: score
+  ref: /LIEDER/A köd/score/score.pdf
+  manuscript: true
+  published: false
