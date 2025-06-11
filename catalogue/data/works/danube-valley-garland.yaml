@@ -1,7 +1,7 @@
 category: voice_piano
 composition_date: 1976
 date: 2022-02-17
-description: 3 cycles of 3 songs for soprano solo, tenor solo and orchestra
+description: 3 cycles of 3 songs for soprano, tenor and piano or orchestra
 duration: 848
 id: danube-valley-garland
 movements:
@@ -10,9 +10,6 @@ movements:
   - title: Romanian songs - Auzi t'am joi la moara / Ha rákezdem a bús dalom - Deas st'i cantaca cucu / Hej, ha kakuk lehetnék - Zöld bokor a domb oldalán 
 publications:
   - publisher_id: afp
-    type: score
-  - publisher_id: afp
-    type: piano-reduction
 setting: 2(picc.) 1, 2, 1 - 2, 1, 0, 0 – archi
 texts:
   sk: in Slovak 
@@ -21,7 +18,7 @@ texts:
   hu: Hungarian translated
 title:
   main: en
-  original: hu 
+  original: hu
   sort:
     - en
     - hu 
