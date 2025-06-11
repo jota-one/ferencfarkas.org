@@ -1,0 +1,5 @@
+- id: a-celrol-score
+  score_type: score
+  ref: /LIEDER/A célról/score/score.pdf
+  manuscript: true
+  published: false
