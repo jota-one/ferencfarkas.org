@@ -19,7 +19,7 @@ In the 16th and 17th centuries, Hungary suffered of the Turkish occupation and t
 {{% row %}}
 {{% column %}}
 
-1. « Bátoritás a halál ellen / Encouragement devant la mort (Courage in the face of death ) » : János Szepetneki, 1555
+1. *Bátoritás a halál ellen / Encouragement devant la mort (Courage in the face of death )* : János Szepetneki, 1555
    
 My Lord, my God, here I am in front of You,
 Ready in everything to submit me to You,
@@ -36,7 +36,7 @@ At the edge of Szamos River, János Szepetneki,
 This song for being ready to die, 
 To find Christ, peace and bliss.
 
-2. « Könyörgés / Imploration » : Bálint Balassi (1554-1594)
+2. *Könyörgés / Imploration* : Bálint Balassi (1554-1594)
    
 Forgive, my Lord, my youth errors,
 My vile treacheries, my ignominious acts.
@@ -53,7 +53,7 @@ I am weary and sad, I see the end coming and grace of the Holy God.
 {{% /column %}}
 {{% column %}}
 
-3. « Máriá ének / Chant à Marie » (Song to Mary) by András Vásárhelyi, 1651 
+3. *Máriá ének / Chant à Marie (Song to Mary)* : András Vásárhelyi, 1651 
    
 Lady of Angels, full of grace,
 Mother of Jesus, glory to you,
@@ -70,7 +70,7 @@ God’s daughter full of beauty,
 Of the Holy Spirit beloved fiancée,
 Creation of the Holy Trinity.
 
-4. « O Jézus » by Ferenc Lénárt Szegedi, 1674.
+4. *O Jézus* : Ferenc Lénárt Szegedi, 1674.
    
 Nice Rose born of the Virgin Mary, oh my Jesus,
 I found you in your simplest humility.
