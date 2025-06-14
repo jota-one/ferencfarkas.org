@@ -110,20 +110,14 @@ Hush hush cowslip ...
 
 **8. Száncsengő (Sleigh-bells)** : 
 
-Deep in the night ringing round 
-- ching ding ding – sleigh-bells resound 
-Sleigh-bells resound - ching ding ding –
-A silent drift on winter's wing. 
+Deep in the night ringing round - ching ding ding – sleigh-bells resound 
+Sleigh-bells resound - ching ding ding – A silent drift on winter's wing. 
 
-Two horses come throbbing through 
-- clop clop clop - of eight horseshoes 
-Eight horseshoes - clop clop clop –
-robbing sound from silence pouch. 
+Two horses come throbbing through - clop clop clop - of eight horseshoes 
+Eight horseshoes - clop clop clop – robbing sound from silence pouch. 
 
-Mouldering forest of sound 
-- ching ding ding – sleigh-bells resound 
-Sleigh-bells resound - ching ding ding – 
-A distant drift on winter's wing. 
+Mouldering forest of sound - ching ding ding – sleigh-bells resound 
+Sleigh-bells resound - ching ding ding – A distant drift on winter's wing. 
 
 **9. Békakirály (Frog-king)** : 
 
