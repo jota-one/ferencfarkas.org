@@ -9,6 +9,9 @@ menu:
 
 {{% section highlight %}}
 
+{{% row %}}
+{{% column %}}
+
 > I wrote the first melody of my "Fruit Basket" song cycle, "Altatódal" (Lullaby), for my son András's first birthday. The 
 > humor, subtle emotionality, and occasional grotesque grimaces of Sándor Weöres's children's poems make them equally delightful 
 > for adults. They inspired me to write more songs. Thus, the twelve songs of my cycle were created in rapid succession.
@@ -16,10 +19,8 @@ menu:
 
 The twelve very short songs of "Fruit Basket" are entitled :
 
-{{% row %}}
-{{% column %}}
+**1. Káspár** : 
 
-1. Káspár : 
 He went off, he went off, 
 Caspar, to a far away land, 
 three letters of his fell behind, 
@@ -30,7 +31,8 @@ and gave birth to five children,
 two sons and two daughters, 
 and the fifth a pope-pauper. 
 
-2. Ládika (The magic box) :
+**2. Ládika (The magic box)** :
+
 There was a lovely casket 
 an apple tree grew from it. 
 On the apple tree 1 too 
@@ -38,7 +40,8 @@ picked melons in the afternoon.
 Sarika jumped upon it 
 and there ended the casket.
 
-3.  Marasztalás (Sunbeams) : 
+**3. Marasztalás (Sunbeams)** : 
+
 Don't take away 
 with your two eyes 
 the light of the sun. 
@@ -53,7 +56,8 @@ Don't take away
 with your two eyes 
 the light of the sun.
 
-4. Falusi reggel (Morning in the village) : 
+**4. Falusi reggel (Morning in the village)** : 
+
 Striking - it's striking now –
 the steeple in the morning! 
 Time is painted white by the early calling cock-cry, 
@@ -64,21 +68,24 @@ it's good to hear you honk!
 If you are drowned out by this cranky cackling cock-cry,
 you'll forfeit your rank.
 
-5. Mondóka (Ditty) : 
+**5. Mondóka (Ditty)** : 
+
 In the deep wood a violet patch,
 hung over by a juniper branch.
 Why must the branch hide? 
 Come now, the world is wide! 
 In the deep wood a violet patch. 
 
-6) A kőbéka (Stone-frog) : 
+**6. A kőbéka (Stone-frog)** :
+
 The stone-frog went slowly, 
 the stone-frog went slowly. 
 Midnight's fur was torn away 
 the skin of dawn was stripped away 
 The stone-frog went slowly. 
 
-7) Altatódal  (Lullaby) : 
+**7. Altatódal (Lullaby)** : 
+
 Hush shush-hush rosehip, 
 Hush hush cowslip ... 
 
@@ -101,7 +108,8 @@ as long as slumber reigns it stays.
 Hush shush-hush rosehip, 
 Hush hush cowslip ... 
 
-8) Száncsengő (Sleigh-bells) : 
+**8. Száncsengő (Sleigh-bells)** : 
+
 Deep in the night ringing round 
 - ching ding ding – sleigh-bells resound 
 Sleigh-bells resound - ching ding ding –
@@ -117,7 +125,8 @@ Mouldering forest of sound
 Sleigh-bells resound - ching ding ding – 
 A distant drift on winter's wing. 
 
-9) Békakirály  (Frog-king) : 
+**9. Békakirály (Frog-king)** : 
+
 Beneath the reed, beneath the haze 
 song rises from the water palace,
 in the palace on green stone 
@@ -128,10 +137,8 @@ the song of Ung king coming near
 and towards the melody bend 
 butterfly and grassblade.
 
-{{% /column %}}
-{{% column %}}
+**10. A tündér (The fairy)** : 
 
-10) A tündér  (The fairy) : 
 Plumicom, Plumicorn dancing, 
 around her the angels are listening, 
 bullfrog-armies play on pan-pipes 
@@ -152,7 +159,11 @@ resting on the autumn leaves,
 she slumbers in thickets of branches, 
 and two snails watch over her dreams.
 
-11) Paprika Jancsi szerenádja (The clown serenade) :
+{{% /column %}}
+{{% column %}}
+
+**11. Paprika Jancsi szerenádja (The clown serenade)** :
+
 A weak breeze ripples on the lake, 
 a pearlstring of lights billows. 
 My sigh - orphan bird-fluff - escapes 
@@ -174,7 +185,8 @@ the song entreats and implores.
 And if my heart, my straw, ignites, 
 for you this down will die.
 
-12) Déli felhők (Noon clouds) : 
+**12. Déli felhők (Noon clouds)** : 
+
 At the hill's root where the rabbits run 
 and the foxes dig a burrow: 
 in the summer light in the sunshine 
