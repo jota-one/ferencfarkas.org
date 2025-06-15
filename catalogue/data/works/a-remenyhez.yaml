@@ -1,0 +1,17 @@
+category: voice_piano
+composition_date: 1956
+date: 2025-06-15T14:19:05.440Z
+description: for voice and piano - based on a melody by József Kossovits (1750-1819)
+duration: 140
+id: a-remenyhez
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Mihály Csokonai Vitéz
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: A reményhez
