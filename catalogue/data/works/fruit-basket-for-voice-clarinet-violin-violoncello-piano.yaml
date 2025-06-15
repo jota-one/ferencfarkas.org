@@ -1,29 +1,32 @@
 category: voice_piano
 composition_date: 1946
-date: 2023-12-30T17:21:23.448Z
-dedication: “ Altatódal / Wiegenlied / Berceuse ” is dedicated to my son András
-  for his first birthday
+date: 2025-06-14T11:50:17.773Z
+dedication: “ Altatódal ” is dedicated to my son András for his first birthday
 description: Cycle of 12 songs for voice, clarinet, violin, violoncello and piano
 duration: 1020
 id: fruit-basket-for-voice-clarinet-violin-violoncello-piano
 movements:
-  - title: Gáspár / Kaspar / Bastide
-  - title: Ládika / Das Zauberkästlein / Le pot de fer
-  - title: Marasztalás / Sonnenstrahlen / Supplication
-  - title: Falusi reggel / Dorfmorgen / Le coq et l'âne
-  - title: Mondóka / Veilchen / Violette
-  - title: A kőbéka / Der Steinfrosch / Le crapaud
-  - title: Altatódal / Wiegenlied / Berceuse
-  - title: Száncsengő /Schlittenschellen / La cloche du traineau
-  - title: Békakirály / Froschkönig / Le roi des grenouilles
-  - title: A tündér / Das Elflein / La fée Bobita
-  - title: Paprika Jancsi szerenádja / Hanswurst-Serenade / Sérénade de Pierrot
-  - title: Déli felhők / Mittagswolken / Dans les nuages
+  - title: Gáspár
+  - title: Ládika
+  - title: Marasztalás
+  - title: Falusi reggel
+  - title: Mondóka
+  - title: A kőbéka
+  - title: Altatódal
+  - title: Száncsengő
+  - title: Békakirály
+  - title: A tündér
+  - title: Paprika Jancsi szerenádja
+  - title: Déli felhők
 publications:
-  - publisher_id: emb
+  - publisher_id: afp
 rework_of: fruit-basket
 texts:
-  hu: in hungarian by Sándor Weöres
+  hu: in Hungarian by Sándor Weöres
+  de: The German translation is available on “ Fruit basket for voice and clarinet
+    quartet “ (free download)
+  fr: The French translation is available on “ Fruit basket for voice and clarinet
+    quartet “ (free download)
 title:
   main: en
   original: hu
@@ -33,5 +36,3 @@ title:
   translations:
     en: Fruit basket
     hu: Gyümölcskosár
-nb: French and german translation of the words by Sándor Weöres is available in
-  “ Fruit basket for voice and clarinet quartet “

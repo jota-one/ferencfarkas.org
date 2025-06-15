@@ -1,29 +1,30 @@
 category: voice_piano
-date: 2023-12-30T17:21:25.918Z
+date: 2025-06-14T23:52:42.498Z
 dedication: “ Altatódal ” is dedicated to my son András for his first birthday
 description: Cycle of 12 songs for voice and guitar adaptated by Ferenc Fodor
 duration: 1020
 id: fruit-basket-for-voice-and-guitar
 movements:
-  - title: Gáspár / Kaspar / Bastide
-  - title: Ládika / Das Zauberkästlein / Le pot de fer
-  - title: Marasztalás / Sonnenstrahlen / Supplication
-  - title: Falusi reggel / Dorfmorgen / Le coq et l'âne
-  - title: Mondóka / Veilchen / Violette
-  - title: A kőbéka / Der Steinfrosch / Le crapaud
-  - title: Altatódal / Wiegenlied / Berceuse
-  - title: Száncsengő /Schlittenschellen / La cloche du traineau
-  - title: Békakirály / Froschkönig / Le roi des grenouilles
-  - title: A tündér / Das Elflein / La fée Bobita
-  - title: Paprika Jancsi szerenádja / Hanswurst-Serenade / Sérénade de Pierrot
-  - title: Déli felhők / Mittagswolken / Dans les nuages
+  - title: Gáspár / Kaspar
+  - title: Ládika / Das Zauberkästlein
+  - title: Marasztalás / Sonnenstrahlen
+  - title: Falusi reggel / Dorfmorgen
+  - title: Mondóka / Veilchen
+  - title: A kőbéka / Der Steinfrosch
+  - title: Altatódal / Wiegenlied
+  - title: Száncsengő /Schlittenschellen
+  - title: Békakirály / Froschkönig
+  - title: A tündér / Das Elflein
+  - title: Paprika Jancsi szerenádja / Hanswurst-Serenade
+  - title: Déli felhők / Mittagswolken
 publications:
   - publisher_id: afp
 rework_of: fruit-basket
 texts:
-  hu: in hungarian by Sándor Weöres
+  hu: in Hungarian by Sándor Weöres
   de: German translated by Johannes Kretzschmar and Heinz Kahlau
-  fr: French translated by Mario Bois and Roger Bornet
+  fr: French translation is available on “ Fruit basket for voice and clarinet
+    quartet “ (free download).
 title:
   main: en
   original: hu
@@ -35,5 +36,3 @@ title:
     en: Fruit basket
     hu: Gyümölcskosár
     de: Fruchtkorb
-nb: French translation of the words by Sándor Weöres is available in “ Fruit
-  basket for voice and clarinet quartet “
