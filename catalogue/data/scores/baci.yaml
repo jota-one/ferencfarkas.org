@@ -1,0 +1,5 @@
+- id: baci-score
+  score_type: score
+  ref: /LIEDER/Baci/score/score.pdf
+  manuscript: true
+  published: false
