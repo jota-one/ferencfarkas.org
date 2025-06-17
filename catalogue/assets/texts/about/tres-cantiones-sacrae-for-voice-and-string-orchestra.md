@@ -14,7 +14,7 @@ menu:
 
 > In my "Tres cantiones sacrae," I set three Latin liturgical texts to music.
 >
-> For "Paulus ad Corinthos de charitate », which I wrote in 1988, I took up Saint Paul's letter to the Corinthians, which speaks 
+> For "Paulus ad Corinthos de Charitate », which I wrote in 1988, I took up Saint Paul's letter to the Corinthians, which speaks 
 > of love. I am surprised that, to my knowledge, no one else has set this touching confession to music.
 >
 > The other two songs date from 1991: "Canticum Redemptorum," is a song of thanksgiving based on a text from the Prophet Isaiah 
