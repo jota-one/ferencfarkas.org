@@ -1,0 +1,5 @@
+- id: fruit-basket-for-voice-and-guitar-score
+  score_type: score
+  ref: /LIEDER/Fruit basket voice-guitar/score/score.pdf
+  manuscript: true
+  published: false

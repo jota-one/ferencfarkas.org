@@ -1,0 +1,17 @@
+category: voice_piano
+composition_date: 1953
+date: 2025-06-15T14:06:21.449Z
+description: for voice and piano
+duration: 120
+id: a-patak
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian translated by Géza Képes (original text by Jakub Kolasz)
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: A patak

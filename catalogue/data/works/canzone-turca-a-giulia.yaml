@@ -1,0 +1,20 @@
+category: voice_piano
+composition_date: 1972
+date: 2025-06-17T14:30:14.640Z
+description: for voice and guitar
+duration: 20
+id: canzone-turca-a-giulia
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Bálint Balassi
+  it: Italian translated
+title:
+  main: hu
+  original: it
+  sort:
+    - it
+    - hu
+  translations:
+    it: Canzone turca a Giulia
+    hu: Török vers Júliára

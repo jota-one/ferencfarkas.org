@@ -1,0 +1,10 @@
+- id: tres-cantiones-sacrae-for-voice-and-string-orchestra-score
+  score_type: score
+  ref: /LIEDER/Tres cantiones sacrae/score/score.pdf
+  manuscript: true
+  published: false
+- id: tres-cantiones-sacrae-for-voice-and-string-orchestra-material
+  score_type: material
+  ref: /LIEDER/Tres cantiones sacrae/score/material.pdf
+  manuscript: true
+  published: false

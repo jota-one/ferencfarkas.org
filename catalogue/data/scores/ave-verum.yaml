@@ -1,0 +1,5 @@
+- id: ave-verum-score
+  score_type: score
+  ref: /LIEDER/Ave verum/score/score.pdf
+  manuscript: false
+  published: false

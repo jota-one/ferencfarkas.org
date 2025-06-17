@@ -1,0 +1,21 @@
+category: voice_piano
+composition_date: 1988
+date: 2025-06-17T12:58:46.343Z
+description: for voice and piano or organ
+duration: 531
+id: cantiones-sacrae
+movements:
+  - title: Paulus ad Corinthos de Charitate
+  - title: Canticum Redemptorum
+publications:
+  - publisher_id: afp
+rework_of: tres-cantiones-sacrae-for-voice-and-string-orchestra
+texts:
+  la: in Latin
+title:
+  main: la
+  original: la
+  sort:
+    - la
+  translations:
+    la: Cantiones sacrae

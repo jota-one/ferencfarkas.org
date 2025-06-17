@@ -1,0 +1,5 @@
+- id: a-patak-score
+  score_type: score
+  ref: /LIEDER/A patak/score/score.pdf
+  manuscript: true
+  published: false

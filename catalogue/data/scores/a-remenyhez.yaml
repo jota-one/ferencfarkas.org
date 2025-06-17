@@ -1,0 +1,5 @@
+- id: a-remenyhez-score
+  score_type: score
+  ref: /LIEDER/A reményhez/score/score.pdf
+  manuscript: false
+  published: false

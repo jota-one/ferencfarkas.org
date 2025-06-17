@@ -1,0 +1,20 @@
+category: voice_piano
+composition_date: 1930
+date: 2025-06-16T09:01:34.339Z
+description: for voice and piano
+duration: 240
+id: baci
+publications:
+  - publisher_id: afp
+texts:
+  it: in Italian by Moscardelli
+  hu: Hungarian translated by László Dalos
+title:
+  main: it
+  original: hu
+  sort:
+    - it
+    - hu
+  translations:
+    it: Baci
+    hu: Baci

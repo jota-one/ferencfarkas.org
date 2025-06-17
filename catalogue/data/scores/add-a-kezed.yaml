@@ -1,0 +1,5 @@
+- id: add-a-kezed-score
+  score_type: score
+  ref: /LIEDER/Add a kezed/score/score.pdf
+  manuscript: false
+  published: false
