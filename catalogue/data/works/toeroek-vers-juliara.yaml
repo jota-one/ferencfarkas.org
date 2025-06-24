@@ -1,0 +1,20 @@
+category: voice_piano
+composition_date: 1972
+date: 2025-06-24T01:59:49.086Z
+description: for voice and guitar
+duration: 240
+id: toeroek-vers-juliara
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Bálint Balassi
+  it: Italian translated
+title:
+  main: hu
+  original: it
+  sort:
+    - hu
+    - it
+  translations:
+    hu: Török vers Júliára
+    it: Canzone turca a Giulia
