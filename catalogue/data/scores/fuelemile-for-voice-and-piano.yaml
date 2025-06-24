@@ -1,0 +1,5 @@
+- id: fuelemile-for-voice-and-piano-score
+  score_type: score
+  ref: /LIEDER/Fülemile/score/score.pdf
+  manuscript: false
+  published: false
