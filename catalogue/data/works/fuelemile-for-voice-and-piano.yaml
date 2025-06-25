@@ -1,0 +1,21 @@
+category: voice_piano
+composition_date: 1941
+date: 2025-06-24T14:53:18.825Z
+description: for voice and piano
+duration: 300
+id: fuelemile-for-voice-and-piano
+movements:
+  - title: Dicsértessék, adjon Isten...
+  - title: Fülemile
+publications:
+  - publisher_id: afp
+rework_of: fuelemile
+texts:
+  hu: in Hungarian by Árpád Szabados
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Fülemile
