@@ -1,0 +1,5 @@
+- id: gasel-score
+  score_type: score
+  ref: /LIEDER/Gasel/score/score.pdf
+  manuscript: false
+  published: false

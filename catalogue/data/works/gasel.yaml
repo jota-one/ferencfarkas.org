@@ -1,0 +1,17 @@
+category: voice_piano
+composition_date: 1993
+date: 2025-06-25T11:55:17.263Z
+description: for voice and piano
+duration: 120
+id: gasel
+publications:
+  - publisher_id: afp
+texts:
+  de: in German by Gottfried Keller
+title:
+  main: de
+  original: de
+  sort:
+    - de
+  translations:
+    de: Gasel

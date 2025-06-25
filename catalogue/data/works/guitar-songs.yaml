@@ -1,0 +1,26 @@
+category: voice_piano
+composition_date: 1983
+date: 2025-06-25T12:49:11.073Z
+description: Cycle of 3 songs for voice and guitar
+duration: 286
+id: guitar-songs
+movements:
+  - title: Egy fecske átsuhan
+  - title: Merre száll
+  - title: Csend van
+nb: Merre száll for voice and guitar is an adaptation of "Merre száll" for mixed
+  choir
+rework_of: mere-szall
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian by Jenő Dsida
+title:
+  main: en
+  original: hu
+  sort:
+    - en
+    - hu
+  translations:
+    en: Guitar songs
+    hu: Gitár dalok
