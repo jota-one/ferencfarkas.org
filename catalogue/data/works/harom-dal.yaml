@@ -1,0 +1,21 @@
+category: voice_piano
+composition_date: 1923
+date: 2025-06-26T15:02:54.521Z
+description: for voice and piano
+duration: 286
+id: harom-dal
+movements:
+  - title: Ajánlás - text by Béla Balázs
+  - title: A Zozó levele  - text by Endre Ady
+  - title: Virágének  - text by János Samu
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Három dal
