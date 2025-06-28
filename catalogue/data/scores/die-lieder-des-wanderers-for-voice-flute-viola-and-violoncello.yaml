@@ -1,0 +1,10 @@
+- id: die-lieder-des-wanderers-for-voice-flute-viola-and-violoncello-score
+  score_type: score
+  ref: /LIEDER/Die Lieder des Wanderers-voice-instruments/score/score.pdf
+  manuscript: true
+  published: false
+- id: die-lieder-des-wanderers-for-voice-flute-viola-and-violoncello-material
+  score_type: material
+  ref: /LIEDER/Die Lieder des Wanderers-voice-instruments/score/material.pdf
+  manuscript: true
+  published: false
