@@ -1,9 +1,3 @@
-- id: a-celrol-score
-  score_type: score
-  ref: /LIEDER/A célról/score/score.pdf
-  manuscript: true
-  published: false
-
 - id: danube-valley-garland-piano-reduction
   score_type: piano-reduction
   ref: /LIEDER/Danube valley garland/score/piano reduction.pdf
