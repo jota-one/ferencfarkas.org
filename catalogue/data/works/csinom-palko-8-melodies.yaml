@@ -1,7 +1,6 @@
----
 category: voice_piano
 composition_date: 1949
-date: 2019-04-08T21:36:04.000Z
+date: 2025-06-28T12:22:42.104Z
 description: 8 melodies from the opera “ Csínom Palkó ” for voice and piano
 duration: 1980
 id: csinom-palko-8-melodies
@@ -24,7 +23,6 @@ movements:
     title: Hűséges szivemmel
 publications:
   - publisher_id: emb
-    type: Where is that song ? Operetta Hits 
 rework_of: csinom-palko
 texts:
   hu: in hungarian by András Dékány

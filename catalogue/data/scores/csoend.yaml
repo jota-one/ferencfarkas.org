@@ -1,0 +1,5 @@
+- id: csoend-score
+  score_type: score
+  ref: /LIEDER/Csönd/score/score.pdf
+  manuscript: true
+  published: false
