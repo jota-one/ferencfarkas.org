@@ -23,7 +23,7 @@ menu:
 {{% column %}}
 
 
-{{< catalogue work-id="divertimento" >}}
+{{< catalogue work-id="danube-valley-garland" >}}
 
 {{% /column %}}
 {{% /row %}}
