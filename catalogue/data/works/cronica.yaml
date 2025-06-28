@@ -1,0 +1,25 @@
+category: voice_piano
+composition_date: 1973
+date: 2025-06-28T10:42:22.641Z
+description: for  voice and guitar
+duration: 450
+id: cronica
+movements:
+  - title: Hadnagyoknak tanulság
+  - title: Sirva veszéköl
+  - title: Eger vár viadaljáról
+  - title: Ez idö tájt Ali basa
+  - title: Lőn jó reggelt
+  - title: Az tömlöcbástyán
+  - title: Sok részögös
+publications:
+  - publisher_id: smz
+texts:
+  hu: in Hungarian by Sebestyén Tinódi Lantos
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Cronica
