@@ -1,6 +1,12 @@
 - id: christmas-album-1
   description: Pásztorok, pásztorok
+  cd: p1
+  track: 4
 - id: christmas-album-2
   description: Dicsőség
+  cd: p1
+  track: 6
 - id: christmas-album-3
   description: Kicsi gyermek (Villancico)
+  cd: p1
+  track: 23

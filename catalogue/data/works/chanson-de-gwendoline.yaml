@@ -1,0 +1,17 @@
+category: voice_piano
+composition_date: 1982
+date: 2025-06-27T15:14:42.884Z
+description: for voice and guitar
+duration: 180
+id: chanson-de-gwendoline
+publications:
+  - publisher_id: afp
+texts:
+  fr: in French by Jean Anouilh (Becket ou l'honneur de Dieu)
+title:
+  main: fr
+  original: fr
+  sort:
+    - fr
+  translations:
+    fr: Chanson de Gwendoline

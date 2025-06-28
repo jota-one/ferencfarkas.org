@@ -1,0 +1,5 @@
+- id: chanson-de-gwendoline-score
+  score_type: score
+  ref: /LIEDER/Chanson de Gwendoline/score/score.pdf
+  manuscript: true
+  published: false
