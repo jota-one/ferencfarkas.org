@@ -1,0 +1,23 @@
+category: voice_piano
+composition_date: 1993
+date: 2025-06-28T14:55:30.535Z
+description: for voice and piano
+duration: 600
+id: diakdalok-a-18-szazadbol
+movements:
+  - title: Ha nem láttam volna
+  - title: Elmehetsz már
+  - title: Gyászos szivem
+  - title: Sóhajtással
+  - title: Nem leszek én
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Diákdalok a XVIII. Századból
