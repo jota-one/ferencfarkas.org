@@ -30,10 +30,6 @@ menu:
 > under the name "Die Lieder des Wanderers".
 > {{< author name="Ferenc Farkas" >}}
 
-{{% /column %}}
-{{% column %}}
-
-
 {{< catalogue work-id="die-lieder-des-wanderers" >}}
 
 {{% /column %}}
