@@ -1,0 +1,10 @@
+- id: fruit-basket-for-voice-and-clarinet-quartet-score
+  score_type: score
+  ref: /LIEDER/Fruit basket for voice and clar.quartet/score/score.pdf
+  manuscript: true
+  published: false
+- id: fruit-basket-for-voice-and-clarinet-quartet-material
+  score_type: material
+  ref: /LIEDER/Fruit basket for voice and clar.quartet/score/material.pdf
+  manuscript: true
+  published: false
