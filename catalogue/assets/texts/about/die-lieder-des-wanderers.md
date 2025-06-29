@@ -23,6 +23,9 @@ menu:
 > score that I had dedicated to him. He leafed through it with emotion, wondering how we were going to interpret it. He 
 > understood immediately when the musicians accompanying me took out their lectern. 
 
+{{% /column %}}
+{{% column %}}
+
 > I composed a third song, "A kalandor" (The adventurer). The whole piano version was translated later into German and published 
 > under the name "Die Lieder des Wanderers".
 > {{< author name="Ferenc Farkas" >}}
