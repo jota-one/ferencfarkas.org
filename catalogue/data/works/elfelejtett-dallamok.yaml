@@ -1,0 +1,22 @@
+category: voice_piano
+composition_date: 1980
+date: 2025-07-01T15:15:44.215Z
+description: Cycle of 4 songs for voice and piano
+duration: 323
+id: elfelejtett-dallamok
+movements:
+  - title: Az örömhez - text by Benedek Virág
+  - title: Barátimhoz - text by Dániel Berzsenyi
+  - title: Emlékezés - text by Mihály Babits
+  - title: Nóta a halott szüzröl - text by Endre Ady
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Elfelejtett dallamok
