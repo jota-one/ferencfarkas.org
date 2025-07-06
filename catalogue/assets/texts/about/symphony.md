@@ -34,7 +34,7 @@ menu:
 > movement which became my "Scherzo sinfonico". This "unfinished" symphony was my only attempt in this genre.
 > {{< author name="Ferenc Farkas" >}}
 
-Ferenc Farkas’ unique Symphony was performed in concert for the first time in its entirety in Budapest in 2021 and recorded on CD in 2025.
+Ferenc Farkas’ unique Symphony was recorded on CD for the first time in its entirety in 2025.
 
 {{< catalogue work-id="symphony" >}}
 
