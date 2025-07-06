@@ -40,9 +40,9 @@
 - id: schott
   name: Schott Music
   url: https://en.schott-music.com/shop/autoren/ferenc-farkas
-- id: sidem
-  name: Sidem Editions
-  url: mailto:sidomusic@sidomusic.com
+- id: sidomusic
+  name: Sidomusic
+  url: https://sidomusic.com/
 - id: sikorski
   name: Sikorski Musikverlage
   url: https://www.boosey.com/cr/catalogue/ps/powersearch_results.cshtml?search=ferenc+farkas&x=7&y=6
