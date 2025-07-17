@@ -1,6 +1,6 @@
 category: string
 composition_date: 1945
-date: 2024-02-12T12:25:13.142Z
+date: 2025-07-17T15:02:40.298Z
 description: for string orchestra
 duration: 660
 id: musica-pentatonica
@@ -9,7 +9,7 @@ movements:
   - title: Aria
   - title: Fuga
 publications:
-  - publisher_id: sidem
+  - publisher_id: sidomusic
 title:
   main: it
   original: it

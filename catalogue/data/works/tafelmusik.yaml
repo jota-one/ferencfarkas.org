@@ -1,6 +1,6 @@
 category: orchestra
 composition_date: 1938
-date: 2022-12-05
+date: 2025-07-17T15:08:55.908Z
 description: for orchestra
 duration: 540
 id: tafelmusik
@@ -11,10 +11,7 @@ movements:
   - title: Andante
   - title: Allegro moderato
 publications:
-  - publisher_id: afp
-    type: score
-  - publisher_id: sidem
-    type: material
+  - publisher_id: sidomusic
 setting: 1, 1, 2, 1 – 2, 1, 1, 0 – archi
 title:
   main: de
@@ -22,6 +19,6 @@ title:
   sort:
     - de
     - fr
-  translations: 
+  translations:
     de: Tafelmusik
-    fr: Musique de table 
+    fr: Musique de table
