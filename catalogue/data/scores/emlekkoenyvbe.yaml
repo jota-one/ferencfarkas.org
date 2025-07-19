@@ -1,0 +1,5 @@
+- id: emlekkoenyvbe-score
+  score_type: score
+  ref: /LIEDER/Emlékkönyvbe/score/score.pdf
+  manuscript: true
+  published: false

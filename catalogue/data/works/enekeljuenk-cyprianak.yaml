@@ -1,0 +1,24 @@
+category: voice_piano
+date: 2025-07-19T12:15:16.009Z
+description: 7 melodies of the 19th century for voice and piano
+duration: 900
+id: enekeljuenk-cyprianak
+movements:
+  - title: Két szeretö dalja
+  - title: Szemrehányás
+  - title: A magánossághoz
+  - title: Az esküvés
+  - title: Daphnis hajnalkor
+  - title: A Tihanyi echóhoz
+  - title: Az emberiség  s a szeretet
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian by Mihály Csokonai Vitéz
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Enekeljünk Cypriának
