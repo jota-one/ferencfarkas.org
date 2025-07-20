@@ -1,0 +1,22 @@
+category: voice_piano
+composition_date: 1952
+date: 2025-07-20T16:52:09.122Z
+description: for voice and piano
+duration: 150
+id: erdoeben
+nb: Erdőben is published by Editio Musica Budapest in a collection of Lieder
+  entitled [Petőfi Songs](https://www.kotta.info/en/product/6650/Petofi-Songs)
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian by Sándor Petőfi
+  de: German translated by Imre Ormay
+title:
+  main: hu
+  original: de
+  sort:
+    - hu
+    - de
+  translations:
+    hu: Erdőben
+    de: Im Walde
