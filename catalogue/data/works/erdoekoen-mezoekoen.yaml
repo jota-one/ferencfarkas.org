@@ -1,0 +1,17 @@
+category: voice_piano
+date: 2025-07-21T14:48:14.785Z
+description: Student song from the 18th century for tenor and harpsichord
+duration: 170
+id: erdoekoen-mezoekoen
+publications:
+  - publisher_id: afp
+rework_of: pataki-diakdalok
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Erdőkön, mezőkön
