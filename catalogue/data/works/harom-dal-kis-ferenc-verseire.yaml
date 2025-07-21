@@ -1,6 +1,6 @@
 category: voice_piano
 composition_date: 1982
-date: 2021-03-13
+date: 2025-07-21T14:43:34.938Z
 description: 3 songs for voice and piano
 duration: 300
 id: harom-dal-kis-ferenc-verseire
@@ -8,7 +8,9 @@ movements:
   - title: Téli szinek
   - title: Gyógyulóban
   - title: Dal
-nb: Három dal Kis Ferenc verseire is published in a collection of Lieder entitled "Farkas Ferenc Újabb dalok".
+nb: Három dal Kis Ferenc verseire is published in a collection of Lieder
+  entitled [Újabb dalok](
+  https://www.umpemb.com/en-US/Catalogue.aspx/details/454044)
 publications:
   - publisher_id: emb
 texts:
