@@ -1,0 +1,22 @@
+category: voice_piano
+composition_date: 1936
+date: 2025-07-23T12:25:46.149Z
+description: Cycle of 4 songs for voice and piano
+duration: 373
+id: eszterlanc
+movements:
+  - title: Viola szerelmem
+  - title: Csillaghasú ég alatt
+  - title: Békési föld
+  - title: Szívedet az Isten adta
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Ernő Számadó
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Eszterlánc
