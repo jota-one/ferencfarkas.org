@@ -1,0 +1,22 @@
+category: voice_piano
+composition_date: 1988
+date: 2025-07-23T11:43:14.646Z
+description: for voice and guitar
+duration: 624
+id: estampas-espanolas
+movements:
+  - title: Noche de verano - text by A. Machado
+  - title: Amanecer de otono - text by A. Machado
+  - title: Estampa de invierno - text by J.R. Jiménez
+  - title: Cancion primaveral - text by Federico Garcia Lorca
+publications:
+  - publisher_id: curci
+texts:
+  es: in Spanish
+title:
+  main: es
+  original: es
+  sort:
+    - es
+  translations:
+    es: Estampas espanolas
