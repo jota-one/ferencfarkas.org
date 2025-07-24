@@ -1,0 +1,24 @@
+category: voice_piano
+composition_date: 1982
+date: 2025-07-23T15:10:12.977Z
+description: for voice and piano
+duration: 600
+id: fejfak
+movements:
+  - title: Amit te cselekedtél
+  - title: Egyszerű fejfa
+  - title: Csak egy arccal
+nb: Fejfák is published by Editio Musica Budapest in a collection of Lieder
+  entitled [Újabb dalok](
+  https://www.umpemb.com/en-US/Catalogue.aspx/details/454044)
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian by László Kálnoky
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Fejfák
