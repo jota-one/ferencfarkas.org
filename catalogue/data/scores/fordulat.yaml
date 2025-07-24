@@ -1,0 +1,5 @@
+- id: fordulat-score
+  score_type: score
+  ref: /LIEDER/Fordulat/score/score.pdf
+  manuscript: true
+  published: false

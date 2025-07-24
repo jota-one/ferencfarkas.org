@@ -1,0 +1,24 @@
+category: voice_piano
+composition_date: 1983
+date: 2025-07-24T13:34:22.185Z
+description: for voice and piano
+duration: 342
+id: futamok
+movements:
+  - title: Hová visz ez az út ?
+  - title: Az éjszakában...
+  - title: Utak röppennek el...
+nb: Futamok is published by Editio Musica Budapest in a collection of Lieder
+  entitled [Újabb dalok](
+  https://www.umpemb.com/en-US/Catalogue.aspx/details/454044)
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian by Sándor Csoóri
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Futamok

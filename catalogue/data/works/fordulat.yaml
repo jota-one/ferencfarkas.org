@@ -1,0 +1,17 @@
+category: voice_piano
+composition_date: 1939
+date: 2025-07-23T15:21:26.890Z
+description: for voice and piano
+duration: 105
+id: fordulat
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Kálmán Harsányi
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Fordulat
