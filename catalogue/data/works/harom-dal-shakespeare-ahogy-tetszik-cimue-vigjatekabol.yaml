@@ -1,6 +1,6 @@
 category: voice_piano
 composition_date: 1937
-date: 2025-06-27T14:45:45.800Z
+date: 2025-07-24T16:02:46.845Z
 description: 3 songs for voice and piano
 duration: 330
 id: harom-dal-shakespeare-ahogy-tetszik-cimue-vigjatekabol
@@ -8,8 +8,10 @@ movements:
   - title: Amiens dala / Das Lied des Amiens
   - title: Dal / Lied
   - title: Dal / Lied
-nb: Három dal Shakespeare "Ahogy tetszik" cimü vigjátékából is published in a
-  collection of Lieder entitled "Ferenc Farkas Selected songs"
+nb: Három dal Shakespeare "Ahogy tetszik" cimü vigjátékából / Drei Lieder aus
+  dem Lustspiel "Wie es euch gefällt" von Shakespeare is published in a
+  collection of Lieder entitled [Selected Songs](
+  https://www.kotta.info/en/product/2744/FARKAS-FERENC-Selected-Songs)
 publications:
   - publisher_id: emb
 rework_of: as-you-like-it

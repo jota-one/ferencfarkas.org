@@ -1,0 +1,21 @@
+category: voice_piano
+composition_date: 1989
+date: 2025-07-28T14:16:07.072Z
+description: for voice and piano
+duration: 270
+id: harom-dal-szilagyi-domokos-verseire
+movements:
+  - title: Dal
+  - title: Alkony
+  - title: Ragyogj
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Domokos Szilágyi
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Három dal Szilágyi Domokos verseire
