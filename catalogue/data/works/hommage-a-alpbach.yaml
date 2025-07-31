@@ -1,0 +1,23 @@
+category: voice_piano
+composition_date: 1968
+date: 2025-07-29T10:05:23.782Z
+description: Cycle of 4 songs for voice and piano
+duration: 510
+id: hommage-a-alpbach
+movements:
+  - title: Die Stunden / Az órák
+  - title: Schweigen / Hallgatás
+  - title: Die künftigen Lieder / A jövő dalai
+  - title: Alles kommt wie es muss / Minden jön, hogyha kell
+publications:
+  - publisher_id: emb
+texts:
+  de: in German by Paula von Preradovic
+  hu: Hungarian translated by Ernö Hárs
+title:
+  main: fr
+  original: fr
+  sort:
+    - fr
+  translations:
+    fr: Hommage à Alpbach
