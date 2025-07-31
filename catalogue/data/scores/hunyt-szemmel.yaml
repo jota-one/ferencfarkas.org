@@ -1,0 +1,5 @@
+- id: hunyt-szemmel-score
+  score_type: score
+  ref: /LIEDER/Húnyt szemmel/score/score.pdf
+  manuscript: true
+  published: false

@@ -1,0 +1,34 @@
+category: voice_piano
+composition_date: 1955
+date: 2025-07-31T08:22:18.236Z
+dedicated: Anna Báthy and Endre Rösler
+description: Cycle of 12 songs for soprano, tenor and piano
+duration: 1020
+id: kalender
+movements:
+  - title: Januar / Január
+  - title: Februar / Február
+  - title: März / Március
+  - title: April / Április
+  - title: Mai / Május
+  - title: Juni / Június
+  - title: Juli / Július
+  - title: August / Augusztus
+  - title: September / Szeptember
+  - title: Oktober / Október
+  - title: November / November
+  - title: Dezember / December
+publications:
+  - publisher_id: universal
+texts:
+  hu: in Hungarian by Miklós Radnóti
+  de: German translated by Anneliese Eulau-Felsenstein
+title:
+  main: de
+  original: hu
+  sort:
+    - de
+    - hu
+  translations:
+    de: Kalender
+    hu: Naptár
