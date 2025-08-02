@@ -1,0 +1,20 @@
+category: voice_piano
+composition_date: 1939
+date: 2025-08-02T14:29:03.908Z
+description: for voice and piano
+duration: 240
+id: ket-dal-jozsef-attila-verseire
+movements:
+  - title: Mikor az uccán...
+  - title: Nem emel föl...
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Attila József
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Két dal József Attila verseire
