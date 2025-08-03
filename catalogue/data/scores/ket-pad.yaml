@@ -1,0 +1,5 @@
+- id: ket-pad-score
+  score_type: score
+  ref: /LIEDER/Két pad/score/score.pdf
+  manuscript: true
+  published: false
