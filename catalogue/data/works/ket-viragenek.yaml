@@ -1,0 +1,26 @@
+category: voice_piano
+composition_date: 1948
+date: 2025-08-03T12:45:11.625Z
+description: for voice and piano
+duration: 255
+id: ket-viragenek
+movements:
+  - title: Virágének /Blumenlied I - text in Hungarian by Miklos Radnóti
+  - title: Virágének /Blumenlied II - text in Hungarian by György Sárközi
+nb: Két virágének is published by Editio Musica Budapest in a collection of
+  Lieder entitled [Selected Songs](
+  https://www.kotta.info/en/product/2744/FARKAS-FERENC-Selected-Songs)
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian
+  de: German translated by Marcel Rubin and Otto Horn
+title:
+  main: hu
+  original: de
+  sort:
+    - hu
+    - de
+  translations:
+    hu: Két virágének
+    de: Zwei Blumenlieder
