@@ -1,0 +1,23 @@
+category: voice_piano
+composition_date: 1985
+date: 2025-08-04T08:13:32.233Z
+dedicated: pour l'anniversaire de Grand-maman et de la petite famille
+description: for voice and piano
+duration: 590
+id: l-art-d-etre-grand-pere
+movements:
+  - title: Jeanne et Georges
+  - title: Jeanne parle
+  - title: L'autre
+  - title: Promenade
+publications:
+  - publisher_id: afp
+texts:
+  fr: in French by Victor Hugo
+title:
+  main: fr
+  original: fr
+  sort:
+    - fr
+  translations:
+    fr: L'art d'être grand-père
