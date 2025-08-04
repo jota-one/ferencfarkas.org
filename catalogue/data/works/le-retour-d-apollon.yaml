@@ -1,0 +1,17 @@
+category: voice_piano
+composition_date: 1982
+date: 2025-08-04T15:13:41.834Z
+description: for voice and piano
+duration: 180
+id: le-retour-d-apollon
+publications:
+  - publisher_id: afp
+texts:
+  fr: in French by Paule Csillag
+title:
+  main: fr
+  original: fr
+  sort:
+    - fr
+  translations:
+    fr: Le retour d'Apollon
