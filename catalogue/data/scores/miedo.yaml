@@ -1,0 +1,5 @@
+- id: miedo-score
+  score_type: score
+  ref: /LIEDER/Miedo/score/score.pdf
+  manuscript: true
+  published: false

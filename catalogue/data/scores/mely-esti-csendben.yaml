@@ -1,0 +1,5 @@
+- id: mely-esti-csendben-score
+  score_type: score
+  ref: /LIEDER/Mély esti csendben/score/score.pdf
+  manuscript: true
+  published: false

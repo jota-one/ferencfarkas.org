@@ -1,0 +1,5 @@
+- id: milyen-score
+  score_type: score
+  ref: /LIEDER/Milyen/score/score.pdf
+  manuscript: false
+  published: false
