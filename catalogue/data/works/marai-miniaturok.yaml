@@ -1,0 +1,21 @@
+category: voice_piano
+composition_date: 1992
+date: 2025-08-05T13:39:30.201Z
+description: for voice and guitar
+duration: 260
+id: marai-miniaturok
+movements:
+  - title: A fehér erdő
+  - title: Naptár
+  - title: Próféta
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Sándor Márai
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Márai miniaturok

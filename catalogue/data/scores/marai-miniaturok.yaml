@@ -1,0 +1,5 @@
+- id: marai-miniaturok-score
+  score_type: score
+  ref: /LIEDER/Márai miniaturok/score/score.pdf
+  manuscript: true
+  published: false
