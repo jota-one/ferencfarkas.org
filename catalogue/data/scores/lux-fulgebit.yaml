@@ -1,0 +1,5 @@
+- id: lux-fulgebit-score
+  score_type: score
+  ref: /LIEDER/Lux fulgebit/score/score.pdf
+  manuscript: true
+  published: false

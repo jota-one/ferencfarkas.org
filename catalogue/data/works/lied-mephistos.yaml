@@ -1,0 +1,20 @@
+category: voice_piano
+composition_date: 1947
+date: 2025-08-05T10:28:45.564Z
+description: for voice and piano
+duration: 60
+id: lied-mephistos
+publications:
+  - publisher_id: afp
+texts:
+  de: in German by Johann Wolfgang von Goethe
+  hu: Hungarian translated by György Sárközi
+title:
+  main: de
+  original: hu
+  sort:
+    - de
+    - hu
+  translations:
+    de: Lied Mephistos
+    hu: Mefisztó dala

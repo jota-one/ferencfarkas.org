@@ -1,0 +1,23 @@
+category: voice_piano
+composition_date: 1943
+date: 2025-08-05T11:51:13.780Z
+description: for voice and piano
+duration: 216
+id: malaj-abrandok
+nb: Maláj ábrándok / Malayische Traumbilder is published by Editio Musica
+  Budapest in a collection of Lieder entitled [Selected Songs](
+  https://www.kotta.info/en/product/2744/FARKAS-FERENC-Selected-Songs)
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian by Sándor Weöres
+  de: German translated by Marcel Rubin and Otto Horn
+title:
+  main: hu
+  original: de
+  sort:
+    - hu
+    - de
+  translations:
+    hu: Maláj ábrándok
+    de: Malayische Traumbilder
