@@ -1,0 +1,5 @@
+- id: minuti-score
+  score_type: score
+  ref: /LIEDER/Minuti/score/score.pdf
+  manuscript: true
+  published: false

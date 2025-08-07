@@ -1,0 +1,25 @@
+category: voice_piano
+composition_date: 1990
+date: 2025-08-07T12:29:00.778Z
+description: Cycle of 7 songs for voice and violoncello
+duration: 430
+id: minuti
+movements:
+  - title: Il passato - text by G. Pascoli
+  - title: Congedo - text by G. Carducci
+  - title: Amen per la Domenica in Albis - text by S. Quasimodo
+  - title: I morti - text by S. Quasimodo
+  - title: Ed è subito sera - text by S. Quasimodo
+  - title: La Rondine - text by E. Montale
+  - title: Ecco il segno - text by E. Montale
+publications:
+  - publisher_id: afp
+texts:
+  it: in Italien
+title:
+  main: it
+  original: it
+  sort:
+    - it
+  translations:
+    it: Minuti

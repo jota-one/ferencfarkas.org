@@ -1,0 +1,5 @@
+- id: chartina-score
+  score_type: score
+  ref: /LIEDER/Chartina/score/score.pdf
+  manuscript: true
+  published: false

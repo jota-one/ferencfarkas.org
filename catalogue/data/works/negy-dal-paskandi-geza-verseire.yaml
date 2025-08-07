@@ -1,0 +1,22 @@
+category: voice_piano
+composition_date: 1989
+date: 2025-08-07T13:26:44.281Z
+description: for voice and piano
+duration: 440
+id: a-celrol
+movements:
+  - title: Alagút
+  - title: Ars poetica a pusztán
+  - title: A rés földje
+  - title: Tükörbe eresztett koporsó
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Géza Páskándi
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Négy dal Páskándi Géza verseire

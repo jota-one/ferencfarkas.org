@@ -1,0 +1,23 @@
+category: voice_piano
+composition_date: 1932
+date: 2025-08-07T12:43:50.995Z
+description: for voice and piano
+duration: 480
+id: mistel
+nb: Mistel is published by Editio Musica Budapest in a collection of Lieder
+  entitled [Selected Songs](
+  https://www.kotta.info/en/product/2744/FARKAS-FERENC-Selected-Songs)
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian by Lőrinc Szabó
+  de: German translated by Johannes Kretschmar, Imre Ormay and Marcel Rubin
+title:
+  main: de
+  original: hu
+  sort:
+    - de
+    - hu
+  translations:
+    de: Mistel
+    hu: Fagyöngy
