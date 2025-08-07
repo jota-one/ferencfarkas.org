@@ -1,0 +1,27 @@
+category: voice_piano
+composition_date: 1940
+date: 2025-08-07T14:00:22.952Z
+description: for voice and orchestra
+duration: 480
+id: mistel-for-voice-and-orchestra
+movements:
+  - title: Csigabiga
+  - title: Tavaszban
+  - title: Mint a fagyöngy sír
+  - title: Ejszaka
+  - title: Hajnali szél
+publications:
+  - publisher_id: emb
+rework_of: mistel
+setting: 2 (picc.), 2 (c.i.), 2 (cl. b.), 1 - 2, 1, 0, 0 - arpa, cel. - archi
+texts:
+  hu: in Hungarian by Lőrinc Szabó
+title:
+  main: de
+  original: hu
+  sort:
+    - de
+    - hu
+  translations:
+    de: Mistel
+    hu: Fagyöngy

@@ -1,0 +1,22 @@
+category: voice_piano
+composition_date: 1989
+date: 2025-08-07T14:06:49.389Z
+description: for voice and piano
+duration: 440
+id: negy-dal-paskandi-geza-verseire
+movements:
+  - title: Alagút
+  - title: Ars poetica a pusztán
+  - title: A rés földje
+  - title: Tükörbe eresztett koporsó
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Géza Páskándi
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Négy dal Páskándi Géza verseire

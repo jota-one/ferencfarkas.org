@@ -1,0 +1,22 @@
+category: voice_piano
+composition_date: 1938
+date: 2025-08-07T12:56:24.679Z
+description: for voice and piano
+duration: 500
+id: negy-dal-erdelyi-jozsef-verseire
+movements:
+  - title: Utlevél
+  - title: Igazán
+  - title: Barackvirág
+  - title: A hegedű
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by József Erdélyi
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Négy dal Erdélyi József verseire
