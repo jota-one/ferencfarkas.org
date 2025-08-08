@@ -1,0 +1,23 @@
+category: voice_piano
+composition_date: 1985
+date: 2025-08-08T15:39:21.894Z
+description: 4 songs for voice and piano
+duration: 380
+id: omaggio-a-pessoa-for-voice-and-piano
+movements:
+  - title: As ilhas afortunadas
+  - title: Já sobre a fronte
+  - title: Viajar
+  - title: E talvez
+publications:
+  - publisher_id: afp
+rework_of: omaggio-a-pessoa
+texts:
+  pt: in Portuguese by Fernando Pessoa
+title:
+  main: pt
+  original: pt
+  sort:
+    - pt
+  translations:
+    pt: Omaggio a Pessoa

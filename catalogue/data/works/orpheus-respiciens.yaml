@@ -1,0 +1,33 @@
+category: voice_piano
+composition_date: 1993
+date: 2025-08-08T15:56:02.867Z
+dedicated: Pro memoria M.
+description: Cycle of 8 songs for voice and piano
+duration: 1200
+id: orpheus-respiciens
+movements:
+  - title: Elmaradt lázálom - text by Sándor Csoóri
+  - title: Sonetto CCLXXII - text by Petrarca
+  - title: Le portrait - text by Charles Baudelaire
+  - title: Alma minha - text by Luis de Camoes
+  - title: Nein, ich vergesse Dich nicht - text by R.M. Rilke
+  - title: Sone que tu me llevabas - text by A. Machado
+  - title: Requiescat - text by O. Wilde
+  - title: El desdichado - text by Nerval
+publications:
+  - publisher_id: ascolta
+texts:
+  hu: in Hungarian
+  it: in italien
+  fr: in French
+  es: in Spanish
+  ge: in German
+  pt: in Portuguese
+  en: in English
+title:
+  main: la
+  original: la
+  sort:
+    - la
+  translations:
+    la: Orpheus respiciens

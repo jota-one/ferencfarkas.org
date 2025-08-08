@@ -1,0 +1,23 @@
+category: voice_piano
+composition_date: 1947
+date: 2025-08-08T14:29:03.250Z
+description: for voice and piano
+duration: 122
+id: o-ha-cinke-volnek
+nb: O ha cinke volnék... / Könnt ich fliegen wie eine Meise... is published by
+  Editio Musica Budapest in a collection of Lieder entitled [Selected Songs](
+  https://www.kotta.info/en/product/2744/FARKAS-FERENC-Selected-Songs)
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian by Sándor Weöres
+  de: German translated by Marcel Rubin and Otto Horn
+title:
+  main: hu
+  original: de
+  sort:
+    - hu
+    - de
+  translations:
+    hu: O ha cinke volnék...
+    de: Könnt ich fliegen wie eine Meise...
