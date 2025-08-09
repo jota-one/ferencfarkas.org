@@ -1,0 +1,24 @@
+category: voice_piano
+composition_date: 1947
+date: 2025-08-09T14:17:12.431Z
+description: Cycle of 5 troubadour songs for voice and piano
+duration: 350
+id: oet-francia-trubadur-dallam
+movements:
+  - title: Volez vos que je vos chant / Zengek néked ime halld
+  - title: Belle Doette / O szépséges hugom
+  - title: Quand li rossignols s'écrie / Fényuszállyal száll a hajna
+  - title: A pris ai qu'en chantant plour / Boldog vagyok mig könnyem
+  - title: Fort m'enoia, s’o auzes dire / Jaj de sanyarù tűrni nekem
+publications:
+  - publisher_id: afp
+texts:
+  fr: in old French
+  hu: Hungarian translated by Sándor Weöres
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Öt francia trubadúr dallam

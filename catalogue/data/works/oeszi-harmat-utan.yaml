@@ -1,0 +1,24 @@
+category: voice_piano
+composition_date: 1975
+date: 2025-08-09T13:36:20.418Z
+description: Kuruc songs for voice and piano
+duration: 580
+id: oeszi-harmat-utan
+movements:
+  - title: Őszi harmat után
+  - title: Mit búsúlsz kenyeres
+  - title: Hej, fúdd el szél
+  - title: Hová készülsz szívem
+  - title: Fordulj kedves lovam
+  - title: Térj meg bújdosásidból
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Térj meg bújdosásidból

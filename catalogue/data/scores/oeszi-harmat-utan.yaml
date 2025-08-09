@@ -1,0 +1,5 @@
+- id: oeszi-harmat-utan-score
+  score_type: score
+  ref: /LIEDER/Őszi harmat után/score/score.pdf
+  manuscript: true
+  published: false

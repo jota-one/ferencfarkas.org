@@ -1,0 +1,26 @@
+category: voice_piano
+composition_date: 1981
+date: 2025-08-09T13:43:54.796Z
+description: 5 songs for voice and piano
+duration: 600
+id: oet-dal-erdelyi-koeltoek-verseire
+movements:
+  - title: Öreg költő - text by László Cs. Szabó
+  - title: Ajánlás - text by Lajos Aprily
+  - title: Kolozsvári éjjel - text by Lajos Aprily
+  - title: Ejszakák - text by Jenő Dsida
+  - title: Kalauz - text by László Tompa
+nb: Öt dal erdélyi költők verseire  is published by Editio Musica Budapest in a
+  collection of Lieder entitled [Újabb dalok](
+  https://www.umpemb.com/en-US/Catalogue.aspx/details/454044)
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Öt dal erdélyi költők verseire
