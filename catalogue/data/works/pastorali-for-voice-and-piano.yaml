@@ -1,0 +1,26 @@
+category: voice_piano
+composition_date: 1968
+date: 2025-08-11T15:43:34.989Z
+dedicated: Madame Terézia Csajbók
+description: for voice and piano
+duration: 360
+id: pastorali-for-voice-and-piano
+movements:
+  - title: Andante pastorale
+  - title: Allegro ma non troppo
+  - title: Lento
+  - title: Molto gaio, festeggiante
+  - title: Andante
+publications:
+  - publisher_id: emb
+rework_of: pastorali
+texts:
+  hu: in Hungarian by Artur Keleti
+  it: Italien translated by Gino Sirola
+title:
+  main: it
+  original: hu
+  sort:
+    - it
+  translations:
+    it: Pastorali
