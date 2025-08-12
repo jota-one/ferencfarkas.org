@@ -1,0 +1,25 @@
+category: voice_piano
+composition_date: 1995
+date: 2025-08-12T14:12:31.909Z
+description: Cycle of 7 songs for voice and piano
+duration: 247
+id: regi-temetoe
+movements:
+  - title: Bajusz Balázs voltam
+  - title: Itt nyugszik a Fehér Sára
+  - title: Sütő Borcsa voltam
+  - title: Im itt nyugszik Edes Ignác
+  - title: Ime sírja Bakos Vincének
+  - title: Láncoskuti Nagy Elek
+  - title: En Csibor Pál
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Sándor Weöres
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Régi temetö

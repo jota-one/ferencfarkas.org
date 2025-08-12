@@ -1,6 +1,6 @@
 category: voice_piano
-composition_date: 1933 - 1976
-date: 2023-12-30T17:21:32.729Z
+composition_date: 1976
+date: 2025-08-12T13:18:41.545Z
 description: Cycle of 5 songs for voice and piano or organ
 duration: 660
 id: rosarium
@@ -13,7 +13,7 @@ movements:
 publications:
   - publisher_id: afp
 texts:
-  la: in latin
+  la: in Latin
 title:
   main: la
   original: la

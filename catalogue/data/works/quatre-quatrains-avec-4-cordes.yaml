@@ -1,0 +1,22 @@
+category: voice_piano
+composition_date: 1996
+date: 2025-08-12T13:41:14.658Z
+description: for voice and violoncello
+duration: 210
+id: quatre-quatrains-avec-4-cordes
+movements:
+  - title: Bel éventail - text by Stéphane Mallarmé
+  - title: Quatrain - text by Arthur Rimbaud
+  - title: Parias la mort - text by Paul Eluard
+  - title: J'ai fait que j'ai pu - text by Victor Hugo
+publications:
+  - publisher_id: afp
+texts:
+  fr: in French
+title:
+  main: fr
+  original: fr
+  sort:
+    - fr
+  translations:
+    fr: Quatre quatrains avec 4 cordes

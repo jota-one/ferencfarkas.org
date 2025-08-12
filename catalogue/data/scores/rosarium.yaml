@@ -1,0 +1,5 @@
+- id: rosarium-score
+  score_type: score
+  ref: /LIEDER/Rosarium voice piano-organ/score/score.pdf
+  manuscript: true
+  published: false
