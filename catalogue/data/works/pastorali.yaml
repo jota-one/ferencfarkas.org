@@ -1,0 +1,24 @@
+category: voice_piano
+composition_date: 1931
+date: 2025-08-12T10:22:36.244Z
+description: for voice and orchestra
+duration: 360
+id: pastorali
+movements:
+  - title: Andante pastorale
+  - title: Allegro ma non troppo
+  - title: Lento
+  - title: Molto gaio, festeggiante
+  - title: Andante
+publications:
+  - publisher_id: emb
+setting: 0, 1, 2, 1 - 2, 1, 1, 0 - 4 vl., 2 vla, 1 vlc, 1 cb
+texts:
+  it: in Italien from a Hungarian text by Artur Keleti translated by Gino Sirola
+title:
+  main: it
+  original: it
+  sort:
+    - it
+  translations:
+    it: Pastorali
