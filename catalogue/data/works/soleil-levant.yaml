@@ -1,0 +1,18 @@
+category: voice_piano
+composition_date: 1982
+date: 2025-08-13T14:18:10.268Z
+description: for voice and piano
+duration: 90
+id: soleil-levant
+publications:
+  - publisher_id: afp
+rework-of: harom-dal-kis-ferenc-verseire
+texts:
+  fr: in French translated by Françoise Farkas
+title:
+  main: fr
+  original: fr
+  sort:
+    - fr
+  translations:
+    fr: Soleil levant

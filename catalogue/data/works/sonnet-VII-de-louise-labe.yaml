@@ -1,13 +1,14 @@
 category: voice_piano
 composition_date: 1944
-date: 2021-04-13
+date: 2025-08-13T15:08:56.113Z
 description: for voice and piano
 duration: 180
 id: sonnet-VII-de-louise-labe
+nb: This work is published by Kontrapunkt Music in a collection of Lieder
+  entitled [Songs to texts by French and English
+  poets](https://kontrapunktmusic.com/en/product/wolf-ferenc-songs-english-and-french-colt-poems/?v=1ee0bf89c5d1)
 publications:
   - publisher_id: kontrapunkt
-    type: Songs to texts by French and English poets / Dalok francia és angol költők
-      verseire
 texts:
   fr: in French by Louise Labé
 title:
