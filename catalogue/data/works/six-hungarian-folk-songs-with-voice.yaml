@@ -1,0 +1,25 @@
+category: voice_piano
+composition_date: 1947
+date: 2025-08-13T14:10:29.554Z
+description: Cycle of 6 songs for voice, recorder or flute, violin and violoncello
+duration: 320
+id: six-hungarian-folk-songs-with-voice
+movements:
+  - title: Zendülj fel Szent János
+  - title: Arokparti kökény
+  - title: Kerek utca
+  - title: Jánoshidi vásártéren
+  - title: Fekete föld
+  - title: Bogyiszlai kertek alja végén
+publications:
+  - publisher_id: afp
+rework-of: six-hungarian-folk-songs
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Six Hungarian folk songs
