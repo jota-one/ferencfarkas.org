@@ -1,0 +1,5 @@
+- id: soleil-levant-score
+  score_type: score
+  ref: /LIEDER/Soleil levant/score/score.pdf
+  manuscript: true
+  published: false
