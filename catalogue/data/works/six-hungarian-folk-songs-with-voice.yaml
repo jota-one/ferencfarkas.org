@@ -1,6 +1,6 @@
 category: voice_piano
 composition_date: 1947
-date: 2025-08-13T14:10:29.554Z
+date: 2025-08-14T11:41:17.330Z
 description: Cycle of 6 songs for voice, recorder or flute, violin and violoncello
 duration: 320
 id: six-hungarian-folk-songs-with-voice
@@ -13,7 +13,7 @@ movements:
   - title: Bogyiszlai kertek alja végén
 publications:
   - publisher_id: afp
-rework-of: six-hungarian-folk-songs
+rework_of: six-hungarian-folk-songs
 texts:
   hu: in Hungarian
 title:
