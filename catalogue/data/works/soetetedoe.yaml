@@ -1,0 +1,22 @@
+category: voice_piano
+composition_date: 1994
+date: 2025-08-15T07:22:56.601Z
+description: for voice and piano
+duration: 590
+id: soetetedoe
+movements:
+  - title: Sötétedő
+  - title: Esteli lovas
+  - title: Szavadban búza
+  - title: Marasztalás
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by Tamás Tűz
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Sőtétedö

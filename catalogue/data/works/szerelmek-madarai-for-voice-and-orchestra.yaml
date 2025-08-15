@@ -1,0 +1,21 @@
+category: voice_piano
+date: 2025-08-15T10:42:14.981Z
+description: for voice and orchestra
+duration: 420
+id: szerelmek-madarai-for-voice-and-orchestra
+movements:
+  - title: A tavaszhoz - text by Ferenc Kazinczy
+  - title: Chloé Daphnishoz - text by Mihály Csokonai Vitéz
+  - title: Amor - text by Mihály Csokonai Vitéz
+publications:
+  - publisher_id: afp
+rework_of: szerelmek-madarai
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Szerelmek madarai. Három dal 18. századbeli versekre
