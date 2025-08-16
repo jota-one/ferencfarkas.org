@@ -1,0 +1,17 @@
+category: voice_piano
+composition_date: 1994
+date: 2025-08-16T14:15:04.509Z
+description: for voice and piano
+duration: 60
+id: verskulcs
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian by György Cigány
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Verskulcs

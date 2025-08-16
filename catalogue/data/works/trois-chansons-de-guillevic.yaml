@@ -1,0 +1,24 @@
+category: voice_piano
+composition_date: 1960
+date: 2025-08-16T14:08:56.625Z
+description: Cycle of 3 songs for voice and piano
+duration: 240
+id: trois-chansons-de-guillevic
+movements:
+  - title: Le menuisier / Az asztalos
+  - title: Roses / Rózsák
+  - title: Le goût de la paix / A béke mosolya
+publications:
+  - publisher_id: emb
+texts:
+  fr: in French by Eugène Guillevic
+  hu: Hungarian translated by Ferenc Farkas
+title:
+  main: fr
+  original: hu
+  sort:
+    - fr
+    - hu
+  translations:
+    fr: Trois chansons de Guillevic
+    hu: Három Guillevic dal

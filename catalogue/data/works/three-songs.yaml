@@ -1,0 +1,21 @@
+category: voice_piano
+composition_date: 1989
+date: 2025-08-16T09:24:08.174Z
+description: Cycle of 3 songs for voice and violoncello
+duration: 240
+id: three-songs
+movements:
+  - title: The music flows
+  - title: Loneliness
+  - title: The cold wind
+publications:
+  - publisher_id: afp
+texts:
+  en: in English by J. Gracen-Brown
+title:
+  main: en
+  original: en
+  sort:
+    - en
+  translations:
+    en: Three songs
