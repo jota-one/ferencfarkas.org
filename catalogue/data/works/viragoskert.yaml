@@ -1,0 +1,26 @@
+category: voice_piano
+composition_date: 1989
+date: 2025-08-16T14:27:06.615Z
+dedicated: to my wife Mancinak
+description: Cycle of 7 songs for voice and piano
+duration: 585
+id: viragoskert
+movements:
+  - title: Margaréta - text by József Erdélyi
+  - title: Fehér virág - text by István Kormos
+  - title: Leánykökörcsin - text by Lajos Aprily
+  - title: Klematisz - text by Zoltán Jékely
+  - title: Napraforgó - text by Dezsö Kosztolányi
+  - title: Krizantém - text by László Nagy
+  - title: Derengö rózsa - text by Attila József
+publications:
+  - publisher_id: kontrapunkt
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Virágoskert

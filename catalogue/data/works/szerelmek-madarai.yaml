@@ -1,0 +1,27 @@
+category: voice_piano
+composition_date: 1937
+date: 2025-08-15T10:37:40.865Z
+description: for voice and piano
+duration: 420
+id: szerelmek-madarai
+movements:
+  - title: A tavaszhoz / An den Frühling - text by Ferenc Kazinczy
+  - title: Chloé Daphnishoz / Chloe an Daphnis - text by Mihály Csokonai Vitéz
+  - title: Amor / Amor - text by Mihály Csokonai Vitéz
+nb: This work is published by Editio Musica Budapest in a collection of Lieder
+  entitled [Selected Songs](
+  https://www.kotta.info/en/product/2744/FARKAS-FERENC-Selected-Songs)
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian
+  de: German translated by Imre Ormay
+title:
+  main: hu
+  original: de
+  sort:
+    - hu
+    - de
+  translations:
+    hu: Szerelmek madarai. Három dal 18. századbeli versekre
+    de: Drei Lieder nach Gedichten aus dem  18. Jahrhundert

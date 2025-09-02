@@ -1,6 +1,6 @@
 {
   "name": "ferencfarkas.org",
-  "version": "1.7.158",
+  "version": "1.7.160",
   "description": "The ferencfarkas.org project",
   "private": false,
   "scripts": {
@@ -59,9 +59,12 @@
     "yaml": "^2.3.2"
   },
   "volta": {
-    "node": "18.18.0"
+    "node": "22.18.0"
   },
   "engines": {
-    "node": "18.18.0"
+    "node": ">= 22.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3"
   }
 }

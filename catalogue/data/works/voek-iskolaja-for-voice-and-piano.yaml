@@ -1,0 +1,25 @@
+category: voice_piano
+composition_date: 1958
+date: 2025-08-16T14:38:07.283Z
+description: for voice and piano
+duration: 1000
+id: voek-iskolaja-for-voice-and-piano
+movements:
+  - title: Azt álmodtam ma éjjel
+  - title: Marcikám
+  - title: Vigyázz a fiúra
+  - title: Szertnék boldog lenni már
+  - title: Egyiknek igen
+  - title: A vén Dunán
+publications:
+  - publisher_id: afp
+rework_of: voek-iskolaja-anyosgeneralis
+texts:
+  hu: in Hungarian by Rezsö Török and Ernö Innocent-Vincze
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Vők iskolája

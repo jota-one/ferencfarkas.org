@@ -1,0 +1,5 @@
+- id: verskulcs-score
+  score_type: score
+  ref: /LIEDER/Verskulcs/score/score.pdf
+  manuscript: true
+  published: false

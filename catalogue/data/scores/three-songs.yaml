@@ -1,0 +1,5 @@
+- id: three-songs-score
+  score_type: score
+  ref: /LIEDER/Three songs/score/score.pdf
+  manuscript: true
+  published: false

@@ -1,0 +1,20 @@
+category: voice_piano
+composition_date: 1997
+date: 2025-08-15T10:26:12.817Z
+description: for voice and piano
+duration: 87
+id: spleen
+nb: Spleen is published by Kontrapunkt Music in a collection of Lieder entitled
+  [Songs to texts by French and English
+  poets](https://kontrapunktmusic.com/en/product/wolf-ferenc-songs-english-and-french-colt-poems/?v=1ee0bf89c5d1)
+publications:
+  - publisher_id: kontrapunkt
+texts:
+  fr: in French by Charles Baudelaire (Les fleurs du mal LXXVI)
+title:
+  main: fr
+  original: fr
+  sort:
+    - fr
+  translations:
+    fr: Spleen
