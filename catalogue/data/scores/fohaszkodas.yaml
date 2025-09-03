@@ -1,0 +1,5 @@
+- id: fohaszkodas-score
+  score_type: score
+  ref: /CANON/Fohászkodás/score/score.pdf
+  manuscript: false
+  published: false
