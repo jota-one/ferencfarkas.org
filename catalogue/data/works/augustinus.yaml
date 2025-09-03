@@ -1,0 +1,15 @@
+category: misc_choir
+date: 2025-09-03T11:58:33.330Z
+description: Canon
+id: augustinus
+publications:
+  - publisher_id: afp
+texts:
+  la: in Latin
+title:
+  main: la
+  original: la
+  sort:
+    - la
+  translations:
+    la: Augustinus

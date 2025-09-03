@@ -1,0 +1,5 @@
+- id: augustinus-score
+  score_type: score
+  ref: /CANON/Augustinus/score/score.pdf
+  manuscript: true
+  published: false
