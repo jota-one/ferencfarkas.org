@@ -1,0 +1,5 @@
+- id: in-gryllum-score
+  score_type: score
+  ref: /CANON/In Gryllum/score/score.pdf
+  manuscript: true
+  published: false

@@ -1,0 +1,5 @@
+- id: biztatas-score
+  score_type: score
+  ref: /CANON/Biztatás/score/score.pdf
+  manuscript: false
+  published: false

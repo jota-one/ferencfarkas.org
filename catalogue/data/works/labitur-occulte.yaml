@@ -1,0 +1,15 @@
+category: misc_choir
+date: 2025-09-03T15:04:52.205Z
+description: canon
+id: labitur-occulte
+publications:
+  - publisher_id: afp
+texts:
+  la: in Latin by Ovidius
+title:
+  main: la
+  original: la
+  sort:
+    - la
+  translations:
+    la: Labitur occulte

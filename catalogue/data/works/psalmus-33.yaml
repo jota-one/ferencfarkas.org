@@ -1,0 +1,15 @@
+category: misc_choir
+date: 2025-09-03T15:37:46.030Z
+description: canon
+id: psalmus-33
+publications:
+  - publisher_id: afp
+texts:
+  la: in Latin
+title:
+  main: la
+  original: la
+  sort:
+    - la
+  translations:
+    la: Psalmus 33
