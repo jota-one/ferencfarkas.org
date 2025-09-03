@@ -1,0 +1,15 @@
+category: misc_choir
+date: 2025-09-03T13:43:17.746Z
+description: canon
+id: in-gryllum
+publications:
+  - publisher_id: afp
+texts:
+  la: in Latin by Janus Pannonius
+title:
+  main: la
+  original: la
+  sort:
+    - la
+  translations:
+    la: In Gryllum

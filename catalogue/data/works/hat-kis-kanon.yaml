@@ -1,0 +1,26 @@
+category: misc_choir
+date: 2025-09-03T13:38:16.543Z
+description: 6 canons
+id: hat-kis-kanon
+movements:
+  - title: Enek a tavaszhoz - text by Mihály Csokonai Vitéz
+  - title: Serkentö ének - text by János Batsányi
+  - title: Harang felirat / Vivos voco
+  - title: köszöntő / Wishing you all the wonderful joys
+  - title: Mundus vult decipi / A világ csalódni akar
+  - title: Epigmamma / Sohasem számos főben / Nimmer in tausend Köpfen - German text
+      by F.Hebbel
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+  la: Latin
+  en: English
+  de: German
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Hat kis kánon
