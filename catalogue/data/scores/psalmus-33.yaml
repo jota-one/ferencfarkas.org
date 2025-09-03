@@ -1,0 +1,5 @@
+- id: psalmus-33-score
+  score_type: score
+  ref: /CANON/Psalmus 33/score/score.pdf
+  manuscript: true
+  published: false
