@@ -1,0 +1,18 @@
+category: folk
+date: 2025-09-04T13:55:53.941Z
+description: for voice and piano
+duration: 50
+id: a-tiszabol-a-dunaba
+nb: A Tiszából a Dunába is published by Editio Musica Budapest in a collection
+  entitled [Röpülj páva](https://www.kotta.info/en/product/777/Roepuelj-pava)
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: A Tiszából a Dunába

@@ -70,6 +70,10 @@
   tag: Voice
   title: Voice and other instrument(s) or orchestra
   genre: vocal
+- id: folk
+  tag: Folk music
+  title: Folk music
+  genre: folk
 - id: incidental
   tag: Incidental music
   title: Incidental music
