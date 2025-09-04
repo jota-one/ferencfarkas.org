@@ -1,0 +1,21 @@
+category: folk
+composition_date: 1933
+date: 2025-09-04T14:04:23.544Z
+description: for voice and piano
+duration: 160
+id: harom-katonanota
+movements:
+  - title: Edes anyám hun van az az édes tej...
+  - title: Hétfön reggel nyolcat ütött az óra
+  - title: Ferenc József az apostoli király
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Három katonanóta
