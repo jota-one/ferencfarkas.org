@@ -1,0 +1,25 @@
+category: folk
+date: 2025-09-04T14:39:23.506Z
+description: for voice and piano
+duration: 520
+id: hat-nepdal
+movements:
+  - title: Aki nem lép egyszerre
+  - title: A malomnak nincsen
+  - title: Hull a szilva a fáról
+  - title: Jól van dolga a mostani huszámak
+  - title: Te vagy a legény
+  - title: Zúg az erdö, zeng a mező
+nb: This work is deposited under the name « Hat magyar népdal » in the National
+  Széchény Library
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Hat népdal
