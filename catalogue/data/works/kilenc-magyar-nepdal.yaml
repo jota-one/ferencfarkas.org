@@ -1,0 +1,28 @@
+category: folk
+composition_date: 1958
+date: 2025-09-04T15:55:53.391Z
+description: for voice and orchestra
+duration: 600
+id: kilenc-magyar-nepdal
+movements:
+  - title: Esett a hó
+  - title: Szántani kék
+  - title: Egyszer két lányok
+  - title: Gyere be szivem
+  - title: Mihály biró
+  - title: Veres az ég
+  - title: Láttad-e
+  - title: Erdő, erdő
+  - title: Széles a Duna
+publications:
+  - publisher_id: afp
+setting: 1, 1, 1, 1 - 0, 0, 0, 0 – arpa, zimb. ungh., citera – archi
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Kilenc magyar népdal

@@ -1,0 +1,21 @@
+category: folk
+date: 2025-09-04T16:04:37.618Z
+description: for voice and piano
+duration: 360
+id: negy-magyar-nepdal
+movements:
+  - title: Béreslegény
+  - title: Csütörtökön este csak azt…
+  - title: Nincsen hideg
+  - title: Szántani kék
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Négy magyar népdal
