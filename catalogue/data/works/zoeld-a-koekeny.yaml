@@ -1,0 +1,37 @@
+category: folk
+date: 2025-09-05T16:00:34.046Z
+description: Collection of 20 folksongs for voice and piano
+duration: 1330
+id: zoeld-a-koekeny
+movements:
+  - title: Az lászlai új majorban
+  - title: Az őcsényi kertek alja végén
+  - title: Bereg Náni
+  - title: Egyszer két lányok
+  - title: Elmegyek, elmegyek
+  - title: Esett a hó
+  - title: Fehér László (Ballada)
+  - title: Fekete föld termi a jó búzát
+  - title: Friss (széles a Duna)
+  - title: Gyere ki szivem
+  - title: Kerek utca, szegelet
+  - title: Kis kertemben uborka
+  - title: Láttad-e
+  - title: Megérett a kökény
+  - title: Megizentem a szeretőm anyjának
+  - title: Mihály bíró
+  - title: Táncnóta (Mikor kend is Laci bátyám)
+  - title: Tisza partján
+  - title: Veres az ég
+  - title: Zöld a kökény
+publications:
+  - publisher_id: emb
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Zöld a kökény

@@ -1,0 +1,26 @@
+category: folk
+composition_date: 1973
+date: 2025-09-05T14:49:32.785Z
+description: for voice and piano
+duration: 400
+id: nyolc-somogyi-nepdal
+movements:
+  - title: Arra alá a Baranya szélben
+  - title: Ha felülök
+  - title: zöld a kökény
+  - title: Erdők, mezők
+  - title: Megérett a kökény
+  - title: Szól a kukukmadár
+  - title: Erre gyere
+  - title: Megyen már
+publications:
+  - publisher_id: afp
+texts:
+  hu: in Hungarian
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Nyolc somogyi népdal
