@@ -1,11 +1,15 @@
 category: incidental
 composition_date: 1937
-date: 2025-09-06T14:38:29.602Z
+date: 2025-09-27T21:41:05.527Z
 id: as-you-like-it
+texts:
+  hu: William Shakespeare
 title:
   main: en
   original: hu
   sort:
+    - en
     - hu
   translations:
-    hu: As you like it / Ahogy tetszik by Shakespeare
+    en: As you like it
+    hu: Ahogy tetszik
