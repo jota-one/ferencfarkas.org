@@ -27,6 +27,9 @@ const dstAboutTheWorkDir = resolve(root, 'website/content/work')
 
 const renderer = new marked.Renderer()
 
+const uniq = array =>
+  array.filter((value, index, arr) => arr.indexOf(value) === index)
+
 renderer.link = function (href) {
   const link = marked.Renderer.prototype.link.apply(this, arguments)
 
@@ -62,6 +65,23 @@ const getWorks = async ({ dir, genres, categories }) => {
     }
 
     work.genre = categories[work.category].genre
+
+    // Check valid title translations
+    const titleTranslationRefs = uniq([
+      work.title.main,
+      work.title.original,
+      ...work.title.sort,
+    ])
+
+    if (
+      titleTranslationRefs.some(
+        langRef => !Object.keys(work.title.translations).includes(langRef),
+      )
+    ) {
+      throw Error(
+        `Title translations not matching references in work: ${work.id}`,
+      )
+    }
 
     // Markdown fields
     if (work.nb) {
