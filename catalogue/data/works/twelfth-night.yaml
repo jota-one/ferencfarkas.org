@@ -1,15 +1,14 @@
 category: incidental
 composition_date: 1954
-date: 2025-08-13T12:01:12.756Z
+date: 2025-10-04T15:09:55.667Z
 id: twelfth-night
 texts:
   hu: William Shakespeare
 title:
-  main: en
-  original: hu
+  main: hu
+  original: en
   sort:
-    - en
     - hu
   translations:
-    en: Twelfth night
-    hu: Vízkereszt
+    hu: Vízkereszt / Twelfth night by Shakespeare
+    en: Twelfth night by Shakespeare
