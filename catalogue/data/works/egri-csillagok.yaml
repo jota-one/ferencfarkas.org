@@ -1,8 +1,7 @@
 category: film
 composition_date: 1968
-date: 2025-10-02T16:00:53.629Z
+date: 2025-10-05T14:47:58.519Z
 description: Historical film
-duration: 9500
 id: egri-csillagok
 rework_of: egri-csillagok-incidental
 title:
@@ -10,9 +9,8 @@ title:
   original: en
   sort:
     - hu
-    - en
   translations:
-    hu: Egri csillagok
+    hu: Egri csillagok / Stars of Eger
     en: Stars of Eger
 film_directors:
   - Zoltán Várkonyi

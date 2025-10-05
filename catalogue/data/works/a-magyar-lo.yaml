@@ -1,0 +1,16 @@
+category: film
+composition_date: 1937
+date: 2025-10-05T09:25:29.641Z
+description: Short film
+id: a-magyar-lo
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: A magyar ló
+film_directors:
+  - István Somkuti
+film_producers:
+  - Magyar Filmiroda
