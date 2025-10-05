@@ -1,0 +1,16 @@
+category: film
+composition_date: 1938
+date: 2025-10-05T09:32:00.208Z
+description: Short film
+id: a-magyar-falu-mosolya
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: A magyar falu mosolya
+film_directors:
+  - Béla Paulini
+film_producers:
+  - Magyar Filmiroda
