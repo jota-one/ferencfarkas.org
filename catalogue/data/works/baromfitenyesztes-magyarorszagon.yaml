@@ -1,0 +1,16 @@
+category: film
+composition_date: 1936
+date: 2025-10-05T12:02:30.196Z
+description: Short film
+id: baromfitenyesztes-magyarorszagon
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Baromfitenyésztés Magyarországon
+film_directors:
+  - István Somkuti
+film_producers:
+  - Magyar Filmiroda
