@@ -1,15 +1,15 @@
 category: film
 composition_date: 1935
-date: 2025-10-05T12:41:19.376Z
+date: 2025-10-05T13:21:51.977Z
 id: det-gyldne-smil
 title:
   main: da
-  original: hu
+  original: en
   sort:
     - da
   translations:
-    da: Det gyldne Smil / Le sourire d’or / Aranymosoly / The Golden Smile
-    hu: Aranymosoly
+    da: Det gyldne Smil / The Golden Smile
+    en: The Golden Smile
 film_directors:
   - Pál Fejős
 film_producers:
