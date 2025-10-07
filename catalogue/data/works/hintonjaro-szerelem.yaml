@@ -1,15 +1,15 @@
 category: film
-composition_date: 1953
-date: 2025-10-07T11:34:11.094Z
-id: a-harag-napja
+composition_date: 1954
+date: 2025-10-07T11:36:04.567Z
+id: hintonjaro-szerelem
 title:
   main: hu
   original: hu
   sort:
     - hu
   translations:
-    hu: A harag napja
+    hu: Hintónjáró szerelem
 film_directors:
-  - Zoltán Várkonyi
+  - László Ranódy
 film_producers:
   - Magyar Filmgyártó Allami Vállalat
