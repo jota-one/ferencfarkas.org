@@ -1,0 +1,15 @@
+category: film
+composition_date: 1966
+date: 2025-10-07T11:49:39.628Z
+id: karpathy-zoltan
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Kárpáthy Zoltán
+film_directors:
+  - Zoltán Várkonyi
+film_producers:
+  - MAFILM 4. JátékFilmstúdió
