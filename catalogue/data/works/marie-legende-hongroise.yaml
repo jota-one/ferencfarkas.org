@@ -1,0 +1,14 @@
+category: film
+composition_date: 1932
+date: 2025-10-07T12:18:16.830Z
+id: marie-legende-hongroise
+title:
+  main: fr
+  original: hu
+  sort:
+    - fr
+  translations:
+    fr: Marie, légende hongroise / Tavaszi zápor
+    hu: Tavaszi zápor
+film_directors:
+  - Pál Fejős
