@@ -1,6 +1,5 @@
 ---
-title: Funerailles
-subTitle: Adaptation for orchestra of the piano work by Franz Liszt
+title: Szerelmi álmok / Liszt
 date: 2020-03-21
 menu:
   main:
@@ -28,10 +27,11 @@ menu:
 > I ended up instrumenting several pieces of the great Master, including
 > an extract from his piano work Funérailles.
 > 
-> After seeing the film, my son András encouraged me to orchestrate the whole piece.
+> After seeing the film, my son András encouraged me to orchestrate the whole piece. In 1974, I wrote an 
+> adaptation for orchestra of the piano work by Franz Liszt, which I entitled "Funérailles"
 > {{< author name="Ferenc Farkas" >}}
 
-{{< catalogue work-id="funerailles" >}}
+{{< catalogue work-id="szerelmi-almok" >}}
 
 {{% /column %}}
 {{% /row %}}
