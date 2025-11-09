@@ -1,0 +1,16 @@
+category: film
+composition_date: 1953
+date: 2025-10-08T15:43:14.204Z
+description: Documentary film
+id: viharsarok
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Viharsarok
+film_directors:
+  - Vince Lakatos
+film_producers:
+  - Magyar Hiradó és Dokumentum Filmgyár

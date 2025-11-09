@@ -1,0 +1,14 @@
+category: film
+composition_date: 1957
+date: 2025-10-08T15:38:24.508Z
+description: Documentary film
+id: szoenyi-istvan
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Szönyi István
+film_directors:
+  - Agoston Kollányi

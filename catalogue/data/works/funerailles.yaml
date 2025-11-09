@@ -1,12 +1,13 @@
 category: orchestra
 composition_date: 1974
-date: 2024-02-08T16:06:05.853Z
+date: 2025-10-08T15:03:58.826Z
 dedication: to my son András
 description: Adaptation for orchestra of the piano work by Franz Liszt
 duration: 660
 id: funerailles
 publications:
   - publisher_id: emb
+rework_of: szerelmi-almok
 setting: 3 (picc.), 2 (c.i.), 2, 3(cfg) - 4, 3, 3, 1 – timp., batt. – arpa – archi
 title:
   main: fr

@@ -1,0 +1,16 @@
+category: film
+composition_date: 1952
+date: 2025-10-08T15:35:21.573Z
+description: Documentary film
+id: vadvizorszag
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Vadvizország
+film_directors:
+  - István Homoki-Nagy
+film_producers:
+  - István Homoki-Nagy
