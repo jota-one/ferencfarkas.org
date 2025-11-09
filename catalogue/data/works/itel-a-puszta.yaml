@@ -1,0 +1,16 @@
+category: film
+composition_date: 1957
+date: 2025-10-07T11:47:13.208Z
+description: Short film
+id: itel-a-puszta
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Itél a puszta
+film_directors:
+  - Imre Lázár
+film_producers:
+  - Hunnia

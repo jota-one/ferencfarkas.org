@@ -1,0 +1,16 @@
+category: film
+composition_date: 1937
+date: 2025-10-07T12:05:28.596Z
+description: Short film
+id: magyar-vad
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Magyar vad
+film_directors:
+  - István Somkuti
+film_producers:
+  - Magyar Filmiroda
