@@ -1,4 +1,8 @@
-- id: hommage-a-alpbach
-  description: Alles kommt wie es muss / Minden jön, hogyha kell
-  cd: p128
-  track: 16
+- id: hommage-a-alpbach-1
+  description: Schweigen / Hallgatás 
+  cd: a22
+  track: 17
+- id: hommage-a-alpbach-2
+  description: Alles kommt wie es muss/Minden jön, hogyha kell
+  cd: a22
+  track: 19
