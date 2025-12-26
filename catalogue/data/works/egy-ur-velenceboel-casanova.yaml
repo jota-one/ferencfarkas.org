@@ -31,7 +31,7 @@ cast:
     voice: tenor
 category: opera
 composition_date: 1979-1980
-date: 2024-01-16T11:29:26.154Z
+date: 2025-12-26T14:18:34.406Z
 description: Opera in 2 acts
 duration: 7200
 id: egy-ur-velenceboel-casanova
@@ -56,11 +56,3 @@ title:
   translations:
     hu: Egy ur Velencéből, Casanova
     de: Ein Herr aus Venedig, Casanova
-world_premiere:
-  credits:
-    - Conducted by János Kovács
-    - "Stage director: László Vámos"
-    - "Stage design: Attila Csikós"
-    - "Costumes: Tivadar Márk"
-  date: 1991-06-04T00:00:00.000Z
-  location: Hungarian State Opera House of Budapest
