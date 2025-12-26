@@ -27,11 +27,12 @@ cast:
     voice: soprano
   - role: 7 small roles
 category: opera
-date: 2023-12-30T17:21:24.989Z
+composition_date: 1949
+date: 2025-12-26T02:26:44.017Z
 description: Popular romantic opera
 id: csinom-palko
 libretto:
-  hu: In hungarian by András Dékány
+  hu: In Hungarian by András Dékány
 setting: 2, 1, 2 (II=tárogató ad lib.), 1 – 4, 2, 3, 0 – timp., batt. - arpa,
   cel. ad lib. – archi
 synopsis: >
@@ -44,33 +45,5 @@ title:
     - hu
   translations:
     hu: Csínom Palkó
-versions:
-  - composition_date: 1949
-    nb: Ferenc Farkas received the “Kossuth Prize” for this version in 1950
-    publications:
-      - publisher_id: emb
-        type: score
-    version: Original version for the radio
-    world_premiere:
-      date: 1950-01-22T00:00:00.000Z
-  - composition_date: 1950
-    version: First version for the theatre in 3 acts
-    world_premiere:
-      date: 1952
-      location: Erkel Theater, Budapest
-  - composition_date: 1960
-    default: true
-    duration: 6300
-    nb: This version has also been adopted for the film “Csínom Palkó” by Márton
-      Keleti, 1973
-    publications:
-      - publisher_id: emb
-    version: Second and definitive version for the theatre in 3 acts
-    world_premiere:
-      credits:
-        - Conducted by Ferenc Farkas
-        - "Stage director: András Mikó"
-        - "Stage design: Mátyás Varga"
-        - "Costumes: Tivadar Márk"
-      date: 1960
-      location: Open Air Festival of Szeged
+publications:
+  - publisher_id: emb
