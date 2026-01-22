@@ -8,3 +8,8 @@
   ref: /CONCERTO/Fantasia for piano and orchestra/score/piano part.pdf
   manuscript: true
   published: false
+- id: fantasia-for-piano-and-orchestra-score
+  score_type: score
+  ref: /CONCERTO/Fantasia for piano and orchestra/score/score.pdf
+  manuscript: true
+  published: false
