@@ -1,0 +1,16 @@
+category: film
+composition_date: 1975
+date: 2026-01-22T13:01:52.342Z
+id: the-magic-cupboard-film
+rework_of: the-magic-cupboard
+title:
+  main: en
+  original: hu
+  sort:
+    - en
+    - hu
+  translations:
+    en: The magic cupboard
+    hu: A bűvös szekrény
+film_directors:
+  - Fehér György
