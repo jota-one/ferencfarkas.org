@@ -38,7 +38,7 @@ and now our dream is pursued by reality, our fate inside that closet is captivit
 > I conducted the première of The Magic Cupboard in Cluj on 16 March 1943,
 > and my opera met huge success.
 
-In 1975, the Hungarian Television broadcasted a version of the work in one act.
+In 1975, the Hungarian Television broadcasted a version of the work in one act (see it in film music)
 
 {{% /column %}}
 {{% /row %}}
