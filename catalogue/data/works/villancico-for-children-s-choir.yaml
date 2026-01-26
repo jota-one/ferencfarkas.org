@@ -1,15 +1,15 @@
-category: choir
+category: children
 composition_date: 1998
-date: 2026-01-26T11:28:29.148Z
-dedication: to Françoise Farkas
-description: Christmas song from South America for 4-part mixed choir
+date: 2026-01-26T14:28:57.309Z
+description: Christmas song from South America for 3-part children’s choir
 duration: 120
-id: villancico
+id: villancico-for-children-s-choir
 publications:
   - publisher_id: afp
 rework_of: christmas-album
 texts:
   es: in Spanish
+  hu: Hungarian translated by Istvàn Raics
 title:
   main: es
   original: es
