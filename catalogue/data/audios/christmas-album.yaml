@@ -1,8 +1,8 @@
 - id: christmas-album-1
-  description: Pásztorok, pásztorok
+  description: Pásztorok (version for children’s choir)
   cd: p1
   track: 4
 - id: christmas-album-2
-  description: Dicsőség
+  description: Dicsőség (version for children’s choir)
   cd: p1
   track: 6
