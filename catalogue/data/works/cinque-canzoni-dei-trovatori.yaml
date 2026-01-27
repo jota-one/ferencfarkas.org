@@ -1,5 +1,5 @@
 category: voice_piano
-date: 2025-08-09T14:19:28.824Z
+date: 2026-01-27T08:59:44.144Z
 description: Cycle of 5 troubadour songs for voice and guitar
 duration: 330
 id: cinque-canzoni-dei-trovatori
@@ -10,7 +10,7 @@ movements:
   - title: A pris ai qu'en chantant plour
   - title: Fort m'enoia
 publications:
-  - publisher_id: curci
+  - publisher_id: berben
 rework_of: oet-francia-trubadur-dallam
 texts:
   fr: in old French
