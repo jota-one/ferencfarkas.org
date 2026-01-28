@@ -1,0 +1,36 @@
+category: voice_piano
+date: 2026-01-28T13:30:28.200Z
+dedication: Sylvia Scharzenbach gewidmet
+description: Cycle of 12 songs for voice, clarinet, viola and piano
+duration: 1020
+id: fruit-basket-for-voice-clarinet-viola-piano
+movements:
+  - title: Moderato, tempo di marcia
+  - title: Andante
+  - title: Andante con tenerezza
+  - title: Allegro
+  - title: Andante moderato
+  - title: Moderato
+  - title: Andante
+  - title: Allegro
+  - title: Andante
+  - title: Allegretto grazioso
+  - title: Andante, quazi una serenata
+  - title: Allegro non troppo
+publications:
+  - publisher_id: afp
+rework_of: fruit-basket
+nb: The score contains no words. The Hungarian words, the German and the French
+  translations are available on “Fruit basket for voice and clarinet quartet“
+  (free download)
+title:
+  main: en
+  original: hu
+  sort:
+    - en
+    - hu
+    - de
+  translations:
+    en: Fruit basket
+    hu: Gyümölcskosár
+    de: Fruchtkorb
