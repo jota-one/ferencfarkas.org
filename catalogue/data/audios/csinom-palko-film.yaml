@@ -1,0 +1,12 @@
+- id: csinom-palko-film-1
+  description: Introduction
+  cd: a34
+  track: 1
+- id: csinom-palko-film-2
+  description: Csínom Palkó
+  cd: a34
+  track: 2
+- id: csinom-palko-film-3
+  description: Tyukodi pajtás
+  cd: a34
+  track: 26
