@@ -2,9 +2,9 @@ import svelte from 'rollup-plugin-svelte';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
-import terser from '@rollup/plugin-terser';
+import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
-import babel from '@rollup/plugin-babel';
+import babel from 'rollup-plugin-babel';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -69,8 +69,7 @@ export default {
 
 		babel({
 			extensions: ['.js', '.mjs', '.html', '.svelte'],
-			// runtimeHelpers: true,
-			babelHelpers: 'runtime',
+			runtimeHelpers: true,
 			exclude: ['node_modules/@babel/**'],
 			presets: [
 				[
