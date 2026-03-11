@@ -1,258 +1,179 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte'
-  import endpoints from './configs/endpoints'
-  import { setFacets, serialize } from './helpers/facets'
-  import { defaultState, load as loadQS, sync as syncQS } from './services/qs'
-  import { initScrollBehaviors, scrollToTop } from './helpers/scroll'
-  import Sort from './components/Sort.svelte'
-  import WorkList from './components/WorkList.svelte'
-  import Refine from './components/Refine.svelte'
-  import Pagination from './components/Pagination.svelte'
-  import Spinner from './components/Spinner.svelte'
+  import type { Catalogue, FacetGroup, FilteredWork, I18n, QsSort, RenderedWork, Work } from './types'
+  import { APP_CONTAINER_ID } from './lib/config'
+  import { facets as facetsHelper } from './lib/helpers'
+  import {
+    catalogue as catalogueService,
+    cms as cmsService,
+    data as dataService,
+    qs as qsService,
+    scroll as scrollService
+  } from './lib/services'
+  import Refine from './lib/components/Refine.svelte'
+  import Sort from './lib/components/Sort.svelte'
+  import Spinner from './lib/components/Spinner.svelte'
+  import WorkList from './lib/components/WorkList.svelte'
 
-  export let workId
+  type Props = {
+		workId?: string
+	}
 
-  let app
-  let mounted = false // flag for query string (QS) sync
-  let index = {} // lunr search index object
-  let works = [] // full list of works (unfiltered)
-  let data = {}
-  let state
+  const { workId }: Props = $props()
 
-  $: embedded = Boolean(workId)
-  $: results = filterWorks({ ...state, index, works })
-  $: scrollToTop(results)
-  $: {
-    if (mounted && index && !embedded) {
-      syncQS(state)
-      initScrollBehaviors(app)
-    } else {
-      state = loadQS(workId)
+  const embedded = $derived(Boolean(workId))
+  let catalogue = $state<Omit<Catalogue, 'works'>>()
+  let i18n = $state<I18n>()
+  let loading = $state(true)
+  let loadingError = $state()
+  let qsState = $state(qsService.defaultState)
+  let works = $state<FilteredWork[]>([])
+  let allWorks = $state<Work[]>([])
+  let app: HTMLFormElement
+  let searchIndex: any
+
+  // App initialisation
+  onMount(async () => {
+    try {
+      // Load catalogue data (including works) and set catalogue and i18n
+      const catalogueData = await dataService.getCatalogueData()
+      allWorks = catalogueData.catalogue.works
+      catalogue = {
+        categories: catalogueData.catalogue.categories,
+        fields: catalogueData.catalogue.fields,
+        genres: catalogueData.catalogue.genres,
+        publishers: catalogueData.catalogue.publishers,
+      }
+      i18n = catalogueData.i18n
+
+      // Load and set search index
+      const indexData = await dataService.getIndexData()
+      searchIndex = window.lunr.Index.load(indexData)
+
+      // Initialise scroll service
+      scrollService.initScrollBehaviors(app)
+
+      // Initialise qs service
+      qsState = qsService.load(workId)
+
+      // Customize CMS section
+      cmsService.customizeSection(APP_CONTAINER_ID)
+
+      // Filter works
+      works = catalogueService.filterWorks({
+        ...qsState,
+        searchIndex,
+        embedded,
+        works: facetsHelper.setFacets(catalogueData.catalogue.works)
+      })
+
+      // App initialisation done!
+      loading = false
+    } catch(e: any) {
+      loadingError = e.message
     }
-  }
-
-  onMount(() => {
-    if (!embedded) {
-      customizeSection(document.getElementById('catalogue-app'))
-    }
-    mounted = true
   })
 
-  function normalizeString(str) {
-    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-  }
+  // Interaction handlers
+  const refine = (serializedFacet: string) => {
+    const [group, facet] = serializedFacet.split('.')
 
-  function customizeSection(container) {
-    let section = container
-
-    while (section.tagName.toLowerCase() !== 'section') {
-      section = section.parentNode
+    if (!group || !facet) {
+      console.warn(`Facet "${serializedFacet}" is malformed, exiting`)
+      return
     }
 
-    if (section) {
-      section.style.overflow = 'hidden'
-    }
-  }
-
-  async function loadCatalogue() {
-    const responses = {}
-
-    await Promise.all(
-      Object.entries(endpoints)
-        .filter(([key]) => key !== 'index')
-        .map(([key, url]) =>
-          fetch(url)
-            .then(res => res.json())
-            .then(data => {
-              responses[key] = data
-            })
-        )
-    )
-
-    works = setFacets(responses.catalogue.works)
-    data = responses
-  }
-
-  async function loadSearchIndex() {
-    try {
-      const res = await fetch(endpoints.index)
-      const data = await res.json()
-
-      if (res) {
-        index = lunr.Index.load(data)
+    if (qsState.activeFacets.map(([g,f]) => facetsHelper.serialize(g,f)).includes(serializedFacet)) {
+      qsState = {
+        ...qsState,
+        activeFacets: qsState.activeFacets.filter(([g,f]) => g !== group && f !== facet)
       }
-    } catch (e) {
-      console.error(e)
-    }
-  }
-
-  function filterWorks({ activeFacets, index, query, reworksOf, sort, works }) {
-    let results = works
-
-    if (reworksOf) {
-      results = works.filter(
-        work => work.id === reworksOf || work.rework === reworksOf
-      )
     } else {
-      results = handleQuery({ works, index, query })
-      results = handleFacets({ activeFacets, works: results })
-    }
-
-    if (embedded || reworksOf) {
-      return results.sort(a => (a.id === reworksOf ? -1 : 1))
-    }
-
-    results.sort((a, b) => {
-      const getDuration = work => parseInt(`${work.duration || 0}`)
-      const getYear = work =>
-        parseInt(`${work.composition_date || 1905}`.substr(0, 4))
-
-      switch (sort.field) {
-        case 'u':
-          const dateA = new Date(a.date)
-          const dateB = new Date(b.date)
-          return dateA > dateB
-            ? state.sort.dir === 'asc'
-              ? 1
-              : -1
-            : dateA === dateB
-            ? 0
-            : state.sort.dir === 'asc'
-            ? -1
-            : 1
-        case 'c':
-          const yearA = getYear(a)
-          const yearB = getYear(b)
-          return yearA > yearB
-            ? state.sort.dir === 'asc'
-              ? 1
-              : -1
-            : yearA === yearB
-            ? 0
-            : state.sort.dir === 'asc'
-            ? -1
-            : 1
-        case 't':
-          const titleA = normalizeString(a.title.translations[a.title.main])
-          const titleB = normalizeString(b.title.translations[b.title.main])
-          return titleA > titleB
-            ? state.sort.dir === 'desc'
-              ? -1
-              : 1
-            : titleA === titleB
-            ? 0
-            : state.sort.dir === 'asc'
-            ? 1
-            : -1
-        case 'd':
-          const durationA = getDuration(a)
-          const durationB = getDuration(b)
-          return durationA > durationB
-            ? state.sort.dir === 'asc'
-              ? 1
-              : -1
-            : durationA === durationB
-            ? 0
-            : state.sort.dir === 'asc'
-            ? -1
-            : 1
+      qsState = {
+        ...qsState,
+        activeFacets: [
+          ...qsState.activeFacets,
+          [group as FacetGroup, facet]
+        ]
       }
-    })
-
-    return results
-  }
-
-  function handleQuery({ index, query, works }) {
-    if (query.startsWith('id:')) {
-      return works.filter(work => work.id === query.split(':')[1])
-    } else {
-      if (!index.search) {
-        return works
-      }
-
-      const results = index.search(query)
-      const r = results.map(result => result.ref)
-      return works.filter(work => r.includes(work.id))
     }
   }
 
-  function handleFacets({ activeFacets, works }) {
-    return activeFacets.length
-      ? works.filter(work =>
-          activeFacets.every(facet => work.facets.includes(facet))
-        )
-      : works
+  const clearState = () => {
+    qsState = { ...qsService.defaultState }
   }
 
-  function refine(event) {
-    const facet = event.detail
-
-    state.activeFacets = state.activeFacets.includes(facet)
-      ? state.activeFacets.filter(f => f !== facet)
-      : [...state.activeFacets, facet]
+  const sort = (sortObj: QsSort) => {
+    qsState.sort = sortObj
   }
 
-  function clear() {
-    state = { ...defaultState }
+  const toggleReworks = (workId: string) => {
+    qsState = {
+      ...qsState,
+      reworksOf: qsState.reworksOf === workId ? '' : workId
+    }
+  }
+
+  const updateQuery = (query: string) => {
+    qsState = { ...qsState, query }
   }
 </script>
 
 <form
   class="catalogue search"
   class:embedded
-  class:rework-mode={state.reworksOf}
+  class:rework-mode={qsState.reworksOf}
   bind:this={app}
-  on:submit|preventDefault
+  onsubmit={e => e.preventDefault()}
 >
   <div class="works">
     <div class="row">
       <div class="column list">
-        {#if !embedded && !state.reworksOf}
-          <Sort {state} on:sort={e => (state.sort = e.detail)} />
+        {#if !embedded && !qsState.reworksOf}
+          <Sort {qsState} onSort={sort} />
         {/if}
-        {#await loadCatalogue()}
+        {#if loading}
           <div class="catalogue--loader">
-            <Spinner size="20" radius="8" stroke="2.5" />
+            <Spinner size={20} radius={8} stroke={2.5} />
             <p>Loading catalogue data</p>
           </div>
-        {:then}
-          <WorkList
-            catalogue={data.catalogue}
-            {embedded}
-            fields={data.catalogue.fields}
-            fullList={works}
-            filteredList={results}
-            i18n={data.i18n}
-            publishers={data.catalogue.publishers}
-            {state}
-            on:refine={refine}
-            on:toggleReworks={e =>
-              (state.reworksOf = state.reworksOf === e.detail ? '' : e.detail)}
-          />
-        {:catch error}
+        {:else if loadingError}
           <p>
-            Failed to initialize catalogue: <strong>{error.message}</strong>.
+            Failed to initialize catalogue: <strong>{loadingError}</strong>.
           </p>
-          {console.error(error) && ''}
-        {/await}
+          {console.error(loadingError)}
+        {:else}
+          <!-- <pre>{JSON.stringify(qsState, null, 2)}</pre> -->
+          <WorkList
+            {embedded}
+            {qsState}
+            categories={catalogue?.categories}
+            fields={catalogue?.fields}
+            fullList={allWorks as RenderedWork[]}
+            filteredList={works as RenderedWork[]}
+            i18n={i18n}
+            publishers={catalogue?.publishers}
+            onRefine={refine}
+            onToggleReworks={toggleReworks}
+          />
+        {/if}
       </div>
       {#if !embedded}
         <div class="column refine">
           <Refine
-            activeFacets={state.activeFacets}
-            categories={data.catalogue?.categories}
-            genres={data.catalogue?.genres}
-            publishers={data.catalogue?.publishers}
-            {loadSearchIndex}
-            {state}
-            works={results}
-            on:updateQuery={e => (state.query = e.detail)}
-            on:refine={refine}
-            on:clear={clear}
+            activeFacets={qsState.activeFacets}
+            categories={catalogue?.categories}
+            genres={catalogue?.genres}
+            publishers={catalogue?.publishers}
+            {qsState}
+            {works}
+            loadSearchIndex={dataService.getIndexData}
+            onUpdateQuery={updateQuery}
+            onRefine={refine}
+            onClearState={clearState}
           />
         </div>
       {/if}
     </div>
-    <Pagination />
   </div>
 </form>
