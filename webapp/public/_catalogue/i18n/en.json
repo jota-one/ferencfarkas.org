@@ -1,0 +1,36 @@
+{
+  "fields": {
+    "cast": "Cast",
+    "categories": "Categories",
+    "choreography": "Choreography",
+    "composition_date": "Composition date",
+    "credits": "Credits",
+    "date": "Last upate",
+    "description": "Description",
+    "duration": "Duration",
+    "libretto": "Libretto",
+    "location": "Location",
+    "movements": "Movements",
+    "nb": "N.B.",
+    "owner_id": "Owner",
+    "publications": "Publication",
+    "reworks": "Reworks",
+    "role": "Roles",
+    "setting": "Setting",
+    "sources": "Sources",
+    "synopsis": "Synopsis",
+    "texts": "Text",
+    "title": "Title",
+    "type": "Type",
+    "version": "Version",
+    "voice": "Voice",
+    "world_premiere": "World premiere"
+  },
+  "score_type": {
+    "score": "Main score",
+    "material": "Performance material",
+    "piano-reduction": "Piano reduction",
+    "solo-part": "Solo part",
+    "choir-score": "Choir score"
+  }
+}
