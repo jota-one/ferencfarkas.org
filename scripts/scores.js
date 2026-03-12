@@ -78,7 +78,7 @@ const getState = async () => {
       ref => ref.path === buildRemotePath(localRef.id),
     )
 
-    if (remoteRef) {
+    if (remoteRef && localRef.state !== STATE.NOT_FOUND) {
       localRef.state =
         remoteRef.size === localRef.size ? STATE.SYNCED : STATE.MODIFIED
     }
