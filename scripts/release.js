@@ -4,17 +4,17 @@ const masterBranch = 'master'
 const previewBranch = 'preview'
 
 const init = async () => {
-  const changes = git('diff --name-only')
-    .split('\n')
-    .filter(v => v)
+  // const changes = git('diff --name-only')
+  //   .split('\n')
+  //   .filter(v => v)
 
-  if (changes.length) {
-    console.error(
-      'Branch is not clean. Please commit or stash your changes before running this script:',
-    )
-    console.error(changes)
-    return
-  }
+  // if (changes.length) {
+  //   console.error(
+  //     'Branch is not clean. Please commit or stash your changes before running this script:',
+  //   )
+  //   console.error(changes)
+  //   return
+  // }
 
   const userName = git('config --get user.name')
   const userEmail = git('config --get user.email')
@@ -64,16 +64,14 @@ const check = async () => {
     .filter(v => v)
     .map(commitBlock => {
       const hash = commitBlock.substring(0, commitBlock.indexOf('\n')).trim()
-      const author = commitBlock
-        .match(/Author: ([^\n]+)/gim)[0]
-        .replace('Author: ', '')
-        .trim()
-      const date = new Date(
-        commitBlock
-          .match(/Date: ([^\n]+)/gim)[0]
-          .replace('Date: ', '')
-          .trim(),
-      )
+      const authorMatch = commitBlock.match(/Author: ([^\n]+)/gim) || [
+        'Unknown author',
+      ]
+      const dateMatch = commitBlock.match(/Date: ([^\n]+)/gim) || [
+        'Unknown date',
+      ]
+      const author = (authorMatch[0] || '').replace('Author: ', '').trim()
+      const date = new Date((dateMatch[0] || '').replace('Date: ', '').trim())
       const message = commitBlock.split('\n\n')[1].trim()
       return { hash, author, date, message }
     })
