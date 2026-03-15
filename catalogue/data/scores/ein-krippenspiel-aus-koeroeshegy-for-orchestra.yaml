@@ -1,0 +1,10 @@
+- id: ein-krippenspiel-aus-koeroeshegy-for-orchestra-score
+  score_type: score
+  ref: /CANTATA-ORATORIO/Ein Krippenspiel aus Kőröshegy for orchestra/score/score.pdf
+  manuscript: false
+  published: false
+- id: ein-krippenspiel-aus-koeroeshegy-for-orchestra-material
+  score_type: material
+  ref: /CANTATA-ORATORIO/Ein Krippenspiel aus Kőröshegy for orchestra/score/material.pdf
+  manuscript: false
+  published: false
