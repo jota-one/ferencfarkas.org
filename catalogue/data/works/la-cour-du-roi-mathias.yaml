@@ -1,10 +1,10 @@
 category: chamber
 composition_date: 1977
-date: 2023-12-30T17:21:33.567Z
+date: 2026-03-15T16:23:26.619Z
 dedication: to the Berner Solisten
 description: Dance suite for clarinet, bassoon, horn and string quintet
 duration: 982
-id: la-cour-du-roi-matthias
+id: la-cour-du-roi-mathias
 movements:
   - title: Lovagok tánca / Danse des chevaliers
   - title: Udvaroncok tánca / Danse des courtisans
@@ -21,5 +21,5 @@ title:
     - fr
     - hu
   translations:
-    fr: La cour du roi Matthias
+    fr: La cour du roi Mathias
     hu: Mátyás király udvara
