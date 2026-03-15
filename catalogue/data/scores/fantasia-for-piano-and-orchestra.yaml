@@ -1,0 +1,15 @@
+- id: fantasia-for-piano-and-orchestra-score
+  score_type: score
+  ref: /CONCERTO/Fantasia for piano and orchestra/score/score.pdf
+  manuscript: false
+  published: false
+- id: fantasia-for-piano-and-orchestra-material
+  score_type: material
+  ref: /CONCERTO/Fantasia for piano and orchestra/score/material.pdf
+  manuscript: false
+  published: false
+- id: fantasia-for-piano-and-orchestra-solo-part
+  score_type: solo-part
+  ref: /CONCERTO/Fantasia for piano and orchestra/score/piano part.pdf
+  manuscript: false
+  published: false
