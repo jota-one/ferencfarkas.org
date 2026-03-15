@@ -20,7 +20,7 @@ menu:
 > The  premiere took place on March 27, 1972 in Pécs. Although it was a great success, it was only 
 > performed three times. As I had invested a lot in this work and in order not to lose this musical 
 > material into which I had put so much energy, I used the instrumental parts to create an octet (like 
-> that of Schubert) which was entitled " La cour du roi Matthias" and, with the choirs, I made an 
+> that of Schubert) which was entitled " La cour du roi Mathias" and, with the choirs, I made an 
 > oratorio, “Vita poetae”.
 > {{< author name="Ferenc Farkas" >}}
 
