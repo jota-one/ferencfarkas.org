@@ -13,7 +13,7 @@ menu:
 {{% column %}}
 
 > In 1931, while I was still a student by Ottorino Respighi in Rome, I began to compose a “Partita” in 
-> 4 movements for orchestra,  whose third movement should be a “Passacaglia”. From this work, I only 
+> 4 movements for orchestra (the manuscript is available at the [National Széchényi library Budapest](https://oszk.hu/en), whose third movement should be a “Passacaglia”. From this work, I only 
 > finished the “Passacaglia” and the “Scherzo”… 
 >
 > In 1968, I took over the “Passacaglia” and transcribed it for organ without any modification, except 
