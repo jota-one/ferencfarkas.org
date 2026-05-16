@@ -32,7 +32,7 @@
       return
     }
 
-    onUpdateQuery(newValue)
+    onUpdateQuery?.(newValue)
   }
 
 </script>

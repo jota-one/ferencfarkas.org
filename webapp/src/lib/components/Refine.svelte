@@ -20,7 +20,7 @@
     loadSearchIndex: () => void
     onClearState: () => void
     onUpdateQuery: (query: string) => void
-    onRefine: (facet: string) => void
+    onRefine: (facet: ActiveFacetTuple) => void
 	}
 
   let {

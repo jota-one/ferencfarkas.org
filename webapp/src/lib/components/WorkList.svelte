@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Category, FilteredWork, I18n, Publisher, QsState, RenderedWork } from '../../types'
+  import type { ActiveFacetTuple, Category, FacetGroup, FilteredWork, I18n, Publisher, QsState, RenderedWork } from '../../types'
   import { mount } from 'svelte'
   import { facets as facetsHelper } from '../helpers'
   import WorkComponent from './Work.svelte'
@@ -14,7 +14,7 @@
     fullList?: RenderedWork[]
     publishers?: Record<string, Publisher>
     qsState: QsState
-    onRefine: (serializedFacet: string) => void
+    onRefine: (facet: ActiveFacetTuple) => void
     onToggleReworks: (workId: string) => void
   }
 
@@ -108,26 +108,24 @@
       return
     }
 
-    const facets = work.facets.reduce((facets, facet) => {
-      const [ group, value ] = facetsHelper.deserialize(facet) || []
-
-      if (group) {
-        facets[group] = value
+    const workFacets = work.facets.reduce((acc, facet) => {
+      const parsed = facetsHelper.deserialize(facet)
+      if (parsed) {
+        acc[parsed[0]] = parsed[1]
       }
-
-      return facets
-    }, {})
+      return acc
+    }, {} as Partial<Record<FacetGroup, string>>)
 
     if (caller === workEl) {
       navigator.clipboard.writeText(work.id)
     }
 
-    if (caller.classList.contains('work--composition-date')) {
-      onRefine(facetsHelper.serialize('d', facets.d))
+    if (caller.classList.contains('work--composition-date') && workFacets.d) {
+      onRefine(['d', workFacets.d])
     }
 
-    if (caller.classList.contains('work--duration')) {
-      onRefine(facetsHelper.serialize('t', facets.t))
+    if (caller.classList.contains('work--duration') && workFacets.t) {
+      onRefine(['t', workFacets.t])
     }
 
     if (
@@ -137,12 +135,12 @@
       onToggleReworks(work.rework || work.id)
     }
 
-    if (caller.classList.contains('category')) {
-      onRefine(facetsHelper.serialize('c', facets.c))
+    if (caller.classList.contains('category') && workFacets.c) {
+      onRefine(['c', workFacets.c])
     }
 
-    if (caller.classList.contains('work--language')) {
-      onRefine(facetsHelper.serialize('l', facets.l))
+    if (caller.classList.contains('work--language') && workFacets.l) {
+      onRefine(['l', workFacets.l])
     }
 
     if (caller.classList.contains('play')) {
@@ -169,16 +167,13 @@
           return
         }
 
-        mount(WorkFields, {
-          target: workEl,
-          anchor: caller,
-          props: {
-            fields,
-            i18n,
-            publishers,
-            work
-          },
-        })
+        if (i18n) {
+          mount(WorkFields, {
+            target: workEl,
+            anchor: caller,
+            props: { fields, i18n, publishers, work },
+          })
+        }
       }
     }
   }

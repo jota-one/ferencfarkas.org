@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import type { Catalogue, FacetGroup, FilteredWork, I18n, QsSort, RenderedWork, Work } from './types'
+  import type { ActiveFacetTuple, Catalogue, FilteredWork, I18n, QsSort, RenderedWork, Work } from './types'
   import { APP_CONTAINER_ID } from './lib/config'
   import { facets as facetsHelper } from './lib/helpers'
   import {
@@ -27,15 +27,34 @@
   let loading = $state(true)
   let loadingError = $state()
   let qsState = $state(qsService.defaultState)
-  let works = $state<FilteredWork[]>([])
+  let worksWithFacets = $state<FilteredWork[]>([])
   let allWorks = $state<Work[]>([])
+  let searchIndex = $state<any>(null)
   let app: HTMLFormElement
-  let searchIndex: any
+
+  // Re-filter whenever qsState or searchIndex change
+  const filteredWorks = $derived.by(() => {
+    if (!worksWithFacets.length) {
+      return []
+    }
+
+    return catalogueService.filterWorks({
+      ...qsState,
+      searchIndex,
+      embedded,
+      works: worksWithFacets
+    })
+  })
+
+  $effect(() => {
+    if (!loading) {
+      qsService.sync(qsState)
+    }
+  })
 
   // App initialisation
   onMount(async () => {
     try {
-      // Load catalogue data (including works) and set catalogue and i18n
       const catalogueData = await dataService.getCatalogueData()
       allWorks = catalogueData.catalogue.works
       catalogue = {
@@ -46,28 +65,19 @@
       }
       i18n = catalogueData.i18n
 
-      // Load and set search index
       const indexData = await dataService.getIndexData()
       searchIndex = window.lunr.Index.load(indexData)
 
-      // Initialise scroll service
       scrollService.initScrollBehaviors(app)
 
-      // Initialise qs service
+      // Set qsState from URL
       qsState = qsService.load(workId)
 
-      // Customize CMS section
       cmsService.customizeSection(APP_CONTAINER_ID)
 
-      // Filter works
-      works = catalogueService.filterWorks({
-        ...qsState,
-        searchIndex,
-        embedded,
-        works: facetsHelper.setFacets(catalogueData.catalogue.works)
-      })
+      // Compute facets once; filteredWorks $derived takes it from here
+      worksWithFacets = facetsHelper.setFacets(catalogueData.catalogue.works)
 
-      // App initialisation done!
       loading = false
     } catch(e: any) {
       loadingError = e.message
@@ -75,27 +85,15 @@
   })
 
   // Interaction handlers
-  const refine = (serializedFacet: string) => {
-    const [group, facet] = serializedFacet.split('.')
+  const refine = (tuple: ActiveFacetTuple) => {
+    const [group, facet] = tuple
+    const isActive = qsState.activeFacets.some(([g, f]) => g === group && f === facet)
 
-    if (!group || !facet) {
-      console.warn(`Facet "${serializedFacet}" is malformed, exiting`)
-      return
-    }
-
-    if (qsState.activeFacets.map(([g,f]) => facetsHelper.serialize(g,f)).includes(serializedFacet)) {
-      qsState = {
-        ...qsState,
-        activeFacets: qsState.activeFacets.filter(([g,f]) => g !== group && f !== facet)
-      }
-    } else {
-      qsState = {
-        ...qsState,
-        activeFacets: [
-          ...qsState.activeFacets,
-          [group as FacetGroup, facet]
-        ]
-      }
+    qsState = {
+      ...qsState,
+      activeFacets: isActive
+        ? qsState.activeFacets.filter(([g, f]) => !(g === group && f === facet))
+        : [...qsState.activeFacets, tuple]
     }
   }
 
@@ -104,7 +102,7 @@
   }
 
   const sort = (sortObj: QsSort) => {
-    qsState.sort = sortObj
+    qsState = { ...qsState, sort: sortObj }
   }
 
   const toggleReworks = (workId: string) => {
@@ -150,7 +148,7 @@
             categories={catalogue?.categories}
             fields={catalogue?.fields}
             fullList={allWorks as RenderedWork[]}
-            filteredList={works as RenderedWork[]}
+            filteredList={filteredWorks as RenderedWork[]}
             i18n={i18n}
             publishers={catalogue?.publishers}
             onRefine={refine}
@@ -166,7 +164,7 @@
             genres={catalogue?.genres}
             publishers={catalogue?.publishers}
             {qsState}
-            {works}
+            works={filteredWorks}
             loadSearchIndex={dataService.getIndexData}
             onUpdateQuery={updateQuery}
             onRefine={refine}

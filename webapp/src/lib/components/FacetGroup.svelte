@@ -1,12 +1,12 @@
 <script lang="ts">
-  import type { FacetGroup, GroupedFacetMap } from '../../types'
+  import type { ActiveFacetTuple, FacetGroup, GroupedFacetMap } from '../../types'
   import { facets as facetsHelper } from '../helpers'
 
   type Props = {
     group: FacetGroup
     label: string
     facets: GroupedFacetMap
-    onRefine: (facet: string) => void
+    onRefine: (facet: ActiveFacetTuple) => void
   }
 
   const MAX_FACETS = 5
@@ -37,7 +37,7 @@
           type="checkbox"
           name={facetsHelper.serialize(group, value).toString()}
           checked={facet.active}
-          onclick={() => onRefine(facetsHelper.serialize(group, value))}
+          onclick={() => onRefine([group, value])}
         >
         <span class="facet--name">{facet.label}</span>
         <span class="facet--count">{facet.count}</span>
