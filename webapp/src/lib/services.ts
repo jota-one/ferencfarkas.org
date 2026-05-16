@@ -87,8 +87,8 @@ export const catalogue = {
           return (yearA - yearB) * dirMult
         }
         case 't': { // Title
-          const titleA = catalogue._normalizeString(a.title.main)
-          const titleB = catalogue._normalizeString(b.title.main)
+          const titleA = catalogue._normalizeString(a.title.translations[a.title.main] ?? a.title.main)
+          const titleB = catalogue._normalizeString(b.title.translations[b.title.main] ?? b.title.main)
           return titleA.localeCompare(titleB) * dirMult
         }
         case 'd': { // Duration
@@ -218,36 +218,31 @@ export const qs = {
     }
   },
 
-  sync: (state: QsState) => {
+  _buildUrl: (state: QsState): string => {
     const params = new URLSearchParams()
 
-    if (state.query) {
-      params.set('q', state.query)
-    }
+    if (state.query) params.set('q', state.query)
 
     const fStr = qs._serializeFacets(state.activeFacets)
-    if (fStr) {
-      params.set('f', fStr)
-    }
+    if (fStr) params.set('f', fStr)
 
-    if (state.reworksOf) {
-      params.set('r', state.reworksOf)
-    }
-
-    if (state.showID) {
-      params.set('showID', '')
-    }
+    if (state.reworksOf) params.set('r', state.reworksOf)
+    if (state.showID) params.set('showID', '')
 
     params.set('s', `${state.sort.field}.${state.sort.dir}`)
 
-    if (state.page > 1) {
-      params.set('p', state.page.toString())
-    }
+    if (state.page > 1) params.set('p', state.page.toString())
 
     const queryString = params.toString()
-    const newUrl = queryString ? `?${queryString}` : window.location.pathname
+    return queryString ? `?${queryString}` : window.location.pathname
+  },
 
-    window.history.replaceState(null, '', newUrl)
+  sync: (state: QsState) => {
+    window.history.replaceState(null, '', qs._buildUrl(state))
+  },
+
+  push: (state: QsState) => {
+    window.history.pushState(null, '', qs._buildUrl(state))
   }
 }
 
@@ -295,5 +290,16 @@ export const scroll = {
       scroll.refine.classList.add('scrolled')
       scroll.refine.classList.remove('sticked')
     }
+  },
+
+  scrollToTop: () => {
+    if (!scroll.list) return
+    setTimeout(() => {
+      scroll.list!.parentElement?.scrollIntoView({ behavior: 'smooth' })
+    }, 50)
+  },
+
+  scrollToWork: (workId: string) => {
+    document.getElementById(workId)?.scrollIntoView({ behavior: 'smooth', block: 'center' })
   }
 }

@@ -143,10 +143,11 @@
       onRefine(['l', workFacets.l])
     }
 
-    if (caller.classList.contains('play')) {
+    const playEl = caller.classList.contains('play') ? caller : caller.closest<HTMLElement>('.play')
+    if (playEl) {
       window.dispatchEvent(
         new window.CustomEvent('play', {
-          detail: { target: caller, audio: caller.getAttribute('data-audio') },
+          detail: { target: playEl, audio: playEl.getAttribute('data-audio') },
         })
       )
     }

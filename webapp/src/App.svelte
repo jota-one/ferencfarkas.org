@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { onMount } from 'svelte'
-  import type { ActiveFacetTuple, Catalogue, FilteredWork, I18n, QsSort, RenderedWork, Work } from './types'
+  import { onMount, tick } from 'svelte'
+  import type { ActiveFacetTuple, Catalogue, FilteredWork, I18n, QsSort, RenderedWork } from './types'
   import { APP_CONTAINER_ID } from './lib/config'
   import { facets as facetsHelper } from './lib/helpers'
   import {
@@ -28,7 +28,6 @@
   let loadingError = $state()
   let qsState = $state(qsService.defaultState)
   let worksWithFacets = $state<FilteredWork[]>([])
-  let allWorks = $state<Work[]>([])
   let searchIndex = $state<any>(null)
   let app: HTMLFormElement
 
@@ -53,35 +52,49 @@
   })
 
   // App initialisation
-  onMount(async () => {
-    try {
-      const catalogueData = await dataService.getCatalogueData()
-      allWorks = catalogueData.catalogue.works
-      catalogue = {
-        categories: catalogueData.catalogue.categories,
-        fields: catalogueData.catalogue.fields,
-        genres: catalogueData.catalogue.genres,
-        publishers: catalogueData.catalogue.publishers,
-      }
-      i18n = catalogueData.i18n
-
-      const indexData = await dataService.getIndexData()
-      searchIndex = window.lunr.Index.load(indexData)
-
-      scrollService.initScrollBehaviors(app)
-
-      // Set qsState from URL
+  onMount(() => {
+    // Restore state from URL when user navigates back (e.g. out of rework mode)
+    const handlePopState = async () => {
+      const prevReworksOf = qsState.reworksOf
       qsState = qsService.load(workId)
-
-      cmsService.customizeSection(APP_CONTAINER_ID)
-
-      // Compute facets once; filteredWorks $derived takes it from here
-      worksWithFacets = facetsHelper.setFacets(catalogueData.catalogue.works)
-
-      loading = false
-    } catch(e: any) {
-      loadingError = e.message
+      if (prevReworksOf) {
+        await tick()
+        scrollService.scrollToWork(prevReworksOf)
+      }
     }
+    window.addEventListener('popstate', handlePopState)
+
+    ;(async () => {
+      try {
+        const catalogueData = await dataService.getCatalogueData()
+        catalogue = {
+          categories: catalogueData.catalogue.categories,
+          fields: catalogueData.catalogue.fields,
+          genres: catalogueData.catalogue.genres,
+          publishers: catalogueData.catalogue.publishers,
+        }
+        i18n = catalogueData.i18n
+
+        const indexData = await dataService.getIndexData()
+        searchIndex = window.lunr.Index.load(indexData)
+
+        scrollService.initScrollBehaviors(app)
+
+        // Step 1: read URL → set qsState
+        qsState = qsService.load(workId)
+
+        cmsService.customizeSection(APP_CONTAINER_ID)
+
+        // Compute facets once; filteredWorks $derived takes it from here
+        worksWithFacets = facetsHelper.setFacets(catalogueData.catalogue.works)
+
+        loading = false
+      } catch(e: any) {
+        loadingError = e.message
+      }
+    })()
+
+    return () => window.removeEventListener('popstate', handlePopState)
   })
 
   // Interaction handlers
@@ -105,10 +118,21 @@
     qsState = { ...qsState, sort: sortObj }
   }
 
-  const toggleReworks = (workId: string) => {
-    qsState = {
+  const toggleReworks = async (workId: string) => {
+    const newState = {
       ...qsState,
       reworksOf: qsState.reworksOf === workId ? '' : workId
+    }
+    if (newState.reworksOf) {
+      // Push to history so the browser Back button restores the previous list
+      qsService.push(newState)
+      qsState = newState
+      scrollService.scrollToTop()
+    } else {
+      const idToScrollTo = qsState.reworksOf
+      qsState = newState
+      await tick()
+      scrollService.scrollToWork(idToScrollTo)
     }
   }
 
@@ -147,7 +171,7 @@
             {qsState}
             categories={catalogue?.categories}
             fields={catalogue?.fields}
-            fullList={allWorks as RenderedWork[]}
+            fullList={worksWithFacets as RenderedWork[]}
             filteredList={filteredWorks as RenderedWork[]}
             i18n={i18n}
             publishers={catalogue?.publishers}
