@@ -1,43 +1,50 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Ferenc Farkas - Audio metadata",
-  "description": "Describes a set of audios",
+  "description": "Describes a set of audio excerpts",
   "type": "array",
   "items": {
     "type": "object",
     "additionalProperties": false,
+    "required": ["id", "description"],
+    "dependencies": {
+      "cd": ["track"],
+      "track": ["cd"]
+    },
     "properties": {
       "id": {
-        "description": "The unique id of the audio.\nIt should be the same as the work's id if there is only 1 audio in the list. If there are more than 1 audio in the list, their id should be the work's id followed by some unique number or description of the audio, separated by a '-' character.\nExamples: old-hungarian-dances-1, old-hungarian-dances-2, old-hungarian-dances-quasi-menuetto, ...",
+        "description": "The unique id of the audio excerpt.\nShould match the work's id when there is only one excerpt. When there are multiple excerpts, append a number or short description separated by '-'.\nExamples: old-hungarian-dances, old-hungarian-dances-1, old-hungarian-dances-quasi-menuetto.",
         "type": "string",
         "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
       },
       "description": {
-        "description": "The description of the audio.\nThis is the label displayed on the website alongside the audio \"play\" icon.",
+        "description": "Label displayed alongside the play icon on the website (e.g. movement name, character of the excerpt).",
         "type": "string"
       },
       "cd": {
-        "description": "The CD the audio has been sampled from. There are 2 kinds of \"source\" CD's which are numbered:\n-Archive CD's: the reference must start with \"a\" followed by the number of the CD.\n-Published CD's: the reference must start with \"p\" followed by the number of the CD.",
+        "description": "Reference to the source CD the excerpt was sampled from.\nTwo kinds of source CDs are indexed:\n- Archive CDs: prefix 'a' followed by the archive number (e.g. 'a76').\n- Published CDs: prefix 'p' followed by the catalogue number (e.g. 'p122').\nMust be present together with 'track'.",
         "type": "string",
         "pattern": "^(a|p)[0-9]+$"
       },
       "track": {
-        "description": "The CD track number the audio has been sampled from.",
-        "type": "integer"
+        "description": "Track number on the source CD. Must be present together with 'cd'.",
+        "type": "integer",
+        "minimum": 1
       },
       "start": {
-        "description": "The audio sample start position in seconds.\nNote: You can use seconds with decimals for high prcision cutting in the audio sample.",
-        "type": "number"
+        "description": "Start position within the track in seconds (decimals allowed for sub-second precision).\nUse when the excerpt does not begin at the start of the track.",
+        "type": "number",
+        "minimum": 0
       },
       "end": {
-        "description": "The audio sample end position in seconds.\nThe sample should not be longer than 30s when taken from a published audio work.",
-        "type": "number"
+        "description": "End position within the track in seconds (decimals allowed for sub-second precision).\nPublished CD excerpts should not exceed 30 seconds.",
+        "type": "number",
+        "minimum": 0
       },
       "ref": {
-        "description": "Not implemented yet (will be similar to the `ref` field of scores.",
+        "description": "Path to a local audio file (not yet implemented).\nWill follow the same convention as the 'ref' field in score.json: a unix-style path relative to the AUDIOS_ROOT environment variable.",
         "type": "string"
       }
-    },
-    "required": ["id", "description", "cd", "track"]
+    }
   }
 }
