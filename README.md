@@ -39,8 +39,8 @@ covering:
   download by concert programmers and conference organisers.
 
 
-## Under consideration
-### Catalogue
+### Under consideration
+#### Catalogue
 
 - [ ] **Multilingual UI**: the catalogue titles are already multilingual. Extending the UI itself
   to French and Hungarian would serve the core audience (family, Hungarian institutions, French
@@ -48,7 +48,7 @@ covering:
 - [ ] **Score preview**: render the first page of a downloadable score as an inline image so
   visitors can preview before downloading.
 
-### Content
+#### Content
 
 - [ ] **Interactive chronological timeline**: an interactive timeline combining life events and works (filterable by
 period or category) would give a compelling entry point for new visitors and students.
@@ -61,7 +61,7 @@ period or category) would give a compelling entry point for new visitors and stu
 - [ ] **Press kit / artist page**: a dedicated, printable page for promoters: biography summary, portrait photos,
 catalogue highlights, key awards (Kossuth Prize ×3, Herder Prize, …), and contact.
 
-### SEO & visibility
+#### SEO & visibility
 
 - [ ] **Structured data (schema.org)**: add `MusicComposition` and `Person` JSON-LD markup to work pages and the
   biography => this is the highest-leverage SEO improvement. It helps Google surface individual works
@@ -70,7 +70,7 @@ catalogue highlights, key awards (Kossuth Prize ×3, Herder Prize, …), and con
   ("Ferenc Farkas scores", "Early Hungarian Dances sheet music") where organic ranking
   should outperform paid search.
 
-### Developer / data
+#### Developer / data
 
 - [ ] **Public catalogue API (v2)**: The current JSON endpoints are generated statically and optimised for the webapp
   (pre-computed facets, stripped fields). A proper public API would expose the full work
