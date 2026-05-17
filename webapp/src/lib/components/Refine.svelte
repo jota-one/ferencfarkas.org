@@ -78,7 +78,8 @@
     return wrapper.offsetHeight > window.innerHeight
   }
 
-  const toggleRefine = () => {
+  const toggleRefine = (e: MouseEvent) => {
+    e.preventDefault()
     document.querySelector('.refine')?.classList.toggle('open')
   }
 
@@ -92,7 +93,7 @@
 </script>
 
 <div class="refine--wrapper" bind:this={wrapper} class:cropped>
-  <button class="refine--handler" onclick={toggleRefine}> <!-- preventDefault missing here -->
+  <button class="refine--handler" onclick={toggleRefine}>
     <svg viewBox="0 0 24 24" width="24" height="24">
       <path d="M6,13H18V11H6M3,6V8H21V6M10,18H14V16H10V18Z" />
     </svg>

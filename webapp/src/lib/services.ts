@@ -267,29 +267,57 @@ export const scroll = {
       scroll.refine = app.querySelector<HTMLElement>('.refine--wrapper')
       scroll.inner = app.querySelector<HTMLElement>('.refine--inner')
       scroll.list = app.querySelector<HTMLElement>('.works--list')
+      scroll.initStickyObserver()
     }, 100)
 
-    window.addEventListener('scroll', scroll.stickRefinePanel, { passive: true })
-    window.addEventListener('resize', scroll.stickRefinePanel, { passive: true })
+    window.addEventListener('resize', () => scroll.refine?.classList.remove('sticked', 'scrolled'), { passive: true })
   },
 
-  stickRefinePanel: () => {
+  initStickyObserver: () => {
     if (!scroll.refine || !scroll.list || !scroll.inner) {
       return
     }
 
-    const innerRect = scroll.inner.getBoundingClientRect()
-    const listRect = scroll.list.getBoundingClientRect()
+    const topSentinel = document.createElement('div')
+    topSentinel.setAttribute('aria-hidden', 'true')
+    topSentinel.style.cssText = 'height:0;pointer-events:none'
+    scroll.list.before(topSentinel)
 
-    if (listRect.top > 0) {
-      scroll.refine.classList.remove('sticked', 'scrolled')
-    } else if (listRect.bottom >= innerRect.height) {
-      scroll.refine.classList.add('sticked')
-      scroll.refine.classList.remove('scrolled')
-    } else {
-      scroll.refine.classList.add('scrolled')
-      scroll.refine.classList.remove('sticked')
-    }
+    const bottomSentinel = document.createElement('div')
+    bottomSentinel.setAttribute('aria-hidden', 'true')
+    bottomSentinel.style.cssText = 'height:0;pointer-events:none'
+    scroll.list.after(bottomSentinel)
+
+    new IntersectionObserver(([entry]) => {
+      if (!scroll.refine) {
+        return
+      }
+
+      if (entry?.isIntersecting) {
+        scroll.refine.classList.remove('sticked', 'scrolled')
+      } else if (entry && entry.boundingClientRect.top < 0) {
+        scroll.refine.classList.add('sticked')
+        scroll.refine.classList.remove('scrolled')
+      }
+    }).observe(topSentinel)
+
+    new IntersectionObserver(([entry]) => {
+      if (!scroll.refine) {
+        return
+      }
+
+      if (entry?.isIntersecting) {
+        if (scroll.refine.classList.contains('sticked')) {
+          scroll.refine.classList.add('scrolled')
+          scroll.refine.classList.remove('sticked')
+        }
+      } else if (entry && entry.boundingClientRect.top > window.innerHeight) {
+        if (scroll.refine.classList.contains('scrolled')) {
+          scroll.refine.classList.add('sticked')
+          scroll.refine.classList.remove('scrolled')
+        }
+      }
+    }).observe(bottomSentinel)
   },
 
   scrollToTop: () => {
