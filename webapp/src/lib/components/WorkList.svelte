@@ -1,0 +1,225 @@
+<script lang="ts">
+  import type { ActiveFacetTuple, Category, FacetGroup, FilteredWork, I18n, Publisher, QsState, RenderedWork } from '../../types'
+  import { mount } from 'svelte'
+  import { facets as facetsHelper } from '../helpers'
+  import WorkComponent from './Work.svelte'
+  import WorkFields from './WorkFields.svelte'
+
+  type Props = {
+    categories?: Record<string, Category>
+    embedded: boolean
+    i18n?: I18n
+    fields?: string[]
+    filteredList?: FilteredWork[]
+    fullList?: RenderedWork[]
+    publishers?: Record<string, Publisher>
+    qsState: QsState
+    onRefine: (facet: ActiveFacetTuple) => void
+    onToggleReworks: (workId: string) => void
+  }
+
+  let {
+    categories,
+    embedded = false,
+    i18n,
+    fields = [],
+    filteredList = [],
+    fullList = [],
+    publishers = {},
+    qsState,
+    onRefine,
+    onToggleReworks,
+  }: Props = $props()
+
+  let works = $state<RenderedWork[]>([])
+
+  let reworkActive = $derived((qsState.reworksOf && filteredList.length > 1) || undefined)
+  let reworkTitle = $derived(getReworkTitle(qsState.reworksOf))
+
+  $effect(() => {
+    updateWorks(fullList, filteredList)
+  })
+
+  function getReworkTitle(reworksOf: string) {
+    if (!reworksOf) {
+      return
+    }
+
+    const work = works.find(work => work.id === reworksOf)
+    return work?.title?.translations[work.title?.main]
+  }
+
+  const updateWorks = (fullList: RenderedWork[], filteredList: FilteredWork[]) => {
+    console.log('updateWorks', filteredList.length)
+    const list = [... works.length ? works : fullList]
+
+    for (let i = 0; i < list.length; i++) {
+      const order = filteredList.findIndex(item => item.id === list[i]?.id)
+      const visible = order > -1
+      const workItem = list[i]
+
+      if (!workItem) {
+        continue
+      }
+
+      workItem.visible = visible
+      workItem.order = order
+    }
+
+    if (!works.length) {
+      works = [...fullList]
+    } else {
+      for (let i = 0; i < works.length; i++) {
+        const work = works[i]
+
+        if (!work) {
+          continue
+        }
+
+        const workEl = document.getElementById(work.id)
+
+        if (!workEl) {
+          continue
+        }
+
+        workEl.style.order = work.order.toString()
+
+        if (work.visible) {
+          workEl.classList.remove('hidden')
+        } else {
+          workEl.classList.add('hidden')
+        }
+      }
+    }
+  }
+
+  const onClick = (event: MouseEvent) => {
+    const caller = event.target as HTMLElement
+    let workEl = caller
+
+    while (!workEl.id) {
+      workEl = workEl.parentNode as HTMLElement
+    }
+
+    const workId = workEl.id
+    const work = works.find(w => w.id === workId)
+
+    if (!work) {
+      return
+    }
+
+    const workFacets = work.facets.reduce((acc, facet) => {
+      const parsed = facetsHelper.deserialize(facet)
+      if (parsed) {
+        acc[parsed[0]] = parsed[1]
+      }
+      return acc
+    }, {} as Partial<Record<FacetGroup, string>>)
+
+    if (caller === workEl) {
+      navigator.clipboard.writeText(work.id)
+    }
+
+    if (caller.classList.contains('work--composition-date') && workFacets.d) {
+      onRefine(['d', workFacets.d])
+    }
+
+    if (caller.classList.contains('work--duration') && workFacets.t) {
+      onRefine(['t', workFacets.t])
+    }
+
+    if (
+      caller.classList.contains('rework') ||
+      caller.classList.contains('reworked')
+    ) {
+      onToggleReworks(work.rework || work.id)
+    }
+
+    if (caller.classList.contains('category') && workFacets.c) {
+      onRefine(['c', workFacets.c])
+    }
+
+    if (caller.classList.contains('work--language') && workFacets.l) {
+      onRefine(['l', workFacets.l])
+    }
+
+    const playEl = caller.classList.contains('play') ? caller : caller.closest<HTMLElement>('.play')
+    if (playEl) {
+      window.dispatchEvent(
+        new window.CustomEvent('play', {
+          detail: { target: playEl, audio: playEl.getAttribute('data-audio') },
+        })
+      )
+    }
+
+    if (caller.classList.contains('work--story')) {
+    }
+
+    if (caller.classList.contains('work--detail-toogle')) {
+      const fieldsEl = workEl.querySelector('dl')
+
+      if (fieldsEl) {
+        fieldsEl.remove()
+        workEl.classList.remove('show-fields')
+      } else {
+        workEl.classList.add('show-fields')
+
+        if (!work) {
+          return
+        }
+
+        if (i18n) {
+          mount(WorkFields, {
+            target: workEl,
+            anchor: caller,
+            props: { fields, i18n, publishers, work },
+          })
+        }
+      }
+    }
+  }
+</script>
+
+{#if !embedded && reworkActive}
+  <div class="works--rework-info" class:visible={reworkActive}>
+    <p>
+      You are seeing the list of works that have been reworked based on
+      <strong>{reworkTitle}</strong>.
+      <br />
+      You can go
+      <button
+        class="link back"
+        onclick={e => {
+          e.stopPropagation()
+          onToggleReworks(qsState.reworksOf)
+        }}
+        >back to the previous list</button
+      > by clicking ony any of the "Rework" / "Reworked" buttons.
+    </p>
+  </div>
+{/if}
+
+{#if embedded && !reworkActive}
+  <br />
+{/if}
+
+<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<ul
+  class="works--list"
+  class:show-id={qsState.showID}
+  class:show-reworks={reworkActive}
+  onclick={onClick}
+>
+  <li class="reworks-sep">Reworks</li>
+  {#each works as work (work.id)}
+    <WorkComponent
+      categories={categories}
+      index={(work as RenderedWork).index}
+      work={work as RenderedWork}
+      {embedded}
+      {reworkActive}
+      {i18n}
+    />
+  {/each}
+</ul>
