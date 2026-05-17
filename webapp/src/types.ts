@@ -23,7 +23,7 @@ export type Genre = {
 export type Publisher = {
   name: string
   url: string
-  shortName?: string // Ajouté car utilisé dans config.ts
+  shortName?: string
 }
 
 export type Audio = {
