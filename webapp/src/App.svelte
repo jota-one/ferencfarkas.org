@@ -108,6 +108,8 @@
         ? qsState.activeFacets.filter(([g, f]) => !(g === group && f === facet))
         : [...qsState.activeFacets, tuple]
     }
+
+    scrollService.scrollToTop()
   }
 
   const clearState = () => {
@@ -138,6 +140,7 @@
 
   const updateQuery = (query: string) => {
     qsState = { ...qsState, query }
+    scrollService.scrollToTop()
   }
 </script>
 

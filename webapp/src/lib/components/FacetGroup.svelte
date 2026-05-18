@@ -30,7 +30,7 @@
 </script>
 
 <ul>
-  {#each facetsList as { value, facet }}
+  {#each facetsList as { value, facet } (value)}
     <li>
       <label>
         <input

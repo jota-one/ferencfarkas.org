@@ -25,7 +25,7 @@
       ? 'Loading search index...'
       : 'Filter with keywords')
 
-  const onKeyUp = (e: KeyboardEvent) => {
+  const onInput = (e: Event) => {
     const newValue = (e.target as HTMLInputElement)?.value.trim()
 
     if (value === newValue) {
@@ -46,7 +46,7 @@
       readonly={failed || loading}
       {value}
       {placeholder}
-      onkeyup={onKeyUp}
+      oninput={onInput}
       onfocus={() => (focused = !failed && !loading)}
       onblur={() => (focused = false)}
     />
