@@ -1,6 +1,8 @@
 declare global {
   interface Window {
     lunr: any
+    Flickity: any
+    WaveSurfer: any
   }
 }
 

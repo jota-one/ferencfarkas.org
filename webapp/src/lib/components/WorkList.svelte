@@ -50,7 +50,6 @@
   }
 
   const updateWorks = (fullList: RenderedWork[], filteredList: FilteredWork[]) => {
-    console.log('updateWorks', filteredList.length)
     const list = [... works.length ? works : fullList]
 
     for (let i = 0; i < list.length; i++) {

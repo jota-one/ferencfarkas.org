@@ -1,5 +1,21 @@
 <script lang="ts">
   import { onMount, tick } from 'svelte'
+  import lunr from 'lunr'
+  import lunrStemmerSupport from 'lunr-languages/lunr.stemmer.support.js'
+  import lunrMulti from 'lunr-languages/lunr.multi.js'
+  import lunrHu from 'lunr-languages/lunr.hu.js'
+  import lunrDe from 'lunr-languages/lunr.de.js'
+  import lunrFr from 'lunr-languages/lunr.fr.js'
+  import lunrEs from 'lunr-languages/lunr.es.js'
+  import lunrIt from 'lunr-languages/lunr.it.js'
+
+  lunrStemmerSupport(lunr)
+  lunrMulti(lunr)
+  lunrHu(lunr)
+  lunrDe(lunr)
+  lunrFr(lunr)
+  lunrEs(lunr)
+  lunrIt(lunr)
   import type { ActiveFacetTuple, Catalogue, FilteredWork, I18n, QsSort, RenderedWork } from './types'
   import { APP_CONTAINER_ID } from './lib/config'
   import { facets as facetsHelper } from './lib/helpers'
@@ -76,7 +92,8 @@
         i18n = catalogueData.i18n
 
         const indexData = await dataService.getIndexData()
-        searchIndex = window.lunr.Index.load(indexData)
+        // searchIndex = window.lunr.Index.load(indexData)
+        searchIndex = lunr.Index.load(indexData)
 
         scrollService.initScrollBehaviors(app)
 

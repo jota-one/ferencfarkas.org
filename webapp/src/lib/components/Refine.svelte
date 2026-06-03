@@ -39,7 +39,7 @@
   let wrapper: HTMLElement | undefined = undefined
   let collapsedItems = $state<FacetGroup[]>([])
   let facetsList = $derived(_getFacets())
-  const searchReady = loadSearchIndex()
+  const searchReady = $derived(loadSearchIndex())
 
   const cropped = $derived(isCropped(wrapper))
 

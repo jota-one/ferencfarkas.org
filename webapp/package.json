@@ -8,5 +8,10 @@
     "type-check": "npx tsc --noEmit && svelte-check --tsconfig ./tsconfig.json --no-tsconfig",
     "build": "npm run type-check && vite build --mode production",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/flickity": "^2.2.12",
+    "flickity": "^3.0.0",
+    "wavesurfer.js": "^6.6.4"
   }
 }
