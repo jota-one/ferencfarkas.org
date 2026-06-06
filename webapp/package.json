@@ -1,9 +1,12 @@
 {
-  "name": "svelte-app",
-  "version": "1.1.0",
+  "name": "ff-webapp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs",
-    "dev": "rollup -c -w --bundleConfigAsCjs",
-    "_start": "sirv ../website/static/js"
+    "dev": "vite build --watch --mode development",
+    "type-check": "npx tsc --noEmit && svelte-check --tsconfig ./tsconfig.json --no-tsconfig",
+    "build": "npm run type-check && vite build --mode production",
+    "preview": "vite preview"
   }
 }
