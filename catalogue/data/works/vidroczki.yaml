@@ -33,19 +33,17 @@ cast:
     voice: prose
 category: opera
 composition_date: 1963-1964
-date: 2023-12-23
+date: 2026-06-06T07:36:27.600Z
 description: Popular romantic opera in 3 acts
 duration: 6720
 id: vidroczki
 libretto:
   hu: In hungarian Ernö Innocent Vincze
 publications:
- - publisher_id: afp
-   type: score
- - publisher_id: emb
-   type: piano-reduction 
+  - publisher_id: afp
 nb: performance material at the Open Air Festival of Szeged
-setting: 3 (picc.), 2, 2 (cl.b.), 2 – 4, 3, 3, 0 – timp. batt. (3 ess) – arpa, pf., cel., zimb. ungh. – archi
+setting: 3 (picc.), 2, 2 (cl.b.), 2 – 4, 3, 3, 0 – timp. batt. (3 ess) – arpa,
+  pf., cel., zimb. ungh. – archi
 synopsis: The adventures and the death of Vidróczki, bandit from the Mátra
   country in the 19th century.
 title:
