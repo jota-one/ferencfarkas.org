@@ -11,7 +11,7 @@ date: 2021-03-21
 ## Goals and credits
 
 **ferencfarkas.org** is the official website of hungarian classical music
-composer Ferenc Farkas. It is privately run by his son **Andràs** and
+composer Ferenc Farkas. It is privately run by his son **András** and
 his family ("we" / "us" in the text), namely Françoise (his wife),
 Istvàn and Izabella (their children).
 

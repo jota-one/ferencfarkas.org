@@ -30,17 +30,6 @@ menu:
     </label>
   </p>
   <p>
-    <label>Enquiry:
-      <select name="enquiry">
-        <option value="material">I need material to play a work</option>
-        <option value="manuscript">I need more information on Ferenc Farkas</option>
-        <option value="website">I have a problem with the website</option>
-        <option value="publisher">I have infos about a publisher</option>
-        <option value="other">None of the above</option>
-      </select>
-    </label>
-  </p>
-  <p>
     <label>
       Message:
       <textarea name="message" rows="6"></textarea>
@@ -65,7 +54,7 @@ we are finished witht his task, the works that are not yet online can be sent
 to you by e-mail in PDF format.
 
 ### Contact
-**Andràs Farkas**
+**András Farkas**
 <br>
 Chemin des Bouvreuils 12
 <br>
