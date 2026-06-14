@@ -1,18 +1,22 @@
-category: voice_piano
+category: lieder
 composition_date: 1976
-date: 2022-02-17
+date: 2026-06-14T12:18:09.220Z
 description: 3 cycles of 3 songs for soprano, tenor and piano or orchestra
 duration: 848
 id: danube-valley-garland
 movements:
-  - title: 3 Slovak songs - Apenko, mamenko / Edesapám, anyám - Anicka mamila / Ancsurkám virágom - A ti pescanske divcence / Ingó, bingó rózsabimbó 
-  - title: 3 Croat songs - Kak places slavicek / Besirsz kicsiny madár - Kak places slavicek / Besirsz kicsiny madár - Zena ide nagoste / Asszonyt várja vendégség
-  - title: Romanian songs - Auzi t'am joi la moara / Ha rákezdem a bús dalom - Deas st'i cantaca cucu / Hej, ha kakuk lehetnék - Zöld bokor a domb oldalán 
+  - title: 3 Slovak songs - Apenko, mamenko / Edesapám, anyám - Anicka mamila /
+      Ancsurkám virágom - A ti pescanske divcence / Ingó, bingó rózsabimbó
+  - title: 3 Croat songs - Kak places slavicek / Besirsz kicsiny madár - Kak places
+      slavicek / Besirsz kicsiny madár - Zena ide nagoste / Asszonyt várja
+      vendégség
+  - title: Romanian songs - Auzi t'am joi la moara / Ha rákezdem a bús dalom - Deas
+      st'i cantaca cucu / Hej, ha kakuk lehetnék - Zöld bokor a domb oldalán
 publications:
   - publisher_id: afp
 setting: 2(picc.) 1, 2, 1 - 2, 1, 0, 0 – archi
 texts:
-  sk: in Slovak 
+  sk: in Slovak
   hr: in Croat
   ro: in Romanian
   hu: Hungarian translated
@@ -21,7 +25,7 @@ title:
   original: hu
   sort:
     - en
-    - hu 
+    - hu
   translations:
     en: Danube valley garland
     hu: Dunavölgyi koszorú
