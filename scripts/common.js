@@ -25,7 +25,7 @@ const bumpVersion = async (version, level = 'patch') =>
 
 const bumpNpmVersion = async (level = 'patch') => {
   return exec(
-    `npm version ${level} --tag-version-prefix='' --no-git-tag-version`,
+    `npm version ${level} --tag-version-prefix= --no-git-tag-version`,
     { silent: true },
   )
 }
