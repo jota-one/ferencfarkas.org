@@ -93,9 +93,6 @@ export const FACETS: FacetMap = {
       if (!work.publications) return ['unpublished']
 
       return work.publications.reduce((grouped, publication) => {
-        if (publication.downloadable || publication.download) {
-          return grouped
-        }
         const id = publication.publisher_id
         if (id && !grouped.includes(id)) {
           grouped.push(id)
