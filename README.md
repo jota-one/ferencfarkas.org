@@ -20,10 +20,10 @@ The **ferencfarkas.org** project is a website with 3 main goals in mind:
 
 ### Catalogue
 
-- [ ] **Bulk audio download (ZIP)**: allow visitors to download all available audio excerpts as a single ZIP archive.
-- [ ] **Favorites**: allow visitors to manage a list of favorite works (localstorage on persisted on a dedicated database)
-- [ ] **Duration filter improvements**: replace the current coarse duration buckets with a range slider for more precise
-filtering.
+- [ ] **Bulk audio download (ZIP)**: allow visitors to download all available audio excerpts as a single ZIP archive. -1
+- [ ] **Favorites**: allow visitors to manage a list of favorite works (localstorage on persisted on a dedicated database) +1
+- [ ] **Duration filter improvements**: replace the current coarse duration buckets with a range slider for more precise filtering. -1
+- [ ] **Add full length audio for private recordings**
 
 ### Content
 
@@ -44,22 +44,22 @@ covering:
 
 - [ ] **Multilingual UI**: the catalogue titles are already multilingual. Extending the UI itself
   to French and Hungarian would serve the core audience (family, Hungarian institutions, French
-  and Italian musicological communities).
+  and Italian musicological communities). 0
 - [ ] **Score preview**: render the first page of a downloadable score as an inline image so
-  visitors can preview before downloading.
+  visitors can preview before downloading. -1
 
 #### Content
 
 - [ ] **Interactive chronological timeline**: an interactive timeline combining life events and works (filterable by
-period or category) would give a compelling entry point for new visitors and students.
+period or category) would give a compelling entry point for new visitors and students. +1
 - [ ] **Notable students section**: Farkas taught at the Budapest Music Academy from 1949 to 1975. His students include
   György Ligeti, György Kurtág, Emil Petrovics, Sándor Szokolay, Zsolt Durkó, Attila Bozay, Miklós Kocsár —
   placing him at the very heart of 20th-century Hungarian music history. A short dedicated page would help
-  contextualise his importance for broader audiences.
+  contextualise his importance for broader audiences. +1 in place of current welcome block on homepage
 - [ ] **"Similar works" suggestions**: use category, instrumentation, and composition period to
-  surface related works at the bottom of each work detail page.
+  surface related works at the bottom of each work detail page. +1
 - [ ] **Press kit / artist page**: a dedicated, printable page for promoters: biography summary, portrait photos,
-catalogue highlights, key awards (Kossuth Prize ×3, Herder Prize, …), and contact.
+catalogue highlights, key awards (Kossuth Prize ×3, Herder Prize, …), and contact. 0
 
 #### SEO & visibility
 
