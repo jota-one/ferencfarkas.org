@@ -58,17 +58,13 @@
   tag: Children choir
   title: Children choir
   genre: vocal
-- id: misc_choir
+- id: canon
   tag: Canon
   title: Canon
   genre: vocal
-- id: voice_piano
+- id: lieder
   tag: Lieder
   title: Lieder
-  genre: vocal
-- id: voice
-  tag: Voice
-  title: Voice and other instrument(s) or orchestra
   genre: vocal
 - id: folk
   tag: Folk music

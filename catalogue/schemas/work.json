@@ -3,6 +3,7 @@
   "title": "Ferenc Farkas - Work metadata",
   "description": "Describes a work",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "id": {
       "description": "The id of the work.\nIt must be the name of the work in lowercase ASCII encoding (without any special character like accents).",
@@ -15,38 +16,190 @@
       "pattern": "^[a-z0-9][a-z0-9_]*[a-z0-9]$"
     },
     "composition_date": {
-      "description": "The composition date of the work.\nCan be either a year (.e.g `1967`) or a range of year (e.g. `1965-1967`) and can contain a revision year or year range (e.g. `1965, rev. 1967` or `1965-1966, rev. 1967` or `1965, rev. 1966-1967` or `1965-1966, rev. 1967-1968`).",
+      "description": "The composition date of the work.\nCan be either a year (e.g. `1967`) or a range of years (e.g. `1965-1967`) and can contain a revision year or year range (e.g. `1965, rev. 1967`).",
       "type": ["integer", "string"],
-      "pattern": "^\\d{4}(-\\d{4})?(, rev. \\d{4})?$"
+      "pattern": "^\\d{4}(-\\d{4})?(, rev. \\d{4}(-\\d{4})?)?$"
     },
     "date": {
       "description": "The date of the last update to the file (should be automatically set when saving the file).",
       "type": "string",
-      "pattern": "^\\d{4}-\\d{2}-\\d{2}(T\\d{2}:\\d{2}:\\d{2}(.\\d{1,3})Z)?$"
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}(T\\d{2}:\\d{2}:\\d{2}(\\.\\d{1,3})?Z)?$"
+    },
+    "title": {
+      "description": "The title of the work in one or more languages.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["main", "translations"],
+      "properties": {
+        "main": {
+          "description": "The language code of the primary/display title (must be a key in `translations`).",
+          "type": "string"
+        },
+        "original": {
+          "description": "The language code of the original title, if different from `main`.",
+          "type": "string"
+        },
+        "sort": {
+          "description": "Ordered list of language codes indicating the sort/display priority of translations.",
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "translations": {
+          "description": "Map of language code to title string.",
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        }
+      }
     },
     "description": {
-      "description": "The description of the work.",
+      "description": "A short description of the work (instrumentation, sub-title, etc.).",
       "type": "string"
     },
     "duration": {
       "description": "The duration of the work in seconds.",
       "type": "number"
     },
-    "publications": {
+    "movements": {
+      "description": "The list of movements or parts of the work.",
       "type": "array",
       "items": {
         "type": "object",
+        "additionalProperties": false,
+        "required": ["title"],
+        "properties": {
+          "title": {
+            "description": "The title of the movement.",
+            "type": "string"
+          },
+          "duration": {
+            "description": "The duration of the movement in seconds.",
+            "type": "number"
+          }
+        }
+      }
+    },
+    "rework_of": {
+      "description": "The id of the work this work is a rework/arrangement/transcription of.\nMust be a valid work `id`.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
+    },
+    "version": {
+      "description": "Free-text description of the version when there are multiple versions of the same work.",
+      "type": "string"
+    },
+    "setting": {
+      "description": "The orchestral or ensemble setting of the work in standard shorthand notation (e.g. `2, 2, 2, 2 – 2, 2, 1, 0 – timp. – archi`).",
+      "type": "string"
+    },
+    "dedication": {
+      "description": "The dedication of the work.",
+      "type": "string"
+    },
+    "dedicated": {
+      "description": "The dedication of the work (alias of `dedication`).",
+      "type": "string"
+    },
+    "nb": {
+      "description": "Miscellaneous notes about the work (unpublished status, archive location, etc.). Supports Markdown links.",
+      "type": "string"
+    },
+    "texts": {
+      "description": "Map of language code to description of the text/libretto source used in the work (e.g. `{ \"hu\": \"In Hungarian by...\", \"de\": \"In German by...\" }`).",
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "libretto": {
+      "description": "Map of language code to description of the libretto source (same structure as `texts`, used for operatic/vocal works).",
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "synopsis": {
+      "description": "A short synopsis of the work (for stage/operatic works).",
+      "type": "string"
+    },
+    "cast": {
+      "description": "The list of vocal roles in the work.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role"],
+        "properties": {
+          "role": {
+            "description": "The name of the role.",
+            "type": "string"
+          },
+          "voice": {
+            "description": "The voice type (e.g. soprano, mezzo-soprano, tenor, baritone, bass, bass-baritone).",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "world_premiere": {
+      "description": "Information about the world premiere of the work.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["date", "location"],
+      "properties": {
+        "date": {
+          "description": "Year of the world premiere.",
+          "type": "integer"
+        },
+        "location": {
+          "description": "Venue and/or city of the world premiere.",
+          "type": "string"
+        },
+        "credits": {
+          "description": "List of credits (conductor, director, cast, etc.).",
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "film_directors": {
+      "description": "List of directors of the film this work was composed for.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "film_producers": {
+      "description": "List of producers of the film this work was composed for.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "choreography": {
+      "description": "Name of the choreographer (for ballet/dance works).",
+      "type": "string"
+    },
+    "publications": {
+      "description": "List of publications (sheet music) of the work.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
         "properties": {
           "publisher_id": {
+            "description": "The id of the publisher. Must be a valid publisher id from `publishers.yaml`.",
             "type": "string",
             "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
           },
           "type": {
+            "description": "The type of score. If omitted, the publication covers all score types.",
             "$ref": "./score_type.json"
           }
         }
       }
+    },
+    "audios": {
+      "description": "List of audio excerpts available for this work. Use `null` as a placeholder when audio exists but hasn't been digitized yet.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "array",
+          "items": { "$ref": "./audio.json#/items" }
+        }
+      ]
     }
   },
-  "required": ["id","category","date","title"]
+  "required": ["id", "category", "date", "title"]
 }

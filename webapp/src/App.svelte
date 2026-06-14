@@ -1,258 +1,221 @@
-<script>
-  import { onMount } from 'svelte'
-  import endpoints from './configs/endpoints'
-  import { setFacets, serialize } from './helpers/facets'
-  import { defaultState, load as loadQS, sync as syncQS } from './services/qs'
-  import { initScrollBehaviors, scrollToTop } from './helpers/scroll'
-  import Sort from './components/Sort.svelte'
-  import WorkList from './components/WorkList.svelte'
-  import Refine from './components/Refine.svelte'
-  import Pagination from './components/Pagination.svelte'
-  import Spinner from './components/Spinner.svelte'
+<script lang="ts">
+  import { onMount, tick } from 'svelte'
+  import lunr from 'lunr'
+  import lunrStemmerSupport from 'lunr-languages/lunr.stemmer.support.js'
+  import lunrMulti from 'lunr-languages/lunr.multi.js'
+  import lunrHu from 'lunr-languages/lunr.hu.js'
+  import lunrDe from 'lunr-languages/lunr.de.js'
+  import lunrFr from 'lunr-languages/lunr.fr.js'
+  import lunrEs from 'lunr-languages/lunr.es.js'
+  import lunrIt from 'lunr-languages/lunr.it.js'
 
-  export let workId
+  lunrStemmerSupport(lunr)
+  lunrMulti(lunr)
+  lunrHu(lunr)
+  lunrDe(lunr)
+  lunrFr(lunr)
+  lunrEs(lunr)
+  lunrIt(lunr)
+  import type { ActiveFacetTuple, Catalogue, FilteredWork, I18n, QsSort, RenderedWork } from './types'
+  import { APP_CONTAINER_ID } from './lib/config'
+  import { facets as facetsHelper } from './lib/helpers'
+  import {
+    catalogue as catalogueService,
+    cms as cmsService,
+    data as dataService,
+    qs as qsService,
+    scroll as scrollService
+  } from './lib/services'
+  import Refine from './lib/components/Refine.svelte'
+  import Sort from './lib/components/Sort.svelte'
+  import Spinner from './lib/components/Spinner.svelte'
+  import WorkList from './lib/components/WorkList.svelte'
 
-  let app
-  let mounted = false // flag for query string (QS) sync
-  let index = {} // lunr search index object
-  let works = [] // full list of works (unfiltered)
-  let data = {}
-  let state
+  type Props = {
+		workId?: string
+	}
 
-  $: embedded = Boolean(workId)
-  $: results = filterWorks({ ...state, index, works })
-  $: scrollToTop(results)
-  $: {
-    if (mounted && index && !embedded) {
-      syncQS(state)
-      initScrollBehaviors(app)
-    } else {
-      state = loadQS(workId)
+  const { workId }: Props = $props()
+
+  const embedded = $derived(Boolean(workId))
+  let catalogue = $state<Omit<Catalogue, 'works'>>()
+  let i18n = $state<I18n>()
+  let loading = $state(true)
+  let loadingError = $state()
+  let qsState = $state(qsService.defaultState)
+  let worksWithFacets = $state<FilteredWork[]>([])
+  let searchIndex = $state<any>(null)
+  let app: HTMLFormElement
+
+  // Re-filter whenever qsState or searchIndex change
+  const filteredWorks = $derived.by(() => {
+    if (!worksWithFacets.length) {
+      return []
     }
-  }
 
-  onMount(() => {
-    if (!embedded) {
-      customizeSection(document.getElementById('catalogue-app'))
-    }
-    mounted = true
+    return catalogueService.filterWorks({
+      ...qsState,
+      searchIndex,
+      embedded,
+      works: worksWithFacets
+    })
   })
 
-  function normalizeString(str) {
-    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-  }
-
-  function customizeSection(container) {
-    let section = container
-
-    while (section.tagName.toLowerCase() !== 'section') {
-      section = section.parentNode
+  $effect(() => {
+    if (!loading) {
+      qsService.sync(qsState)
     }
+  })
 
-    if (section) {
-      section.style.overflow = 'hidden'
-    }
-  }
-
-  async function loadCatalogue() {
-    const responses = {}
-
-    await Promise.all(
-      Object.entries(endpoints)
-        .filter(([key]) => key !== 'index')
-        .map(([key, url]) =>
-          fetch(url)
-            .then(res => res.json())
-            .then(data => {
-              responses[key] = data
-            })
-        )
-    )
-
-    works = setFacets(responses.catalogue.works)
-    data = responses
-  }
-
-  async function loadSearchIndex() {
-    try {
-      const res = await fetch(endpoints.index)
-      const data = await res.json()
-
-      if (res) {
-        index = lunr.Index.load(data)
+  // App initialisation
+  onMount(() => {
+    // Restore state from URL when user navigates back (e.g. out of rework mode)
+    const handlePopState = async () => {
+      const prevReworksOf = qsState.reworksOf
+      qsState = qsService.load(workId)
+      if (prevReworksOf) {
+        await tick()
+        scrollService.scrollToWork(prevReworksOf)
       }
-    } catch (e) {
-      console.error(e)
     }
+    window.addEventListener('popstate', handlePopState)
+
+    ;(async () => {
+      try {
+        const catalogueData = await dataService.getCatalogueData()
+        catalogue = {
+          categories: catalogueData.catalogue.categories,
+          fields: catalogueData.catalogue.fields,
+          genres: catalogueData.catalogue.genres,
+          publishers: catalogueData.catalogue.publishers,
+        }
+        i18n = catalogueData.i18n
+
+        const indexData = await dataService.getIndexData()
+        // searchIndex = window.lunr.Index.load(indexData)
+        searchIndex = lunr.Index.load(indexData)
+
+        scrollService.initScrollBehaviors(app)
+
+        // Step 1: read URL → set qsState
+        qsState = qsService.load(workId)
+
+        cmsService.customizeSection(APP_CONTAINER_ID)
+
+        // Compute facets once; filteredWorks $derived takes it from here
+        worksWithFacets = facetsHelper.setFacets(catalogueData.catalogue.works)
+
+        loading = false
+      } catch(e: any) {
+        loadingError = e.message
+      }
+    })()
+
+    return () => window.removeEventListener('popstate', handlePopState)
+  })
+
+  // Interaction handlers
+  const refine = (tuple: ActiveFacetTuple) => {
+    const [group, facet] = tuple
+    const isActive = qsState.activeFacets.some(([g, f]) => g === group && f === facet)
+
+    qsState = {
+      ...qsState,
+      activeFacets: isActive
+        ? qsState.activeFacets.filter(([g, f]) => !(g === group && f === facet))
+        : [...qsState.activeFacets, tuple]
+    }
+
+    scrollService.scrollToTop()
   }
 
-  function filterWorks({ activeFacets, index, query, reworksOf, sort, works }) {
-    let results = works
+  const clearState = () => {
+    qsState = { ...qsService.defaultState }
+  }
 
-    if (reworksOf) {
-      results = works.filter(
-        work => work.id === reworksOf || work.rework === reworksOf
-      )
+  const sort = (sortObj: QsSort) => {
+    qsState = { ...qsState, sort: sortObj }
+  }
+
+  const toggleReworks = async (workId: string) => {
+    const newState = {
+      ...qsState,
+      reworksOf: qsState.reworksOf === workId ? '' : workId
+    }
+    if (newState.reworksOf) {
+      // Push to history so the browser Back button restores the previous list
+      qsService.push(newState)
+      qsState = newState
+      scrollService.scrollToTop()
     } else {
-      results = handleQuery({ works, index, query })
-      results = handleFacets({ activeFacets, works: results })
-    }
-
-    if (embedded || reworksOf) {
-      return results.sort(a => (a.id === reworksOf ? -1 : 1))
-    }
-
-    results.sort((a, b) => {
-      const getDuration = work => parseInt(`${work.duration || 0}`)
-      const getYear = work =>
-        parseInt(`${work.composition_date || 1905}`.substr(0, 4))
-
-      switch (sort.field) {
-        case 'u':
-          const dateA = new Date(a.date)
-          const dateB = new Date(b.date)
-          return dateA > dateB
-            ? state.sort.dir === 'asc'
-              ? 1
-              : -1
-            : dateA === dateB
-            ? 0
-            : state.sort.dir === 'asc'
-            ? -1
-            : 1
-        case 'c':
-          const yearA = getYear(a)
-          const yearB = getYear(b)
-          return yearA > yearB
-            ? state.sort.dir === 'asc'
-              ? 1
-              : -1
-            : yearA === yearB
-            ? 0
-            : state.sort.dir === 'asc'
-            ? -1
-            : 1
-        case 't':
-          const titleA = normalizeString(a.title.translations[a.title.main])
-          const titleB = normalizeString(b.title.translations[b.title.main])
-          return titleA > titleB
-            ? state.sort.dir === 'desc'
-              ? -1
-              : 1
-            : titleA === titleB
-            ? 0
-            : state.sort.dir === 'asc'
-            ? 1
-            : -1
-        case 'd':
-          const durationA = getDuration(a)
-          const durationB = getDuration(b)
-          return durationA > durationB
-            ? state.sort.dir === 'asc'
-              ? 1
-              : -1
-            : durationA === durationB
-            ? 0
-            : state.sort.dir === 'asc'
-            ? -1
-            : 1
-      }
-    })
-
-    return results
-  }
-
-  function handleQuery({ index, query, works }) {
-    if (query.startsWith('id:')) {
-      return works.filter(work => work.id === query.split(':')[1])
-    } else {
-      if (!index.search) {
-        return works
-      }
-
-      const results = index.search(query)
-      const r = results.map(result => result.ref)
-      return works.filter(work => r.includes(work.id))
+      const idToScrollTo = qsState.reworksOf
+      qsState = newState
+      await tick()
+      scrollService.scrollToWork(idToScrollTo)
     }
   }
 
-  function handleFacets({ activeFacets, works }) {
-    return activeFacets.length
-      ? works.filter(work =>
-          activeFacets.every(facet => work.facets.includes(facet))
-        )
-      : works
-  }
-
-  function refine(event) {
-    const facet = event.detail
-
-    state.activeFacets = state.activeFacets.includes(facet)
-      ? state.activeFacets.filter(f => f !== facet)
-      : [...state.activeFacets, facet]
-  }
-
-  function clear() {
-    state = { ...defaultState }
+  const updateQuery = (query: string) => {
+    qsState = { ...qsState, query }
+    scrollService.scrollToTop()
   }
 </script>
 
 <form
   class="catalogue search"
   class:embedded
-  class:rework-mode={state.reworksOf}
+  class:rework-mode={qsState.reworksOf}
   bind:this={app}
-  on:submit|preventDefault
+  onsubmit={e => e.preventDefault()}
 >
   <div class="works">
     <div class="row">
       <div class="column list">
-        {#if !embedded && !state.reworksOf}
-          <Sort {state} on:sort={e => (state.sort = e.detail)} />
+        {#if !embedded && !qsState.reworksOf}
+          <Sort {qsState} onSort={sort} />
         {/if}
-        {#await loadCatalogue()}
+        {#if loading}
           <div class="catalogue--loader">
-            <Spinner size="20" radius="8" stroke="2.5" />
+            <Spinner size={20} radius={8} stroke={2.5} />
             <p>Loading catalogue data</p>
           </div>
-        {:then}
-          <WorkList
-            catalogue={data.catalogue}
-            {embedded}
-            fields={data.catalogue.fields}
-            fullList={works}
-            filteredList={results}
-            i18n={data.i18n}
-            publishers={data.catalogue.publishers}
-            {state}
-            on:refine={refine}
-            on:toggleReworks={e =>
-              (state.reworksOf = state.reworksOf === e.detail ? '' : e.detail)}
-          />
-        {:catch error}
+        {:else if loadingError}
           <p>
-            Failed to initialize catalogue: <strong>{error.message}</strong>.
+            Failed to initialize catalogue: <strong>{loadingError}</strong>.
           </p>
-          {console.error(error) && ''}
-        {/await}
+          {console.error(loadingError)}
+        {:else}
+          <!-- <pre>{JSON.stringify(qsState, null, 2)}</pre> -->
+          <WorkList
+            {embedded}
+            {qsState}
+            categories={catalogue?.categories}
+            fields={catalogue?.fields}
+            fullList={worksWithFacets as RenderedWork[]}
+            filteredList={filteredWorks as RenderedWork[]}
+            i18n={i18n}
+            publishers={catalogue?.publishers}
+            onRefine={refine}
+            onToggleReworks={toggleReworks}
+          />
+        {/if}
       </div>
       {#if !embedded}
         <div class="column refine">
           <Refine
-            activeFacets={state.activeFacets}
-            categories={data.catalogue?.categories}
-            genres={data.catalogue?.genres}
-            publishers={data.catalogue?.publishers}
-            {loadSearchIndex}
-            {state}
-            works={results}
-            on:updateQuery={e => (state.query = e.detail)}
-            on:refine={refine}
-            on:clear={clear}
+            activeFacets={qsState.activeFacets}
+            categories={catalogue?.categories}
+            genres={catalogue?.genres}
+            publishers={catalogue?.publishers}
+            {qsState}
+            works={filteredWorks}
+            loadSearchIndex={dataService.getIndexData}
+            onUpdateQuery={updateQuery}
+            onRefine={refine}
+            onClearState={clearState}
           />
         </div>
       {/if}
     </div>
-    <Pagination />
   </div>
 </form>

@@ -159,7 +159,7 @@ const getWorks = async ({ dir, genres, categories }) => {
         }))
 
         if (work.publications.every(p => p.downloadable)) {
-          work.publications = [{ downloadable: true }]
+          work.publications = [{ downloadable: true, publisher_id: 'afp' }]
         }
       }
     }
