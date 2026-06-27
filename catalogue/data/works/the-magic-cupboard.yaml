@@ -16,7 +16,7 @@ cast:
     voice: coro
 category: opera
 composition_date: 1942
-date: 2026-03-16T09:41:21.592Z
+date: 2026-06-27T10:26:46.432Z
 description: Opera in 2 acts based on a story from the "Thousand and one nights"
   - original version for symphonic orchestra
 duration: 5220
@@ -42,12 +42,3 @@ title:
     en: The magic cupboard
     fr: L’armoire magique
     hu: A bűvös szekrény
-version: Original version for symphonic orchestra
-world_premiere:
-  credits:
-    - Conducted by Otto Berg
-    - "Stage director: Kálmán Nádasdy"
-    - "Stage design: Gusztáv Oláh"
-    - "Costumes: Tivadar Márk"
-  date: 1942
-  location: Hungarian State Opera of Budapest
