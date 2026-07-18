@@ -1,0 +1,16 @@
+category: chamber
+date: 2026-07-18T15:31:21.580Z
+description: for harpsichord and harp - based on the work by Bálint Bakfart (1507-1576)
+duration: 180
+id: fantazia
+nb: Fantázia is an adaptation of the 3th movement of "Three fantasias"
+publications:
+  - publisher_id: afp
+rework_of: three-fantasias
+title:
+  main: hu
+  original: hu
+  sort:
+    - hu
+  translations:
+    hu: Fantázia
