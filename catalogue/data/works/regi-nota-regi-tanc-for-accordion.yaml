@@ -1,0 +1,20 @@
+category: solo
+date: 2026-07-19T09:33:13.253Z
+description: for accordion - 2 little pieces on motifs from the 18th century
+duration: 300
+id: regi-nota-regi-tanc-for-accordion
+movements:
+  - title: Nem nyughatom.../ Ich habe keine Ruhe...
+  - title: Kis Verbunk / Kleiner Werbungstanz
+publications:
+  - publisher_id: afp
+rework_of: regi-nota-regi-tanc
+title:
+  main: hu
+  original: ge
+  sort:
+    - hu
+    - ge
+  translations:
+    hu: Régi nóta, régi tánc
+    ge: Alte Weise, alter Tanz
