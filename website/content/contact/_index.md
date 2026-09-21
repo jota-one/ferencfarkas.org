@@ -43,15 +43,12 @@ menu:
 {{% /column %}}
 {{% column %}}
 
-## AF Publishing
+## Free manuscript downloads
 <br>
-Represents the private collection of András Farkas, the son of the composer.
-It includes all the works of Ferenc Farkas that have not yet been edited.
+More than 300 works by Ferenc Farkas have not been published. The corresponding sheet music can be downloaded for free from this website.
 
-We are in the process of providing every manuscript in our possession on this
-website as free download. However, this might last quite some time and until
-we are finished witht his task, the works that are not yet online can be sent
-to you by e-mail in PDF format.
+If you have any questions or need more information, please fill out the form on this page and we will get back to you.
+
 
 ### Contact
 **András Farkas**

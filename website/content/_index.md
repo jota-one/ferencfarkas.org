@@ -9,6 +9,32 @@ date: 2021-03-21
 
 {{% carousel %}}
 
+{{% news date="21.09.2026" %}}
+{{% row %}}
+{{% column %}}
+
+## Toccata Classics
+### 14 CDs and counting
+
+The British label has been recording and releasing music by Ferenc Farkas
+for over a decade, spanning his orchestral, chamber and vocal works —
+making it our most prolific and valued recording partner.
+
+Many of these works had never been recorded before, some unheard since
+Farkas's own lifetime. Their care in bringing this music back to life
+deserves our sincere gratitude.
+
+{{< arrow-link "https://toccataclassics.com/?s=Ferenc+Farkas" "Discover the collection" "_blank" >}}
+
+{{% /column %}}
+{{% column  size="2" valign="center" %}}
+
+{{< figure src="/img/news/Toccata-all.png" >}}
+
+{{% /column %}}
+{{% /row %}}
+{{% /news %}}
+
 {{% news date="09.06.2025" %}}
 {{% row %}}
 {{% column %}}
