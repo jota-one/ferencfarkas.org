@@ -48,7 +48,7 @@
     "svelte": "^5.45.2",
     "svelte-check": "^4.4.5",
     "typescript": "^6.0.3",
-    "vite": "^8.0.16",
+    "vite": "^8.1.6",
     "wavesurfer.js": "^6.6.4"
   }
 }
