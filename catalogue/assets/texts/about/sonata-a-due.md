@@ -21,11 +21,6 @@ menu:
 
 > After a wide gesturing introduction some bars in length which stands like a gate in front of the work, the first movement written in sonata form starts off. The main theme is drawn over a jaunty ostinato, from which is woven the transition section, then a languorous, emotional secondary theme appears that later gives way to the pulsing, four-part closing theme built on the double stopping of the two instruments. The second movement is a profoundly expressed confession: an intimate dialogue of instruments in ternary form. The third movement is a playful, bantering, ‘irregular’ Rondo. The jaunty secondary theme returns changed yet recognizable. In the trio the cello sings lyrically. To close the piece the introduction is heard once again, providing a frame for the three movements. 
 > {{< author name="Laszló Gombos" >}}
-> 
-
-{{% /column %}}
-{{% column %}}
-
 
 {{< catalogue work-id="sonata-a-due" >}}
 
