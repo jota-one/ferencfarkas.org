@@ -36,10 +36,7 @@ precedes a more tranquil, characteristic trio, which alternates cadentially betw
 and its variations.
 > {{< author name="Ferenc Farkas" >}}
 
-{{% /column %}}
-{{% column %}}
-
-{{< catalogue work-id="serenade-for-wind-quintet" >}}
+{{< catalogue work-id="serenata-concertante" >}}
 
 {{% /column %}}
 {{% /row %}}
