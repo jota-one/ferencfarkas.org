@@ -1,17 +1,17 @@
 category: lieder
 composition_date: 1995
-date: 2026-06-14T12:18:10.318Z
+date: 2026-11-24T17:40:18.295Z
 description: Cycle of 7 songs for voice and piano
 duration: 247
 id: regi-temetoe
 movements:
-  - title: Bajusz Balázs voltam
-  - title: Itt nyugszik a Fehér Sára
-  - title: Sütő Borcsa voltam
-  - title: Im itt nyugszik Edes Ignác
-  - title: Ime sírja Bakos Vincének
-  - title: Láncoskuti Nagy Elek
-  - title: En Csibor Pál
+  - title: Bajusz Balázs voltam (My name was Balázs Bajusz)
+  - title: Itt nyugszik a Fehér Sára (Here lies Sára Fehér)
+  - title: Sütő Borcsa voltam (My name was Borcsa Sütő)
+  - title: Im itt nyugszik Edes Ignác (Here lies Ignác Édes)
+  - title: Ime sírja Bakos Vincének (Here is the grave of Vince Bakos)
+  - title: Láncoskuti Nagy Elek (Elek Nagy from Láncoskut)
+  - title: En Csibor Pál (Me Pál Csibor)
 publications:
   - publisher_id: afp
 texts:
