@@ -12,7 +12,7 @@ menu:
 {{% row %}}
 {{% column %}}
 
-> “It was only in the 1940s that I began to explore twelve-tone music… My “Preludio e fuga” was composed between 1944 and 1947… But after the communist takeover in 1948, for fear of sanctions, I stopped using this technique… It was incidental music that, in 1954, allowed me to “flirt” with it again” [András Farkas: Mon père m’a raconté](https://www.editions-delatour.com/fr/biographies-entretiens/3727-mon-pere-m-a-raconte-la-vie-du-compositeur-hongrois-ferenc-farkas-9782752103079.html)
+> “It was only in the 1940s that I began to explore twelve-tone music… My “Preludio e fuga” was composed between 1944 and 1947… But after the communist takeover in 1948, for fear of sanctions, I stopped using this technique… It was incidental music that, in 1954, allowed me to “flirt” with it again”. Extract from [András Farkas: Mon père m’a raconté](https://www.editions-delatour.com/fr/biographies-entretiens/3727-mon-pere-m-a-raconte-la-vie-du-compositeur-hongrois-ferenc-farkas-9782752103079.html)
 >
 > Ferenc Farkas composed his cantata entitled "Tavaszvárás" (Waiting for Spring) in 1967, based on poems by Gyula Juhász. The titles of the four movements of the cantata perfectly reflect the atmosphere that Farkas wanted to give to his work:
 >
