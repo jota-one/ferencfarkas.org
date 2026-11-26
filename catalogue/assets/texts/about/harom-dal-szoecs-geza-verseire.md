@@ -12,7 +12,7 @@ menu:
 {{% row %}}
 {{% column %}}
 
-> Farkas dated his song cycle "Három dal Szőcs Géza verseire" (Three songs on poems by Géza Szőcs) June 16, 1989, a highly symbolic date since it was on that day that the historic rehabilitation of Imre Nagy, the emblematic figure of the 1956 Budapest uprising, took place.
+> Ferenc Farkas dated his song cycle "Három dal Szőcs Géza verseire" (Three songs on poems by Géza Szőcs) June 16, 1989, a highly symbolic date since it was on that day that the historic rehabilitation of Imre Nagy, the emblematic figure of the 1956 Budapest uprising, took place.
 >
 > Equally significant is the choice of poems that the composer set to music for this occasion: those by Géza Szőcs, a renowned poet, writer, journalist, and political dissident from Transylvania (Romania), whom he had first met in 1979. 
 >
